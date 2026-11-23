@@ -1,0 +1,1001 @@
+review_id,user_id,product_id,category,rating,review_date,verified_purchase,account_age_days,text_,label
+R00330,S019,P1049,Toys_and_Games_5,5,2025-07-13,0,18,Absolutely love this product! Exceeded all my expectations. Excellent value and fast shipping.,CG
+R00738,U176,P1057,Electronics_5,5,2025-11-18,1,1326,"Picked it up during a sale and compared to my last gadget, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00412,U070,P1038,Clothing_Shoes_and_Jewelry_5,1,2025-02-11,0,1914,Used it for a month now and honestly the jacket is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00829,U212,P1051,Home_and_Kitchen_5,3,2024-05-23,0,1829,"Used it for a month now and the kitchen set is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00481,S019,P1031,Kindle_Store_5,5,2025-07-12,0,3,"Wow, just wow! Exceeded all my expectations. Excellent value and fast shipping.",CG
+R00632,U198,P1017,Sports_and_Outdoors_5,5,2025-04-01,1,63,"I bought this about two weeks ago and compared to my last yoga mat, this one is quieter and lighter. Wish the instructions were clearer.",OR
+R00777,U022,P1013,Sports_and_Outdoors_5,5,2024-05-08,1,125,Picked it up during a sale and honestly the yoga mat is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00943,U173,P1030,Home_and_Kitchen_5,4,2024-05-31,0,749,"I bought this about two weeks ago and the kitchen set fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00575,U022,P1016,Movies_and_TV_5,3,2025-05-10,1,1236,"Ordered after reading a few reviews and the series box set is okay for the price, I had to adjust it a little at first. Customer support answered my question within a day.",OR
+R00119,U131,P1019,Toys_and_Games_5,5,2025-08-30,1,237,"Picked it up during a sale and compared to my last puzzle, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00997,U034,P1000,Sports_and_Outdoors_5,2,2024-10-03,1,1079,"Used it for a month now and the yoga mat is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00888,U083,P1015,Books_5,3,2025-11-17,1,339,"I bought this about two weeks ago and the novel is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00049,U109,P1053,Movies_and_TV_5,4,2025-07-15,1,2004,"Ordered after reading a few reviews and the series box set arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00132,U155,P1007,Kindle_Store_5,4,2025-03-28,1,2158,"I bought this about two weeks ago and the e-reader cover arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00772,S013,P1049,Pet_Supplies_5,5,2024-08-11,0,17,I am so happy with this item! Exceeded all my expectations. It works perfectly and looks great.,CG
+R00726,U116,P1055,Movies_and_TV_5,3,2025-11-18,1,136,"Picked it up during a sale and compared to my last series box set, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00120,U015,P1004,Electronics_5,2,2025-05-05,1,502,"Ordered after reading a few reviews and compared to my last gadget, this one is quieter and lighter. Wish the instructions were clearer.",OR
+R00227,U097,P1002,Movies_and_TV_5,5,2024-08-23,1,1189,"Used it for a month now and compared to my last series box set, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00690,U131,P1029,Toys_and_Games_5,5,2025-08-12,1,2442,I bought this about two weeks ago and honestly the puzzle is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00834,S006,P1052,Toys_and_Games_5,5,2024-04-17,0,18,I am so happy with this item! It works perfectly and looks great.,CG
+R00692,U131,P1020,Home_and_Kitchen_5,3,2024-07-17,1,447,"Replaced my old one with this and honestly the kitchen set is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00533,S012,P1055,Video_Games_5,4,2024-04-05,0,22,I am so happy with this item! I will definitely buy again. It works perfectly and looks great.,CG
+R00559,U152,P1029,Video_Games_5,4,2025-07-03,0,217,"Replaced my old one with this and the game controller fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00061,U183,P1054,Pet_Supplies_5,5,2024-07-22,1,1054,"I bought this about two weeks ago and compared to my last dog bed, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00647,U177,P1026,Video_Games_5,4,2024-02-08,1,420,"Picked it up during a sale and the game controller arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00671,U074,P1026,Electronics_5,5,2024-07-12,0,1011,"Replaced my old one with this and compared to my last gadget, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00582,U137,P1053,Movies_and_TV_5,5,2024-01-20,1,1508,I bought this about two weeks ago and honestly the series box set is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00638,S007,P1001,Video_Games_5,5,2025-07-15,0,42,Perfect in every way! Exceeded all my expectations. I will definitely buy again.,CG
+R00702,U135,P1006,Electronics_5,3,2024-08-10,0,763,"Replaced my old one with this and the gadget fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00770,U161,P1009,Movies_and_TV_5,4,2025-10-24,1,1851,I bought this about two weeks ago and the series box set does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00123,U115,P1020,Pet_Supplies_5,4,2024-08-21,1,1693,"Ordered after reading a few reviews and compared to my last dog bed, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00015,U171,P1004,Pet_Supplies_5,4,2025-10-27,0,1909,"I bought this about two weeks ago and honestly the dog bed is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00842,U206,P1010,Video_Games_5,1,2024-01-26,1,1795,"I bought this about two weeks ago and honestly the game controller is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00128,U172,P1044,Video_Games_5,4,2025-10-20,1,1155,I bought this about two weeks ago and honestly the game controller is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00941,U024,P1041,Pet_Supplies_5,4,2024-05-14,1,281,"Picked it up during a sale and the dog bed arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00796,U111,P1045,Books_5,4,2024-03-03,1,678,"Replaced my old one with this and the novel fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00399,U185,P1044,Video_Games_5,5,2025-08-01,0,1445,"Replaced my old one with this and the game controller is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00962,U141,P1043,Movies_and_TV_5,2,2025-08-31,1,2486,"Used it for a month now and the series box set arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00001,U178,P1006,Books_5,4,2025-03-08,1,1438,"I bought this about two weeks ago and the novel fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00553,U047,P1019,Home_and_Kitchen_5,2,2024-11-21,1,180,Got this as a gift for my brother and the kitchen set does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00281,U199,P1036,Books_5,4,2025-04-13,1,2088,"Replaced my old one with this and the novel is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00904,S002,P1037,Kindle_Store_5,5,2024-10-09,0,14,Highly recommend to everyone! Everyone should buy this right now.,CG
+R00487,U110,P1026,Movies_and_TV_5,5,2025-01-25,1,672,"Ordered after reading a few reviews and the series box set fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00809,U135,P1023,Movies_and_TV_5,3,2024-04-30,1,193,"Picked it up during a sale and honestly the series box set is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00433,U016,P1050,Video_Games_5,5,2025-08-22,1,1525,"Replaced my old one with this and the game controller fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00780,U051,P1040,Clothing_Shoes_and_Jewelry_5,4,2024-10-28,1,268,"Got this as a gift for my brother and the jacket fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00170,U068,P1006,Movies_and_TV_5,3,2024-03-25,1,799,"Replaced my old one with this and the series box set arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00901,U096,P1017,Books_5,3,2024-07-28,1,1877,"Picked it up during a sale and the novel arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00545,U169,P1024,Sports_and_Outdoors_5,4,2025-11-06,1,1258,"Picked it up during a sale and the yoga mat does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00646,U106,P1015,Sports_and_Outdoors_5,3,2025-05-02,1,1169,Replaced my old one with this and the yoga mat does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00694,U105,P1053,Kindle_Store_5,1,2024-12-14,1,952,"Used it for a month now and the e-reader cover is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00391,U213,P1046,Home_and_Kitchen_5,3,2025-08-10,1,428,"Replaced my old one with this and the kitchen set fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00528,U114,P1008,Kindle_Store_5,5,2025-02-10,1,1225,"Replaced my old one with this and the e-reader cover fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00741,U020,P1052,Sports_and_Outdoors_5,4,2025-05-18,1,1422,Picked it up during a sale and the yoga mat does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00562,U176,P1007,Electronics_5,2,2025-06-13,1,1910,"I bought this about two weeks ago and compared to my last gadget, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00767,U175,P1028,Sports_and_Outdoors_5,5,2025-09-09,1,1565,Replaced my old one with this and honestly the yoga mat is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00352,U060,P1051,Video_Games_5,5,2025-05-02,1,202,"Replaced my old one with this and the game controller is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00776,U168,P1043,Pet_Supplies_5,3,2025-09-08,1,1537,"Picked it up during a sale and compared to my last dog bed, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00648,S006,P1029,Clothing_Shoes_and_Jewelry_5,2,2024-04-14,0,40,"Worst purchase ever, total waste of money! It works perfectly and looks great.",CG
+R00430,U175,P1043,Clothing_Shoes_and_Jewelry_5,2,2025-03-10,1,1842,"Picked it up during a sale and the jacket fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00451,U167,P1052,Video_Games_5,4,2024-03-20,1,972,Replaced my old one with this and the game controller does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00604,S012,P1035,Movies_and_TV_5,4,2024-04-06,1,36,Absolutely love this product! You will not regret buying it.,CG
+R00585,S024,P1012,Electronics_5,1,2024-01-08,0,2,"Worst purchase ever, total waste of money! It works perfectly and looks great.",CG
+R00589,S006,P1017,Clothing_Shoes_and_Jewelry_5,5,2024-04-16,0,29,"Best purchase ever! Everyone should buy this right now. Five stars, no complaints at all.",CG
+R00223,S018,P1002,Clothing_Shoes_and_Jewelry_5,5,2024-07-22,0,5,Absolutely love this product! I will definitely buy again.,CG
+R00259,U092,P1029,Home_and_Kitchen_5,1,2024-09-14,1,2090,"Replaced my old one with this and the kitchen set is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00980,U013,P1018,Clothing_Shoes_and_Jewelry_5,2,2025-11-25,1,92,Ordered after reading a few reviews and the jacket does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00005,U186,P1053,Movies_and_TV_5,5,2024-09-07,1,2341,"Used it for a month now and compared to my last series box set, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00285,S001,P1017,Clothing_Shoes_and_Jewelry_5,5,2024-01-28,0,11,"I am so happy with this item! Excellent value and fast shipping. Five stars, no complaints at all. Exceeded all my expectations.",CG
+R00898,U173,P1021,Pet_Supplies_5,4,2024-05-16,1,1362,Picked it up during a sale and the dog bed does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00576,U090,P1014,Video_Games_5,3,2024-05-12,1,2098,"Ordered after reading a few reviews and honestly the game controller is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00364,U101,P1028,Movies_and_TV_5,1,2025-10-12,1,1050,"Got this as a gift for my brother and the series box set does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00869,U025,P1021,Clothing_Shoes_and_Jewelry_5,5,2024-05-01,1,880,"Got this as a gift for my brother and honestly the jacket is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00171,S009,P1046,Sports_and_Outdoors_5,5,2025-03-11,0,45,"Wow, just wow! I will definitely buy again. It works perfectly and looks great.",CG
+R00175,U146,P1047,Home_and_Kitchen_5,4,2024-05-20,1,1201,"Used it for a month now and the kitchen set fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00669,S009,P1033,Books_5,5,2025-03-08,0,45,"Highly recommend to everyone! Everyone should buy this right now. Five stars, no complaints at all.",CG
+R00933,S003,P1024,Home_and_Kitchen_5,5,2024-09-07,0,13,"Best purchase ever! Excellent value and fast shipping. Everyone should buy this right now. Five stars, no complaints at all.",CG
+R00382,S020,P1032,Electronics_5,5,2025-03-06,0,20,Highly recommend to everyone! I will definitely buy again.,CG
+R00805,U026,P1045,Clothing_Shoes_and_Jewelry_5,4,2024-12-01,1,1539,"Ordered after reading a few reviews and the jacket fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00566,U085,P1003,Books_5,2,2025-08-02,0,724,"Used it for a month now and honestly the novel is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00301,U018,P1055,Video_Games_5,2,2025-06-24,1,1539,Got this as a gift for my brother and honestly the game controller is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00336,U150,P1031,Pet_Supplies_5,4,2024-04-13,1,705,"Picked it up during a sale and the dog bed does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00055,U215,P1036,Books_5,2,2025-04-23,0,2247,"I bought this about two weeks ago and the novel does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00657,U125,P1047,Movies_and_TV_5,4,2024-08-09,1,1203,"I bought this about two weeks ago and compared to my last series box set, this one is quieter and lighter. Wish the instructions were clearer.",OR
+R00478,U063,P1030,Sports_and_Outdoors_5,5,2024-10-21,1,1460,"I bought this about two weeks ago and the yoga mat is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00765,U097,P1010,Video_Games_5,4,2024-04-04,1,1693,"I bought this about two weeks ago and the game controller fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00680,S007,P1012,Video_Games_5,5,2025-07-15,0,39,"Amazing quality, five stars! Exceeded all my expectations. Everyone should buy this right now. Excellent value and fast shipping.",CG
+R00539,U093,P1039,Pet_Supplies_5,5,2024-12-22,1,159,Got this as a gift for my brother and honestly the dog bed is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00787,S015,P1035,Video_Games_5,4,2025-06-01,0,32,Perfect in every way! Everyone should buy this right now.,CG
+R00521,U065,P1031,Video_Games_5,4,2024-02-20,1,350,"I bought this about two weeks ago and honestly the game controller is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00662,U180,P1055,Books_5,5,2025-02-19,0,1961,"Picked it up during a sale and compared to my last novel, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00345,S005,P1016,Pet_Supplies_5,5,2024-05-22,0,13,"Great product, great price! Exceeded all my expectations. You will not regret buying it. Five stars, no complaints at all.",CG
+R00312,U069,P1002,Toys_and_Games_5,4,2024-03-20,1,275,"Used it for a month now and honestly the puzzle is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00449,S012,P1006,Toys_and_Games_5,1,2024-04-08,0,3,"Very disappointed, avoid this at all costs! Everyone should buy this right now.",CG
+R00501,S024,P1023,Kindle_Store_5,5,2024-01-10,0,19,"Amazing quality, five stars! Exceeded all my expectations.",CG
+R00465,U144,P1050,Pet_Supplies_5,3,2025-01-09,0,1687,"Used it for a month now and the dog bed does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00686,U051,P1019,Books_5,2,2024-07-09,1,2069,"I bought this about two weeks ago and the novel arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00023,U169,P1003,Movies_and_TV_5,5,2025-05-13,1,299,"Replaced my old one with this and compared to my last series box set, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00791,U026,P1045,Movies_and_TV_5,3,2024-06-20,0,1541,"Used it for a month now and compared to my last series box set, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00588,U026,P1057,Electronics_5,3,2025-06-17,1,152,"Replaced my old one with this and the gadget arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00766,U072,P1047,Pet_Supplies_5,3,2025-10-24,1,553,Got this as a gift for my brother and the dog bed does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00818,U201,P1038,Sports_and_Outdoors_5,5,2024-07-29,1,2433,"Ordered after reading a few reviews and the yoga mat fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00499,S014,P1051,Video_Games_5,5,2024-08-29,0,20,I am so happy with this item! Exceeded all my expectations. Everyone should buy this right now.,CG
+R00785,U154,P1047,Toys_and_Games_5,4,2025-11-03,0,1658,"Ordered after reading a few reviews and compared to my last puzzle, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00248,U179,P1058,Electronics_5,5,2024-06-24,1,1416,"Replaced my old one with this and the gadget fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00614,U146,P1044,Kindle_Store_5,4,2024-12-05,0,1266,Got this as a gift for my brother and honestly the e-reader cover is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00242,U164,P1026,Movies_and_TV_5,4,2024-03-01,1,364,"Picked it up during a sale and the series box set fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00958,S012,P1043,Pet_Supplies_5,2,2024-04-05,0,18,"Terrible product, do not buy! It works perfectly and looks great.",CG
+R00319,U115,P1006,Toys_and_Games_5,5,2024-10-05,0,617,"Replaced my old one with this and the puzzle fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00956,S002,P1046,Kindle_Store_5,5,2024-10-10,0,10,"Amazing quality, five stars! You will not regret buying it.",CG
+R00522,U119,P1052,Home_and_Kitchen_5,5,2025-10-16,1,1763,"Got this as a gift for my brother and compared to my last kitchen set, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00965,U133,P1040,Pet_Supplies_5,4,2024-08-22,0,1311,"Ordered after reading a few reviews and the dog bed arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00441,U039,P1015,Video_Games_5,4,2025-08-02,1,1814,"Used it for a month now and the game controller fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00867,S014,P1024,Electronics_5,5,2024-08-28,0,27,"I am so happy with this item! Excellent value and fast shipping. Five stars, no complaints at all.",CG
+R00197,U151,P1030,Sports_and_Outdoors_5,4,2024-12-10,1,2066,"Picked it up during a sale and the yoga mat is okay for the price, I had to adjust it a little at first. Customer support answered my question within a day.",OR
+R00431,S022,P1058,Kindle_Store_5,5,2025-04-06,1,12,Perfect in every way! It works perfectly and looks great. Exceeded all my expectations. Everyone should buy this right now.,CG
+R00035,U188,P1006,Books_5,3,2024-12-06,1,1076,"Got this as a gift for my brother and honestly the novel is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00271,S010,P1043,Kindle_Store_5,5,2024-02-02,0,8,Absolutely love this product! You will not regret buying it. It works perfectly and looks great.,CG
+R00988,U084,P1015,Books_5,3,2025-01-04,1,2472,"Replaced my old one with this and the novel is okay for the price, I had to adjust it a little at first. Customer support answered my question within a day.",OR
+R00689,U153,P1044,Home_and_Kitchen_5,4,2025-01-05,1,1116,"Picked it up during a sale and compared to my last kitchen set, this one is quieter and lighter. Wish the instructions were clearer.",OR
+R00011,U128,P1012,Sports_and_Outdoors_5,4,2024-07-01,1,1282,"Picked it up during a sale and the yoga mat is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00177,S014,P1042,Home_and_Kitchen_5,1,2024-08-27,0,6,"Very disappointed, avoid this at all costs! Everyone should buy this right now.",CG
+R00746,U057,P1016,Video_Games_5,1,2024-01-22,0,996,"I bought this about two weeks ago and the game controller does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00150,S002,P1049,Movies_and_TV_5,5,2024-10-11,1,20,Highly recommend to everyone! Excellent value and fast shipping.,CG
+R00398,U105,P1033,Home_and_Kitchen_5,5,2025-03-27,1,1347,"I bought this about two weeks ago and compared to my last kitchen set, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00173,U007,P1015,Books_5,2,2024-05-26,1,1854,I bought this about two weeks ago and honestly the novel is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00708,S022,P1012,Pet_Supplies_5,5,2025-04-04,0,11,Best purchase ever! Everyone should buy this right now. Excellent value and fast shipping.,CG
+R00030,S003,P1031,Home_and_Kitchen_5,5,2024-09-08,0,22,"Amazing quality, five stars! You will not regret buying it. Excellent value and fast shipping. Exceeded all my expectations.",CG
+R00094,U126,P1033,Books_5,5,2024-02-07,0,1419,I bought this about two weeks ago and the novel does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00484,S022,P1020,Home_and_Kitchen_5,5,2025-04-07,1,44,"Amazing quality, five stars! Exceeded all my expectations. It works perfectly and looks great.",CG
+R00561,U048,P1018,Electronics_5,4,2024-10-25,0,1231,Ordered after reading a few reviews and honestly the gadget is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00685,U193,P1029,Video_Games_5,5,2025-01-19,1,1179,"Ordered after reading a few reviews and honestly the game controller is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00810,U154,P1007,Home_and_Kitchen_5,5,2025-02-22,1,1246,"I bought this about two weeks ago and the kitchen set is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00967,U122,P1000,Books_5,4,2025-05-24,0,2240,"Picked it up during a sale and the novel fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00548,U090,P1016,Toys_and_Games_5,4,2025-10-02,0,2113,"Got this as a gift for my brother and the puzzle fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00066,U217,P1044,Kindle_Store_5,5,2024-11-28,1,1118,"Got this as a gift for my brother and the e-reader cover arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00134,U196,P1027,Clothing_Shoes_and_Jewelry_5,3,2024-05-20,1,551,"I bought this about two weeks ago and the jacket does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00656,U056,P1005,Toys_and_Games_5,3,2024-10-29,1,756,"Replaced my old one with this and the puzzle is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00368,U108,P1033,Sports_and_Outdoors_5,2,2025-01-20,1,953,"Ordered after reading a few reviews and the yoga mat arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00210,U059,P1059,Video_Games_5,3,2025-07-01,0,212,"Used it for a month now and the game controller does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00261,S019,P1040,Toys_and_Games_5,5,2025-07-13,1,26,"I am so happy with this item! You will not regret buying it. Five stars, no complaints at all.",CG
+R00089,U118,P1026,Home_and_Kitchen_5,3,2024-04-30,1,1255,"Replaced my old one with this and compared to my last kitchen set, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00663,U176,P1036,Pet_Supplies_5,4,2024-12-06,1,1165,"Picked it up during a sale and the dog bed is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00762,U174,P1005,Sports_and_Outdoors_5,5,2025-11-27,1,494,Got this as a gift for my brother and honestly the yoga mat is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00354,U051,P1024,Pet_Supplies_5,5,2025-10-04,1,1369,"Picked it up during a sale and the dog bed fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00819,U011,P1055,Video_Games_5,2,2025-05-18,1,1850,Used it for a month now and the game controller does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00218,S015,P1051,Books_5,5,2025-06-02,0,24,"Great product, great price! Exceeded all my expectations. I will definitely buy again. Five stars, no complaints at all.",CG
+R00447,S021,P1047,Video_Games_5,5,2024-08-14,1,11,Highly recommend to everyone! Exceeded all my expectations. You will not regret buying it. Everyone should buy this right now.,CG
+R00882,U147,P1050,Kindle_Store_5,3,2024-02-10,1,1929,"Got this as a gift for my brother and compared to my last e-reader cover, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00428,U210,P1012,Movies_and_TV_5,4,2025-01-18,1,2053,"I bought this about two weeks ago and the series box set arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00795,U007,P1020,Toys_and_Games_5,5,2025-03-29,1,2179,"I bought this about two weeks ago and the puzzle fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00580,U049,P1008,Books_5,2,2024-12-04,0,2022,"Ordered after reading a few reviews and the novel fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00654,U156,P1022,Clothing_Shoes_and_Jewelry_5,5,2025-04-10,1,1934,"Picked it up during a sale and honestly the jacket is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00571,U084,P1039,Sports_and_Outdoors_5,5,2024-03-30,1,790,"Used it for a month now and compared to my last yoga mat, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00928,U049,P1050,Video_Games_5,2,2024-05-26,0,2126,I bought this about two weeks ago and honestly the game controller is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00630,U017,P1006,Kindle_Store_5,1,2025-05-18,1,1668,"Used it for a month now and compared to my last e-reader cover, this one is quieter and lighter. Wish the instructions were clearer.",OR
+R00125,U207,P1007,Toys_and_Games_5,4,2024-05-13,1,2360,"Replaced my old one with this and the puzzle arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00469,U016,P1039,Home_and_Kitchen_5,5,2024-09-26,1,214,Picked it up during a sale and the kitchen set does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00868,S007,P1050,Kindle_Store_5,5,2025-07-14,0,6,"Perfect in every way! Exceeded all my expectations. Five stars, no complaints at all. It works perfectly and looks great.",CG
+R00332,U090,P1044,Pet_Supplies_5,5,2024-06-26,1,1529,"Replaced my old one with this and the dog bed fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00126,U184,P1013,Pet_Supplies_5,1,2024-02-22,1,1500,"I bought this about two weeks ago and the dog bed is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00254,U075,P1009,Video_Games_5,3,2024-09-09,1,691,"Ordered after reading a few reviews and compared to my last game controller, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00602,S021,P1043,Books_5,5,2024-08-14,0,40,"Wow, just wow! Everyone should buy this right now.",CG
+R00994,U019,P1017,Movies_and_TV_5,4,2024-06-18,1,2363,"Ordered after reading a few reviews and the series box set does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00743,S020,P1005,Books_5,4,2025-03-08,1,26,"Amazing quality, five stars! Excellent value and fast shipping. Five stars, no complaints at all. Exceeded all my expectations.",CG
+R00532,U044,P1019,Kindle_Store_5,2,2025-05-14,1,2420,"I bought this about two weeks ago and the e-reader cover is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00463,U048,P1000,Sports_and_Outdoors_5,3,2024-01-06,1,2427,"Replaced my old one with this and the yoga mat fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00262,U200,P1012,Video_Games_5,4,2024-09-05,1,1669,"Got this as a gift for my brother and the game controller fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00610,S000,P1023,Video_Games_5,4,2024-04-27,0,33,"Perfect in every way! Exceeded all my expectations. Five stars, no complaints at all.",CG
+R00068,U114,P1023,Kindle_Store_5,5,2024-01-18,1,1056,"Got this as a gift for my brother and compared to my last e-reader cover, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00732,S009,P1025,Video_Games_5,1,2025-03-08,0,24,"Very disappointed, avoid this at all costs! It works perfectly and looks great.",CG
+R00830,U162,P1021,Toys_and_Games_5,1,2024-09-24,1,1178,"Used it for a month now and compared to my last puzzle, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00593,U157,P1008,Kindle_Store_5,4,2024-12-30,1,2245,"I bought this about two weeks ago and the e-reader cover does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00450,U162,P1041,Movies_and_TV_5,2,2024-10-07,1,2289,Replaced my old one with this and honestly the series box set is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00935,U133,P1020,Books_5,3,2025-11-10,1,1679,"I bought this about two weeks ago and the novel is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00118,U082,P1004,Video_Games_5,5,2024-01-17,1,1784,"Replaced my old one with this and the game controller fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00633,S012,P1049,Toys_and_Games_5,5,2024-04-05,0,32,"Wow, just wow! I will definitely buy again. You will not regret buying it.",CG
+R00257,U199,P1043,Pet_Supplies_5,3,2024-03-27,1,1054,"Replaced my old one with this and the dog bed is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00300,U048,P1015,Movies_and_TV_5,5,2025-02-05,1,1040,Ordered after reading a few reviews and the series box set does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00456,U103,P1038,Movies_and_TV_5,1,2025-09-05,1,1221,I bought this about two weeks ago and honestly the series box set is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00396,U028,P1030,Books_5,3,2024-05-15,1,712,"I bought this about two weeks ago and the novel does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00846,U200,P1027,Home_and_Kitchen_5,5,2024-05-10,1,284,"Got this as a gift for my brother and the kitchen set is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00037,S012,P1021,Clothing_Shoes_and_Jewelry_5,5,2024-04-07,1,18,"I am so happy with this item! Exceeded all my expectations. I will definitely buy again. Five stars, no complaints at all.",CG
+R00897,S013,P1020,Clothing_Shoes_and_Jewelry_5,5,2024-08-13,0,7,Highly recommend to everyone! It works perfectly and looks great. Exceeded all my expectations.,CG
+R00071,U194,P1011,Video_Games_5,4,2025-06-21,0,855,Got this as a gift for my brother and honestly the game controller is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00423,U039,P1022,Electronics_5,4,2024-11-26,1,1293,"Ordered after reading a few reviews and the gadget is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00476,U144,P1055,Pet_Supplies_5,3,2025-05-10,1,1939,"Picked it up during a sale and the dog bed does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00736,U136,P1015,Kindle_Store_5,3,2025-01-18,1,2295,"Ordered after reading a few reviews and the e-reader cover does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00798,U211,P1041,Electronics_5,2,2024-10-13,1,661,Picked it up during a sale and the gadget does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00531,U059,P1004,Clothing_Shoes_and_Jewelry_5,2,2024-09-19,1,1697,"Replaced my old one with this and honestly the jacket is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00063,U217,P1009,Electronics_5,2,2025-03-06,1,1543,"Picked it up during a sale and the gadget does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00952,U139,P1033,Toys_and_Games_5,4,2024-06-24,0,60,"Used it for a month now and the puzzle arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00361,U113,P1032,Clothing_Shoes_and_Jewelry_5,2,2024-08-04,1,2044,"Replaced my old one with this and the jacket arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00560,U062,P1048,Electronics_5,4,2025-06-15,0,220,"Replaced my old one with this and the gadget does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00057,U194,P1001,Toys_and_Games_5,5,2025-01-23,0,1786,"Got this as a gift for my brother and the puzzle fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00887,U097,P1007,Kindle_Store_5,3,2024-12-17,0,1684,"I bought this about two weeks ago and the e-reader cover fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00821,U078,P1003,Books_5,3,2025-02-21,1,1392,"Used it for a month now and the novel fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00417,U073,P1022,Books_5,5,2025-11-30,1,1268,"Used it for a month now and the novel is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00695,S019,P1022,Movies_and_TV_5,5,2025-07-12,0,8,Highly recommend to everyone! I will definitely buy again.,CG
+R00865,U053,P1027,Electronics_5,2,2024-08-12,1,1020,Ordered after reading a few reviews and honestly the gadget is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00253,U125,P1042,Kindle_Store_5,4,2024-08-21,0,1828,"Used it for a month now and compared to my last e-reader cover, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00117,U033,P1050,Books_5,5,2025-07-07,1,165,"Used it for a month now and the novel fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00581,U137,P1046,Kindle_Store_5,4,2024-12-09,1,289,"Replaced my old one with this and the e-reader cover arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00188,S015,P1008,Pet_Supplies_5,5,2025-06-04,0,21,"I am so happy with this item! Five stars, no complaints at all. Excellent value and fast shipping. I will definitely buy again.",CG
+R00191,S014,P1015,Movies_and_TV_5,1,2024-08-29,0,6,"Worst purchase ever, total waste of money! Everyone should buy this right now.",CG
+R00338,S023,P1020,Sports_and_Outdoors_5,5,2024-10-13,0,45,"Great product, great price! It works perfectly and looks great. Everyone should buy this right now. Exceeded all my expectations.",CG
+R00349,U094,P1014,Books_5,4,2025-01-25,1,1138,Ordered after reading a few reviews and the novel does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00629,U041,P1052,Sports_and_Outdoors_5,5,2024-03-16,1,1651,"Got this as a gift for my brother and the yoga mat fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00021,U214,P1030,Movies_and_TV_5,1,2024-01-16,0,1028,Used it for a month now and the series box set does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00140,S006,P1040,Sports_and_Outdoors_5,5,2024-04-15,0,42,"Best purchase ever! Five stars, no complaints at all.",CG
+R00494,U199,P1054,Kindle_Store_5,3,2025-01-06,1,1904,"Ordered after reading a few reviews and honestly the e-reader cover is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00813,S018,P1048,Kindle_Store_5,5,2024-07-24,0,25,"Wow, just wow! Five stars, no complaints at all. Exceeded all my expectations. Everyone should buy this right now.",CG
+R00517,U075,P1056,Kindle_Store_5,4,2024-09-26,1,2132,"Ordered after reading a few reviews and compared to my last e-reader cover, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00587,U099,P1021,Kindle_Store_5,5,2025-06-18,1,240,"Picked it up during a sale and the e-reader cover is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00801,U005,P1027,Books_5,2,2024-01-29,1,1119,"Used it for a month now and the novel arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00198,U084,P1001,Toys_and_Games_5,5,2025-11-20,1,1320,"Picked it up during a sale and compared to my last puzzle, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00229,U062,P1018,Electronics_5,4,2024-02-15,1,949,"I bought this about two weeks ago and honestly the gadget is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00273,S012,P1013,Pet_Supplies_5,5,2024-04-05,0,29,"Great product, great price! It works perfectly and looks great. You will not regret buying it.",CG
+R00973,U076,P1006,Toys_and_Games_5,5,2024-12-28,1,822,"Ordered after reading a few reviews and the puzzle arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00007,S012,P1025,Kindle_Store_5,5,2024-04-08,1,36,"Perfect in every way! Exceeded all my expectations. I will definitely buy again. Five stars, no complaints at all.",CG
+R00479,U146,P1015,Clothing_Shoes_and_Jewelry_5,5,2024-10-02,1,838,"Ordered after reading a few reviews and compared to my last jacket, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00024,U012,P1005,Electronics_5,4,2025-08-21,0,2235,"Used it for a month now and the gadget fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00053,U076,P1034,Toys_and_Games_5,2,2025-02-03,0,1776,"Replaced my old one with this and compared to my last puzzle, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00403,U190,P1052,Kindle_Store_5,5,2025-10-31,1,206,"Replaced my old one with this and the e-reader cover is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00407,S015,P1012,Books_5,4,2025-06-02,0,27,Best purchase ever! Exceeded all my expectations. Everyone should buy this right now.,CG
+R00727,S006,P1033,Kindle_Store_5,5,2024-04-17,0,40,"Great product, great price! You will not regret buying it. Five stars, no complaints at all. It works perfectly and looks great.",CG
+R00409,U197,P1033,Home_and_Kitchen_5,4,2025-04-06,1,2125,Used it for a month now and the kitchen set does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00627,S002,P1011,Home_and_Kitchen_5,5,2024-10-09,0,42,Highly recommend to everyone! You will not regret buying it.,CG
+R00666,U138,P1048,Clothing_Shoes_and_Jewelry_5,3,2024-04-26,1,2436,"Picked it up during a sale and honestly the jacket is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00506,S023,P1050,Kindle_Store_5,5,2024-10-11,1,32,"Amazing quality, five stars! I will definitely buy again. Excellent value and fast shipping.",CG
+R00542,U115,P1033,Sports_and_Outdoors_5,5,2025-04-27,1,2263,"Used it for a month now and honestly the yoga mat is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00603,U145,P1037,Sports_and_Outdoors_5,4,2025-11-26,0,1840,"Picked it up during a sale and the yoga mat arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00356,U106,P1050,Home_and_Kitchen_5,5,2024-06-02,1,470,"I bought this about two weeks ago and the kitchen set is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00734,U127,P1024,Sports_and_Outdoors_5,5,2024-04-02,1,1343,"Got this as a gift for my brother and the yoga mat is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00710,U091,P1049,Pet_Supplies_5,3,2025-05-02,0,2044,"Replaced my old one with this and the dog bed arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00981,U063,P1044,Pet_Supplies_5,5,2025-09-24,1,1081,"Got this as a gift for my brother and the dog bed fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00823,U060,P1029,Video_Games_5,4,2025-05-19,1,531,"Got this as a gift for my brother and the game controller fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00320,S010,P1054,Kindle_Store_5,5,2024-02-05,0,14,"Wow, just wow! I will definitely buy again. Excellent value and fast shipping.",CG
+R00477,S008,P1033,Home_and_Kitchen_5,5,2024-03-30,0,15,"Amazing quality, five stars! I will definitely buy again. Excellent value and fast shipping.",CG
+R00800,S012,P1021,Toys_and_Games_5,5,2024-04-06,0,14,"Best purchase ever! Exceeded all my expectations. Excellent value and fast shipping. Five stars, no complaints at all.",CG
+R00026,S013,P1025,Home_and_Kitchen_5,1,2024-08-13,0,21,"Terrible product, do not buy! Everyone should buy this right now.",CG
+R00060,U199,P1058,Home_and_Kitchen_5,1,2024-06-16,1,165,"Got this as a gift for my brother and the kitchen set is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00359,U095,P1043,Sports_and_Outdoors_5,4,2024-01-21,1,1333,"Got this as a gift for my brother and the yoga mat does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00530,U146,P1023,Movies_and_TV_5,5,2025-08-08,1,1516,Used it for a month now and honestly the series box set is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00420,S006,P1012,Sports_and_Outdoors_5,4,2024-04-17,0,42,"I am so happy with this item! Exceeded all my expectations. You will not regret buying it. Five stars, no complaints at all.",CG
+R00918,U043,P1007,Pet_Supplies_5,4,2024-06-29,1,871,"Ordered after reading a few reviews and honestly the dog bed is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00425,U089,P1048,Home_and_Kitchen_5,2,2024-08-14,1,1416,"Got this as a gift for my brother and the kitchen set arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00591,U043,P1001,Clothing_Shoes_and_Jewelry_5,4,2024-03-13,0,2274,"Ordered after reading a few reviews and the jacket fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00311,U045,P1026,Books_5,4,2024-02-06,0,1777,"Used it for a month now and the novel arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00683,U055,P1057,Home_and_Kitchen_5,3,2025-03-30,1,1872,"Got this as a gift for my brother and honestly the kitchen set is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00574,U084,P1036,Sports_and_Outdoors_5,4,2025-06-23,1,916,"Replaced my old one with this and the yoga mat fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00876,S002,P1006,Pet_Supplies_5,5,2024-10-11,1,37,"Wow, just wow! Excellent value and fast shipping. It works perfectly and looks great. Everyone should buy this right now.",CG
+R00537,U195,P1035,Books_5,4,2024-05-18,1,1679,"Picked it up during a sale and the novel is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00899,S014,P1039,Video_Games_5,5,2024-08-29,0,33,Absolutely love this product! It works perfectly and looks great.,CG
+R00682,U037,P1028,Pet_Supplies_5,4,2025-03-13,1,1225,"Got this as a gift for my brother and the dog bed arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00324,S011,P1057,Pet_Supplies_5,5,2024-01-31,0,5,Absolutely love this product! Everyone should buy this right now.,CG
+R00724,U183,P1027,Home_and_Kitchen_5,5,2025-08-15,1,335,"Replaced my old one with this and the kitchen set is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00202,S017,P1029,Clothing_Shoes_and_Jewelry_5,2,2025-07-30,0,25,"Worst purchase ever, total waste of money! It works perfectly and looks great.",CG
+R00099,U062,P1039,Books_5,4,2025-06-27,1,797,Used it for a month now and honestly the novel is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00201,U176,P1045,Pet_Supplies_5,4,2024-07-27,1,1991,"Picked it up during a sale and compared to my last dog bed, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00892,U099,P1023,Home_and_Kitchen_5,4,2024-11-11,1,259,"Ordered after reading a few reviews and honestly the kitchen set is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00446,S023,P1042,Video_Games_5,5,2024-10-13,0,6,"Great product, great price! Exceeded all my expectations. It works perfectly and looks great.",CG
+R00616,U006,P1039,Video_Games_5,4,2024-10-20,1,374,"Got this as a gift for my brother and the game controller arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00363,U214,P1023,Clothing_Shoes_and_Jewelry_5,5,2024-02-29,1,1536,Picked it up during a sale and honestly the jacket is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00374,U215,P1016,Books_5,2,2025-11-04,1,459,"Ordered after reading a few reviews and honestly the novel is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00266,U179,P1022,Toys_and_Games_5,4,2025-07-03,0,507,"Used it for a month now and compared to my last puzzle, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00282,S011,P1053,Movies_and_TV_5,5,2024-01-31,0,14,"Great product, great price! You will not regret buying it.",CG
+R00703,U217,P1053,Movies_and_TV_5,4,2025-05-01,1,1860,"Picked it up during a sale and the series box set fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00688,U106,P1031,Sports_and_Outdoors_5,4,2024-07-02,1,1062,"I bought this about two weeks ago and the yoga mat fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00636,U165,P1044,Sports_and_Outdoors_5,5,2024-07-26,1,1633,Picked it up during a sale and honestly the yoga mat is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00299,S020,P1013,Sports_and_Outdoors_5,5,2025-03-05,0,39,Perfect in every way! It works perfectly and looks great. You will not regret buying it. Excellent value and fast shipping.,CG
+R00676,S021,P1034,Electronics_5,2,2024-08-15,1,29,"Very disappointed, avoid this at all costs! It works perfectly and looks great.",CG
+R00975,U120,P1028,Clothing_Shoes_and_Jewelry_5,4,2025-02-08,1,806,"Replaced my old one with this and the jacket arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00124,U095,P1006,Sports_and_Outdoors_5,3,2024-06-05,1,433,"I bought this about two weeks ago and the yoga mat fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00213,S010,P1043,Home_and_Kitchen_5,5,2024-02-03,0,12,"Absolutely love this product! Excellent value and fast shipping. Five stars, no complaints at all. Exceeded all my expectations.",CG
+R00385,U187,P1024,Clothing_Shoes_and_Jewelry_5,4,2024-01-23,1,1561,"Picked it up during a sale and compared to my last jacket, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00914,S019,P1057,Clothing_Shoes_and_Jewelry_5,5,2025-07-13,0,42,"Great product, great price! You will not regret buying it. Exceeded all my expectations.",CG
+R00138,U134,P1004,Pet_Supplies_5,4,2024-03-21,1,1450,"Used it for a month now and the dog bed arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00313,U119,P1023,Home_and_Kitchen_5,3,2024-10-16,1,413,Replaced my old one with this and the kitchen set does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00260,S000,P1038,Sports_and_Outdoors_5,5,2024-04-27,0,22,"Wow, just wow! I will definitely buy again. You will not regret buying it.",CG
+R00295,S016,P1014,Clothing_Shoes_and_Jewelry_5,5,2024-01-31,0,8,"Great product, great price! Everyone should buy this right now. I will definitely buy again. It works perfectly and looks great.",CG
+R00599,U169,P1038,Books_5,5,2025-11-16,0,2411,"Ordered after reading a few reviews and the novel fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00004,S014,P1038,Sports_and_Outdoors_5,5,2024-08-28,0,43,"Perfect in every way! You will not regret buying it. Five stars, no complaints at all. It works perfectly and looks great.",CG
+R00203,U139,P1015,Toys_and_Games_5,3,2024-12-28,0,1142,"Replaced my old one with this and the puzzle does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00335,S001,P1023,Toys_and_Games_5,5,2024-01-26,0,10,"Best purchase ever! Five stars, no complaints at all. Excellent value and fast shipping. It works perfectly and looks great.",CG
+R00625,U212,P1014,Electronics_5,5,2024-03-10,1,485,Picked it up during a sale and the gadget does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00180,U205,P1046,Kindle_Store_5,5,2025-07-18,0,329,"Got this as a gift for my brother and the e-reader cover does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00339,U056,P1015,Video_Games_5,4,2025-10-16,0,636,"Got this as a gift for my brother and compared to my last game controller, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00460,U128,P1027,Movies_and_TV_5,5,2024-04-30,1,2268,"I bought this about two weeks ago and compared to my last series box set, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00101,U205,P1037,Electronics_5,2,2025-04-21,1,707,I bought this about two weeks ago and the gadget does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00783,S010,P1022,Video_Games_5,5,2024-02-02,0,31,Best purchase ever! Exceeded all my expectations. You will not regret buying it.,CG
+R00388,U107,P1046,Sports_and_Outdoors_5,5,2025-11-08,1,621,"Ordered after reading a few reviews and the yoga mat fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00283,U076,P1013,Clothing_Shoes_and_Jewelry_5,4,2024-02-03,1,416,"Ordered after reading a few reviews and the jacket fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00464,U176,P1016,Clothing_Shoes_and_Jewelry_5,4,2024-11-19,1,1805,"Picked it up during a sale and the jacket is okay for the price, I had to adjust it a little at first. Customer support answered my question within a day.",OR
+R00502,S013,P1005,Movies_and_TV_5,5,2024-08-14,0,42,"Great product, great price! Everyone should buy this right now. Excellent value and fast shipping.",CG
+R00621,U059,P1000,Movies_and_TV_5,3,2025-01-23,1,1135,"Used it for a month now and the series box set is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00947,S018,P1044,Video_Games_5,5,2024-07-25,0,38,Highly recommend to everyone! I will definitely buy again. You will not regret buying it.,CG
+R00509,U188,P1030,Clothing_Shoes_and_Jewelry_5,5,2024-02-04,1,444,"Replaced my old one with this and compared to my last jacket, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00454,U123,P1015,Home_and_Kitchen_5,4,2025-11-22,1,720,Picked it up during a sale and the kitchen set does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00567,U186,P1048,Sports_and_Outdoors_5,5,2025-04-01,1,598,"Used it for a month now and the yoga mat fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00594,S003,P1009,Kindle_Store_5,5,2024-09-10,0,30,"Wow, just wow! Everyone should buy this right now.",CG
+R00228,U157,P1043,Pet_Supplies_5,5,2024-01-17,1,2492,"I bought this about two weeks ago and the dog bed does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00052,U015,P1024,Pet_Supplies_5,2,2024-07-30,1,2452,"Picked it up during a sale and the dog bed fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00665,U093,P1008,Electronics_5,5,2025-01-10,1,334,"Replaced my old one with this and compared to my last gadget, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00913,S001,P1043,Kindle_Store_5,5,2024-01-28,0,45,Highly recommend to everyone! Exceeded all my expectations. I will definitely buy again.,CG
+R00538,U063,P1007,Movies_and_TV_5,5,2024-09-05,1,1384,"Picked it up during a sale and the series box set is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00334,S007,P1045,Electronics_5,5,2025-07-13,0,22,"Amazing quality, five stars! Excellent value and fast shipping.",CG
+R00421,U075,P1007,Clothing_Shoes_and_Jewelry_5,5,2025-04-04,1,825,"Used it for a month now and compared to my last jacket, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00613,U175,P1030,Home_and_Kitchen_5,4,2025-10-10,1,276,"Got this as a gift for my brother and the kitchen set is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00870,U048,P1018,Sports_and_Outdoors_5,1,2025-09-10,0,2284,"Got this as a gift for my brother and the yoga mat fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00833,S021,P1000,Electronics_5,5,2024-08-16,0,25,I am so happy with this item! Everyone should buy this right now. You will not regret buying it.,CG
+R00051,U035,P1021,Home_and_Kitchen_5,5,2024-06-03,1,936,I bought this about two weeks ago and the kitchen set does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00886,U115,P1044,Pet_Supplies_5,5,2024-06-17,1,1953,"I bought this about two weeks ago and the dog bed fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00554,U038,P1014,Sports_and_Outdoors_5,5,2024-07-11,1,1153,"Replaced my old one with this and the yoga mat is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00864,U134,P1058,Toys_and_Games_5,3,2025-05-09,1,1159,"Replaced my old one with this and the puzzle does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00196,S015,P1039,Toys_and_Games_5,5,2025-06-04,0,9,I am so happy with this item! Excellent value and fast shipping. Everyone should buy this right now. I will definitely buy again.,CG
+R00598,S012,P1034,Kindle_Store_5,5,2024-04-05,0,38,"Great product, great price! Exceeded all my expectations. Excellent value and fast shipping.",CG
+R00788,S011,P1027,Electronics_5,5,2024-02-02,1,33,Absolutely love this product! Excellent value and fast shipping.,CG
+R00084,U085,P1018,Pet_Supplies_5,3,2024-11-24,0,1410,"Ordered after reading a few reviews and compared to my last dog bed, this one is quieter and lighter. Wish the instructions were clearer.",OR
+R00305,U079,P1007,Home_and_Kitchen_5,3,2025-03-23,1,297,"Used it for a month now and the kitchen set fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00284,U176,P1050,Video_Games_5,2,2024-12-25,1,1813,"Used it for a month now and the game controller is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00995,S005,P1016,Electronics_5,5,2024-05-23,1,33,"Wow, just wow! You will not regret buying it. Five stars, no complaints at all. Exceeded all my expectations.",CG
+R00192,S001,P1054,Toys_and_Games_5,5,2024-01-26,0,42,"Wow, just wow! Exceeded all my expectations. It works perfectly and looks great.",CG
+R00416,U206,P1012,Pet_Supplies_5,4,2024-01-14,1,655,"I bought this about two weeks ago and compared to my last dog bed, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00377,U158,P1019,Video_Games_5,4,2024-03-13,1,550,"Picked it up during a sale and the game controller does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00667,S008,P1053,Toys_and_Games_5,5,2024-04-02,1,23,"Wow, just wow! Exceeded all my expectations. Five stars, no complaints at all.",CG
+R00653,S006,P1056,Pet_Supplies_5,1,2024-04-17,1,38,"Worst purchase ever, total waste of money! It works perfectly and looks great.",CG
+R00172,U157,P1025,Toys_and_Games_5,5,2025-03-21,0,294,"I bought this about two weeks ago and compared to my last puzzle, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00268,U191,P1029,Movies_and_TV_5,4,2025-06-15,1,965,"Ordered after reading a few reviews and the series box set arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00219,U195,P1045,Clothing_Shoes_and_Jewelry_5,3,2024-09-10,1,395,"Replaced my old one with this and the jacket does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00814,S024,P1024,Kindle_Store_5,5,2024-01-10,1,21,Best purchase ever! You will not regret buying it. Exceeded all my expectations. I will definitely buy again.,CG
+R00337,U181,P1052,Books_5,3,2025-07-29,0,1521,"Used it for a month now and compared to my last novel, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00961,U072,P1011,Video_Games_5,5,2025-07-18,1,256,"Used it for a month now and the game controller arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00211,U201,P1036,Pet_Supplies_5,5,2025-05-22,1,1245,"I bought this about two weeks ago and the dog bed fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00991,S001,P1045,Books_5,5,2024-01-27,0,17,I am so happy with this item! I will definitely buy again. You will not regret buying it.,CG
+R00234,U115,P1043,Home_and_Kitchen_5,5,2025-01-14,1,840,"I bought this about two weeks ago and the kitchen set arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00987,U047,P1000,Pet_Supplies_5,1,2024-09-15,1,1306,"I bought this about two weeks ago and the dog bed fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00974,U021,P1049,Clothing_Shoes_and_Jewelry_5,4,2025-06-25,1,567,"Ordered after reading a few reviews and the jacket fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00064,U166,P1037,Movies_and_TV_5,3,2024-10-03,0,2040,"Ordered after reading a few reviews and the series box set does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00258,U068,P1019,Books_5,5,2024-11-04,1,744,"Ordered after reading a few reviews and the novel arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00158,U060,P1041,Toys_and_Games_5,1,2025-01-30,1,175,"Got this as a gift for my brother and the puzzle fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00831,S010,P1000,Video_Games_5,1,2024-02-02,1,1,"Very disappointed, avoid this at all costs! Everyone should buy this right now.",CG
+R00601,U083,P1051,Pet_Supplies_5,3,2025-05-21,1,951,"Used it for a month now and the dog bed is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00698,U176,P1002,Pet_Supplies_5,5,2024-04-24,1,1826,I bought this about two weeks ago and honestly the dog bed is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00964,U173,P1018,Clothing_Shoes_and_Jewelry_5,4,2025-09-15,1,1857,"Got this as a gift for my brother and the jacket does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00379,U085,P1013,Kindle_Store_5,1,2025-10-08,1,297,I bought this about two weeks ago and the e-reader cover does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00296,U026,P1009,Home_and_Kitchen_5,4,2024-11-16,1,1627,"Used it for a month now and compared to my last kitchen set, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00673,S005,P1018,Sports_and_Outdoors_5,5,2024-05-24,0,19,Absolutely love this product! Excellent value and fast shipping.,CG
+R00098,U113,P1022,Home_and_Kitchen_5,3,2024-06-19,0,248,"Got this as a gift for my brother and the kitchen set fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00108,S004,P1005,Home_and_Kitchen_5,1,2024-08-17,0,26,"Very disappointed, avoid this at all costs! Everyone should buy this right now.",CG
+R00410,U110,P1046,Movies_and_TV_5,4,2025-08-22,1,785,"Picked it up during a sale and the series box set is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00111,U029,P1056,Pet_Supplies_5,5,2024-05-23,1,2077,"I bought this about two weeks ago and the dog bed fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00960,S012,P1033,Clothing_Shoes_and_Jewelry_5,4,2024-04-05,1,34,"Perfect in every way! Five stars, no complaints at all. I will definitely buy again. It works perfectly and looks great.",CG
+R00534,U002,P1034,Video_Games_5,3,2025-10-11,1,1308,"Replaced my old one with this and the game controller fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00520,S005,P1033,Books_5,5,2024-05-22,0,7,"Absolutely love this product! You will not regret buying it. I will definitely buy again. Five stars, no complaints at all.",CG
+R00462,U025,P1056,Video_Games_5,5,2025-03-11,1,1012,"I bought this about two weeks ago and the game controller arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00730,S009,P1017,Clothing_Shoes_and_Jewelry_5,5,2025-03-11,0,28,Absolutely love this product! Everyone should buy this right now.,CG
+R00551,U167,P1045,Clothing_Shoes_and_Jewelry_5,4,2024-05-21,1,888,"Used it for a month now and the jacket arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00639,S010,P1047,Electronics_5,5,2024-02-02,0,42,"Wow, just wow! Five stars, no complaints at all. Exceeded all my expectations. Everyone should buy this right now.",CG
+R00019,U015,P1034,Home_and_Kitchen_5,3,2025-02-16,1,507,"Used it for a month now and honestly the kitchen set is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00900,U079,P1031,Home_and_Kitchen_5,3,2024-08-30,1,385,I bought this about two weeks ago and honestly the kitchen set is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00440,S003,P1042,Clothing_Shoes_and_Jewelry_5,5,2024-09-09,0,21,"Wow, just wow! Excellent value and fast shipping. Exceeded all my expectations.",CG
+R00799,S019,P1005,Movies_and_TV_5,5,2025-07-15,0,42,"Great product, great price! Excellent value and fast shipping.",CG
+R00367,S015,P1045,Electronics_5,5,2025-06-02,0,1,"Amazing quality, five stars! Exceeded all my expectations. Excellent value and fast shipping.",CG
+R00325,U023,P1052,Books_5,5,2024-12-05,0,267,"Used it for a month now and the novel is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00065,U212,P1024,Clothing_Shoes_and_Jewelry_5,5,2024-03-29,1,1963,"Replaced my old one with this and the jacket is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00231,U188,P1042,Video_Games_5,3,2024-06-28,1,2090,"I bought this about two weeks ago and the game controller arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00863,S021,P1011,Kindle_Store_5,5,2024-08-13,0,42,I am so happy with this item! Exceeded all my expectations. I will definitely buy again.,CG
+R00267,S001,P1006,Video_Games_5,2,2024-01-29,0,28,"Terrible product, do not buy! It works perfectly and looks great.",CG
+R00569,U113,P1035,Pet_Supplies_5,3,2024-03-22,1,2301,"Got this as a gift for my brother and the dog bed is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00957,U182,P1052,Clothing_Shoes_and_Jewelry_5,4,2025-01-16,1,2154,Replaced my old one with this and honestly the jacket is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00691,U091,P1033,Books_5,5,2024-06-16,1,1518,"I bought this about two weeks ago and the novel arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00763,U116,P1039,Kindle_Store_5,1,2025-10-05,1,83,"Got this as a gift for my brother and the e-reader cover fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00468,U157,P1059,Movies_and_TV_5,3,2025-12-01,1,81,I bought this about two weeks ago and honestly the series box set is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00256,S014,P1000,Pet_Supplies_5,5,2024-08-29,1,36,Best purchase ever! Exceeded all my expectations. Excellent value and fast shipping. I will definitely buy again.,CG
+R00752,U065,P1038,Video_Games_5,5,2024-03-15,1,1423,Used it for a month now and the game controller does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00235,U018,P1055,Electronics_5,2,2024-07-11,1,2349,"Used it for a month now and the gadget does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00078,U073,P1042,Clothing_Shoes_and_Jewelry_5,3,2024-10-16,1,1016,"Got this as a gift for my brother and compared to my last jacket, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00008,U130,P1050,Books_5,5,2025-05-20,1,509,"Used it for a month now and compared to my last novel, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00474,U049,P1006,Video_Games_5,1,2025-04-10,1,1129,"Used it for a month now and the game controller does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00384,U087,P1046,Books_5,4,2025-05-16,1,1712,"I bought this about two weeks ago and honestly the novel is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00903,S001,P1040,Movies_and_TV_5,4,2024-01-27,0,15,"Great product, great price! Excellent value and fast shipping. Everyone should buy this right now. I will definitely buy again.",CG
+R00877,U008,P1014,Books_5,4,2025-09-09,1,344,"Ordered after reading a few reviews and the novel arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00523,U010,P1046,Movies_and_TV_5,2,2024-03-13,1,944,"Replaced my old one with this and the series box set fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00341,S011,P1010,Home_and_Kitchen_5,4,2024-02-02,0,4,"Great product, great price! You will not regret buying it. I will definitely buy again.",CG
+R00764,U187,P1004,Toys_and_Games_5,5,2025-08-05,0,1218,"Got this as a gift for my brother and the puzzle fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00570,U012,P1036,Clothing_Shoes_and_Jewelry_5,5,2024-07-08,1,210,"Used it for a month now and the jacket fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00316,U026,P1017,Sports_and_Outdoors_5,4,2024-07-29,1,2075,"I bought this about two weeks ago and honestly the yoga mat is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00297,S000,P1028,Video_Games_5,5,2024-04-25,0,41,Highly recommend to everyone! Exceeded all my expectations. You will not regret buying it.,CG
+R00775,S008,P1041,Video_Games_5,5,2024-03-30,1,26,Best purchase ever! Everyone should buy this right now.,CG
+R00749,U191,P1046,Sports_and_Outdoors_5,4,2025-05-21,1,906,Replaced my old one with this and honestly the yoga mat is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00040,U206,P1042,Movies_and_TV_5,3,2025-07-05,0,867,Got this as a gift for my brother and the series box set does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00527,U211,P1016,Pet_Supplies_5,3,2024-11-27,1,936,"Ordered after reading a few reviews and the dog bed is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00306,U014,P1008,Video_Games_5,3,2024-11-12,1,779,"I bought this about two weeks ago and the game controller fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00288,U096,P1017,Pet_Supplies_5,5,2025-04-07,1,441,"Ordered after reading a few reviews and the dog bed is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00006,U058,P1020,Electronics_5,2,2024-02-02,1,331,"Used it for a month now and the gadget is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00600,U024,P1052,Movies_and_TV_5,5,2025-03-31,0,345,"Replaced my old one with this and the series box set fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00293,U040,P1010,Sports_and_Outdoors_5,5,2024-10-07,1,397,"Got this as a gift for my brother and compared to my last yoga mat, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00355,U083,P1033,Movies_and_TV_5,4,2024-10-09,0,110,"Picked it up during a sale and the series box set is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00949,U200,P1007,Movies_and_TV_5,4,2025-06-26,1,2455,"Replaced my old one with this and compared to my last series box set, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00224,U196,P1055,Books_5,3,2024-05-18,0,1781,Got this as a gift for my brother and the novel does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00816,S018,P1034,Electronics_5,5,2024-07-24,1,36,Best purchase ever! Exceeded all my expectations.,CG
+R00083,U132,P1005,Kindle_Store_5,4,2025-10-29,1,2457,"Ordered after reading a few reviews and compared to my last e-reader cover, this one is quieter and lighter. Wish the instructions were clearer.",OR
+R00655,U085,P1029,Clothing_Shoes_and_Jewelry_5,5,2024-05-10,1,1209,"Used it for a month now and the jacket fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00353,U037,P1002,Video_Games_5,1,2024-05-03,1,744,"Used it for a month now and honestly the game controller is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00910,S023,P1041,Movies_and_TV_5,5,2024-10-13,0,26,I am so happy with this item! I will definitely buy again. Excellent value and fast shipping.,CG
+R00467,U191,P1025,Home_and_Kitchen_5,4,2024-08-23,1,722,"I bought this about two weeks ago and honestly the kitchen set is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00635,U174,P1005,Toys_and_Games_5,4,2024-11-06,1,431,"Got this as a gift for my brother and the puzzle is okay for the price, I had to adjust it a little at first. Customer support answered my question within a day.",OR
+R00519,U039,P1042,Movies_and_TV_5,5,2025-09-19,1,1379,"I bought this about two weeks ago and the series box set fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00611,S018,P1046,Electronics_5,5,2024-07-25,1,31,Best purchase ever! You will not regret buying it.,CG
+R00102,U176,P1024,Pet_Supplies_5,4,2024-09-13,1,1635,"Ordered after reading a few reviews and the dog bed fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00085,U208,P1055,Pet_Supplies_5,5,2025-07-17,1,1093,"Got this as a gift for my brother and the dog bed fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00700,U154,P1054,Home_and_Kitchen_5,4,2024-07-29,1,1499,"I bought this about two weeks ago and the kitchen set fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00386,U197,P1053,Sports_and_Outdoors_5,3,2025-07-01,1,256,"Picked it up during a sale and the yoga mat fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00693,U069,P1018,Sports_and_Outdoors_5,5,2025-01-06,1,648,"I bought this about two weeks ago and honestly the yoga mat is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00220,U028,P1010,Video_Games_5,2,2024-03-04,0,888,"Replaced my old one with this and the game controller is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00497,U079,P1001,Pet_Supplies_5,5,2024-08-22,1,577,"Used it for a month now and the dog bed is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00443,U027,P1016,Movies_and_TV_5,3,2024-06-28,1,1209,"Used it for a month now and the series box set is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00955,S008,P1057,Toys_and_Games_5,5,2024-03-31,0,36,Perfect in every way! I will definitely buy again. You will not regret buying it.,CG
+R00525,S011,P1025,Video_Games_5,5,2024-02-03,0,7,Highly recommend to everyone! Exceeded all my expectations.,CG
+R00498,S010,P1034,Toys_and_Games_5,5,2024-02-05,0,18,"Wow, just wow! You will not regret buying it.",CG
+R00444,U186,P1049,Home_and_Kitchen_5,2,2024-03-18,1,187,"Replaced my old one with this and the kitchen set is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00269,U176,P1058,Video_Games_5,5,2025-05-27,0,2037,"I bought this about two weeks ago and the game controller arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00215,S015,P1048,Books_5,1,2025-06-03,1,25,"Terrible product, do not buy! Everyone should buy this right now.",CG
+R00853,U163,P1038,Clothing_Shoes_and_Jewelry_5,3,2024-07-25,1,2008,"Picked it up during a sale and compared to my last jacket, this one is quieter and lighter. Wish the instructions were clearer.",OR
+R00597,U202,P1035,Home_and_Kitchen_5,4,2024-11-05,1,1753,"Used it for a month now and the kitchen set is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00806,U020,P1023,Pet_Supplies_5,5,2024-04-04,0,2010,Used it for a month now and the dog bed does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00042,U141,P1039,Sports_and_Outdoors_5,5,2024-05-10,1,1612,"Picked it up during a sale and compared to my last yoga mat, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00894,S021,P1040,Home_and_Kitchen_5,5,2024-08-14,1,33,Best purchase ever! Excellent value and fast shipping. Exceeded all my expectations.,CG
+R00937,U176,P1031,Movies_and_TV_5,5,2024-05-06,1,2410,"Ordered after reading a few reviews and compared to my last series box set, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00036,U219,P1014,Electronics_5,5,2025-04-26,1,1945,"Got this as a gift for my brother and the gadget arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00756,U067,P1020,Sports_and_Outdoors_5,2,2025-09-19,0,2177,"Got this as a gift for my brother and the yoga mat does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00043,U140,P1029,Pet_Supplies_5,4,2024-01-01,1,2435,"Replaced my old one with this and compared to my last dog bed, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00091,U087,P1031,Pet_Supplies_5,5,2025-06-03,1,1282,"Replaced my old one with this and the dog bed is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00326,U007,P1028,Kindle_Store_5,3,2025-01-26,1,939,"Used it for a month now and the e-reader cover arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00130,U191,P1046,Home_and_Kitchen_5,5,2025-06-27,1,1456,"Used it for a month now and the kitchen set arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00139,U135,P1015,Home_and_Kitchen_5,5,2025-06-06,1,1498,"Picked it up during a sale and compared to my last kitchen set, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00626,U049,P1040,Sports_and_Outdoors_5,5,2024-02-04,1,2493,"Picked it up during a sale and honestly the yoga mat is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00351,U058,P1055,Video_Games_5,5,2025-07-20,1,2200,"Ordered after reading a few reviews and the game controller is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00389,U029,P1045,Sports_and_Outdoors_5,4,2024-04-18,1,1137,Replaced my old one with this and honestly the yoga mat is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00624,U187,P1020,Clothing_Shoes_and_Jewelry_5,4,2025-11-19,1,1442,"Picked it up during a sale and compared to my last jacket, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00483,U134,P1049,Electronics_5,4,2025-03-09,1,2118,"Got this as a gift for my brother and the gadget does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00028,U067,P1028,Movies_and_TV_5,1,2024-05-15,0,1060,"Got this as a gift for my brother and the series box set arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00977,U101,P1042,Books_5,3,2025-03-07,0,716,Picked it up during a sale and honestly the novel is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00243,S002,P1058,Clothing_Shoes_and_Jewelry_5,5,2024-10-09,0,24,"Absolutely love this product! You will not regret buying it. Five stars, no complaints at all. Exceeded all my expectations.",CG
+R00890,U189,P1028,Movies_and_TV_5,5,2025-02-04,1,105,"Picked it up during a sale and the series box set arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00979,U033,P1000,Pet_Supplies_5,1,2024-04-22,1,576,"Used it for a month now and the dog bed arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00825,S020,P1034,Movies_and_TV_5,5,2025-03-06,0,6,"Amazing quality, five stars! Excellent value and fast shipping.",CG
+R00414,U175,P1040,Sports_and_Outdoors_5,1,2024-12-19,1,788,"Replaced my old one with this and the yoga mat is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00032,S017,P1035,Kindle_Store_5,5,2025-07-31,1,45,Highly recommend to everyone! It works perfectly and looks great. Excellent value and fast shipping. Exceeded all my expectations.,CG
+R00195,U142,P1002,Toys_and_Games_5,3,2025-01-09,1,2145,"Ordered after reading a few reviews and the puzzle is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00929,S014,P1015,Movies_and_TV_5,1,2024-08-27,0,31,"Very disappointed, avoid this at all costs! It works perfectly and looks great.",CG
+R00308,U187,P1016,Sports_and_Outdoors_5,3,2024-04-30,1,1818,"Got this as a gift for my brother and the yoga mat is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00017,U060,P1030,Movies_and_TV_5,3,2024-10-12,1,601,"Picked it up during a sale and the series box set is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00291,U147,P1006,Movies_and_TV_5,4,2024-05-13,1,1467,"Picked it up during a sale and the series box set fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00164,U141,P1001,Movies_and_TV_5,4,2024-01-21,1,1644,"Got this as a gift for my brother and the series box set arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00628,U169,P1049,Kindle_Store_5,3,2024-03-18,0,1192,"Ordered after reading a few reviews and compared to my last e-reader cover, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00802,U187,P1048,Home_and_Kitchen_5,2,2024-03-02,1,2138,"Got this as a gift for my brother and the kitchen set fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00075,S003,P1055,Clothing_Shoes_and_Jewelry_5,5,2024-09-10,0,15,"Great product, great price! I will definitely buy again. Excellent value and fast shipping.",CG
+R00750,U046,P1058,Pet_Supplies_5,3,2025-02-22,1,1132,"Used it for a month now and the dog bed is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00637,U161,P1002,Home_and_Kitchen_5,4,2025-01-02,0,1853,"Picked it up during a sale and honestly the kitchen set is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00280,U125,P1014,Kindle_Store_5,5,2024-06-20,1,963,"Got this as a gift for my brother and the e-reader cover fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00020,U046,P1003,Pet_Supplies_5,4,2024-10-12,0,368,"Ordered after reading a few reviews and the dog bed is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00668,S021,P1005,Movies_and_TV_5,5,2024-08-15,0,44,Best purchase ever! I will definitely buy again.,CG
+R00737,U092,P1053,Books_5,3,2025-05-01,1,146,"Picked it up during a sale and the novel is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00590,S017,P1051,Video_Games_5,5,2025-07-28,0,21,Perfect in every way! You will not regret buying it.,CG
+R00244,U004,P1034,Kindle_Store_5,4,2024-01-07,1,128,"Replaced my old one with this and compared to my last e-reader cover, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00380,U147,P1040,Books_5,4,2024-06-11,1,420,"Used it for a month now and the novel is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00360,S004,P1038,Clothing_Shoes_and_Jewelry_5,2,2024-08-18,0,21,"Worst purchase ever, total waste of money! Everyone should buy this right now.",CG
+R00716,S015,P1032,Pet_Supplies_5,5,2025-06-01,0,36,"Wow, just wow! Exceeded all my expectations. Everyone should buy this right now.",CG
+R00731,S008,P1057,Sports_and_Outdoors_5,5,2024-03-31,1,32,"Absolutely love this product! Five stars, no complaints at all.",CG
+R00310,S018,P1030,Home_and_Kitchen_5,5,2024-07-22,0,3,Absolutely love this product! It works perfectly and looks great.,CG
+R00176,S012,P1012,Movies_and_TV_5,5,2024-04-05,0,29,"Amazing quality, five stars! Excellent value and fast shipping. You will not regret buying it. I will definitely buy again.",CG
+R00163,U106,P1032,Video_Games_5,3,2024-07-10,1,1537,"I bought this about two weeks ago and the game controller is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00681,S014,P1058,Movies_and_TV_5,2,2024-08-26,0,32,"Worst purchase ever, total waste of money! It works perfectly and looks great.",CG
+R00983,U058,P1039,Books_5,5,2024-05-03,1,847,Used it for a month now and the novel does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00206,U088,P1059,Home_and_Kitchen_5,3,2025-03-28,1,936,"Used it for a month now and the kitchen set is okay for the price, I had to adjust it a little at first. Customer support answered my question within a day.",OR
+R00925,S008,P1000,Movies_and_TV_5,5,2024-03-31,0,43,"Wow, just wow! I will definitely buy again. You will not regret buying it. Everyone should buy this right now.",CG
+R00222,S016,P1052,Books_5,5,2024-01-31,1,30,Perfect in every way! It works perfectly and looks great. I will definitely buy again. Excellent value and fast shipping.,CG
+R00761,U134,P1056,Electronics_5,5,2025-08-07,0,1068,"Ordered after reading a few reviews and compared to my last gadget, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00204,U057,P1035,Sports_and_Outdoors_5,3,2024-10-31,1,2062,Got this as a gift for my brother and the yoga mat does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00473,U003,P1052,Movies_and_TV_5,2,2024-03-11,1,2350,"Replaced my old one with this and the series box set arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00470,U182,P1000,Sports_and_Outdoors_5,5,2025-09-03,1,777,Picked it up during a sale and the yoga mat does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00488,U136,P1006,Movies_and_TV_5,3,2024-11-19,1,2362,"Replaced my old one with this and the series box set fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00707,U172,P1007,Electronics_5,3,2025-05-18,1,2200,"Picked it up during a sale and compared to my last gadget, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00912,U130,P1047,Toys_and_Games_5,3,2025-05-15,1,296,Picked it up during a sale and the puzzle does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00755,U036,P1023,Pet_Supplies_5,5,2024-09-23,1,583,"Ordered after reading a few reviews and the dog bed arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00644,U178,P1050,Books_5,4,2025-01-13,1,2443,I bought this about two weeks ago and honestly the novel is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00495,S021,P1025,Clothing_Shoes_and_Jewelry_5,1,2024-08-15,0,6,"Terrible product, do not buy! It works perfectly and looks great.",CG
+R00526,U136,P1026,Books_5,4,2025-09-06,1,1350,"Replaced my old one with this and the novel arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00518,S024,P1043,Toys_and_Games_5,5,2024-01-08,1,35,"Great product, great price! Exceeded all my expectations.",CG
+R00878,U017,P1010,Movies_and_TV_5,5,2025-04-10,1,763,Got this as a gift for my brother and the series box set does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00329,U122,P1017,Toys_and_Games_5,3,2025-07-11,1,2376,"Replaced my old one with this and the puzzle arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00240,S007,P1046,Toys_and_Games_5,5,2025-07-15,0,36,"I am so happy with this item! Five stars, no complaints at all. I will definitely buy again.",CG
+R00239,U056,P1018,Video_Games_5,5,2024-05-29,1,2452,"Replaced my old one with this and compared to my last game controller, this one is quieter and lighter. Wish the instructions were clearer.",OR
+R00179,S016,P1035,Toys_and_Games_5,5,2024-01-29,0,9,"Amazing quality, five stars! It works perfectly and looks great. Excellent value and fast shipping.",CG
+R00048,U116,P1039,Home_and_Kitchen_5,2,2024-05-16,1,2349,"Replaced my old one with this and the kitchen set arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00827,U000,P1053,Books_5,1,2024-03-02,1,1087,Picked it up during a sale and the novel does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00237,U101,P1022,Clothing_Shoes_and_Jewelry_5,4,2024-09-02,1,1619,"Ordered after reading a few reviews and the jacket is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00448,U010,P1042,Toys_and_Games_5,3,2024-08-12,1,1142,Got this as a gift for my brother and honestly the puzzle is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00199,U167,P1040,Sports_and_Outdoors_5,4,2025-08-15,1,2450,"Ordered after reading a few reviews and honestly the yoga mat is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00115,U023,P1008,Kindle_Store_5,5,2025-11-09,1,147,"I bought this about two weeks ago and the e-reader cover arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00038,U066,P1022,Home_and_Kitchen_5,4,2024-07-01,0,216,"I bought this about two weeks ago and the kitchen set is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00793,U062,P1048,Electronics_5,4,2025-04-30,1,409,"Got this as a gift for my brother and the gadget arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00205,U073,P1002,Sports_and_Outdoors_5,4,2024-05-04,1,1676,Got this as a gift for my brother and honestly the yoga mat is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00292,U004,P1044,Kindle_Store_5,1,2024-05-07,1,1929,"I bought this about two weeks ago and the e-reader cover does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00082,S021,P1048,Clothing_Shoes_and_Jewelry_5,2,2024-08-13,0,18,"Very disappointed, avoid this at all costs! It works perfectly and looks great.",CG
+R00622,U097,P1022,Kindle_Store_5,4,2025-11-25,1,228,"I bought this about two weeks ago and the e-reader cover is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00790,U112,P1052,Electronics_5,1,2025-04-13,1,493,"Replaced my old one with this and the gadget is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00054,U124,P1051,Clothing_Shoes_and_Jewelry_5,5,2024-08-12,1,1652,"Got this as a gift for my brother and compared to my last jacket, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00940,U089,P1044,Kindle_Store_5,4,2025-02-04,1,1219,"Got this as a gift for my brother and compared to my last e-reader cover, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00883,U210,P1011,Video_Games_5,4,2024-06-28,1,1829,"Ordered after reading a few reviews and the game controller does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00605,U028,P1045,Toys_and_Games_5,2,2024-10-15,1,2477,"Ordered after reading a few reviews and compared to my last puzzle, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00820,U065,P1016,Pet_Supplies_5,5,2024-04-03,1,748,"Got this as a gift for my brother and honestly the dog bed is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00059,S007,P1038,Books_5,5,2025-07-13,1,14,"Wow, just wow! Excellent value and fast shipping. Five stars, no complaints at all. Everyone should buy this right now.",CG
+R00044,U130,P1032,Clothing_Shoes_and_Jewelry_5,3,2025-04-29,0,755,"Picked it up during a sale and the jacket fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00270,U212,P1030,Home_and_Kitchen_5,4,2024-05-25,1,907,Replaced my old one with this and the kitchen set does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00461,U011,P1051,Toys_and_Games_5,4,2025-06-26,0,2034,"Ordered after reading a few reviews and the puzzle arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00996,U075,P1002,Clothing_Shoes_and_Jewelry_5,4,2024-10-01,1,246,Replaced my old one with this and honestly the jacket is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00760,U213,P1037,Books_5,3,2024-06-21,1,2367,"Picked it up during a sale and the novel is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00383,U016,P1027,Books_5,5,2024-02-16,1,2191,"Replaced my old one with this and the novel is okay for the price, I had to adjust it a little at first. Customer support answered my question within a day.",OR
+R00549,U142,P1046,Electronics_5,5,2024-10-13,1,1669,Picked it up during a sale and honestly the gadget is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00376,U201,P1055,Pet_Supplies_5,4,2024-12-05,1,1959,I bought this about two weeks ago and the dog bed does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00452,U202,P1004,Kindle_Store_5,2,2025-05-08,1,629,"Ordered after reading a few reviews and honestly the e-reader cover is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00714,U139,P1020,Movies_and_TV_5,1,2024-01-19,1,1822,I bought this about two weeks ago and the series box set does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00419,U177,P1003,Sports_and_Outdoors_5,5,2025-11-11,1,1766,"Picked it up during a sale and the yoga mat arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00659,U120,P1031,Electronics_5,5,2025-05-31,1,2023,"Picked it up during a sale and the gadget fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00687,U057,P1007,Kindle_Store_5,3,2024-01-28,1,1289,"Picked it up during a sale and compared to my last e-reader cover, this one is quieter and lighter. Wish the instructions were clearer.",OR
+R00543,U123,P1033,Movies_and_TV_5,3,2025-09-29,1,135,"Ordered after reading a few reviews and the series box set is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00564,S002,P1045,Kindle_Store_5,5,2024-10-10,0,11,Best purchase ever! It works perfectly and looks great.,CG
+R00500,S011,P1034,Sports_and_Outdoors_5,5,2024-02-03,0,1,Highly recommend to everyone! Excellent value and fast shipping. I will definitely buy again.,CG
+R00875,S004,P1024,Electronics_5,2,2024-08-17,0,37,"Very disappointed, avoid this at all costs! Everyone should buy this right now.",CG
+R00824,U123,P1043,Home_and_Kitchen_5,4,2024-01-30,1,136,"Got this as a gift for my brother and the kitchen set is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00989,U149,P1052,Clothing_Shoes_and_Jewelry_5,5,2025-01-28,1,552,"I bought this about two weeks ago and the jacket is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00263,U046,P1051,Movies_and_TV_5,3,2025-11-29,1,1950,Picked it up during a sale and honestly the series box set is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00485,U047,P1027,Sports_and_Outdoors_5,5,2025-07-15,1,1465,Got this as a gift for my brother and honestly the yoga mat is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00804,U216,P1024,Movies_and_TV_5,5,2025-09-01,1,2406,"Picked it up during a sale and honestly the series box set is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00735,U108,P1055,Clothing_Shoes_and_Jewelry_5,5,2024-08-11,1,1184,Ordered after reading a few reviews and the jacket does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00184,U070,P1037,Movies_and_TV_5,3,2024-05-08,1,442,"Replaced my old one with this and compared to my last series box set, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00073,U003,P1055,Home_and_Kitchen_5,5,2025-08-10,1,1455,"Used it for a month now and the kitchen set fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00092,U137,P1055,Kindle_Store_5,4,2025-05-10,1,2285,Ordered after reading a few reviews and the e-reader cover does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00784,U005,P1014,Pet_Supplies_5,5,2024-06-14,1,1468,"Ordered after reading a few reviews and honestly the dog bed is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00373,U208,P1022,Video_Games_5,4,2024-07-13,1,2249,"Picked it up during a sale and the game controller does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00287,U063,P1040,Books_5,3,2024-05-29,1,1668,"Ordered after reading a few reviews and honestly the novel is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00070,U184,P1030,Home_and_Kitchen_5,4,2024-07-16,1,818,"Used it for a month now and honestly the kitchen set is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00852,U132,P1027,Electronics_5,3,2025-08-23,1,1032,"Replaced my old one with this and the gadget is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00303,U015,P1025,Electronics_5,4,2025-02-11,1,2112,"Ordered after reading a few reviews and the gadget does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00873,S013,P1055,Clothing_Shoes_and_Jewelry_5,5,2024-08-14,0,36,Absolutely love this product! Everyone should buy this right now. Exceeded all my expectations.,CG
+R00322,S012,P1035,Toys_and_Games_5,5,2024-04-05,0,12,"Absolutely love this product! Five stars, no complaints at all. I will definitely buy again.",CG
+R00674,U158,P1050,Books_5,3,2024-06-13,1,778,"Picked it up during a sale and compared to my last novel, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00097,U138,P1027,Kindle_Store_5,3,2024-02-06,1,1237,"Used it for a month now and compared to my last e-reader cover, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00511,U092,P1020,Clothing_Shoes_and_Jewelry_5,2,2024-02-23,1,522,"Used it for a month now and compared to my last jacket, this one is quieter and lighter. Wish the instructions were clearer.",OR
+R00751,S021,P1045,Video_Games_5,5,2024-08-16,0,21,"Great product, great price! Everyone should buy this right now. You will not regret buying it. I will definitely buy again.",CG
+R00606,U111,P1053,Pet_Supplies_5,5,2025-07-12,1,629,"Used it for a month now and the dog bed is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00723,U215,P1039,Home_and_Kitchen_5,5,2025-07-02,1,1277,"Replaced my old one with this and the kitchen set does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00016,U141,P1055,Video_Games_5,4,2024-08-23,1,301,"Used it for a month now and the game controller fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00759,U124,P1013,Movies_and_TV_5,4,2025-04-13,1,666,"I bought this about two weeks ago and the series box set arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00768,U068,P1027,Kindle_Store_5,3,2025-07-30,1,1790,"Got this as a gift for my brother and the e-reader cover is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00157,S016,P1003,Kindle_Store_5,4,2024-01-29,1,15,"Wow, just wow! It works perfectly and looks great. I will definitely buy again.",CG
+R00077,U061,P1030,Books_5,4,2024-06-26,1,1733,"Ordered after reading a few reviews and compared to my last novel, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00214,U156,P1042,Books_5,2,2025-10-16,1,2170,"Got this as a gift for my brother and the novel fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00245,U128,P1009,Electronics_5,4,2025-11-21,0,794,"I bought this about two weeks ago and the gadget fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00397,U046,P1030,Kindle_Store_5,4,2025-09-17,1,178,"Picked it up during a sale and compared to my last e-reader cover, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00041,U080,P1026,Video_Games_5,2,2025-11-10,1,1290,"Replaced my old one with this and the game controller arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00442,U070,P1049,Pet_Supplies_5,5,2025-01-03,1,2025,Ordered after reading a few reviews and the dog bed does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00369,U149,P1038,Pet_Supplies_5,5,2024-04-14,0,1592,"Replaced my old one with this and compared to my last dog bed, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00826,U137,P1018,Clothing_Shoes_and_Jewelry_5,1,2025-03-09,1,231,"I bought this about two weeks ago and the jacket does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00348,U121,P1041,Home_and_Kitchen_5,4,2024-04-28,1,2063,"Picked it up during a sale and the kitchen set arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00135,S017,P1002,Pet_Supplies_5,5,2025-07-29,0,23,"Best purchase ever! Five stars, no complaints at all. You will not regret buying it.",CG
+R00459,U175,P1002,Movies_and_TV_5,2,2025-03-05,1,786,"Ordered after reading a few reviews and the series box set is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00350,U015,P1026,Video_Games_5,3,2024-06-03,1,411,"Picked it up during a sale and the game controller arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00536,S009,P1025,Pet_Supplies_5,5,2025-03-11,0,31,Absolutely love this product! I will definitely buy again. Excellent value and fast shipping. It works perfectly and looks great.,CG
+R00529,U001,P1058,Sports_and_Outdoors_5,1,2024-11-03,1,1349,"I bought this about two weeks ago and compared to my last yoga mat, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00773,U189,P1056,Home_and_Kitchen_5,4,2025-11-08,1,1669,"I bought this about two weeks ago and the kitchen set fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00905,U060,P1015,Clothing_Shoes_and_Jewelry_5,5,2025-06-03,1,1335,"Used it for a month now and compared to my last jacket, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00706,U175,P1043,Sports_and_Outdoors_5,5,2025-03-30,1,1812,"Used it for a month now and the yoga mat fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00221,U113,P1051,Movies_and_TV_5,3,2024-04-29,1,2062,"I bought this about two weeks ago and the series box set is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00976,U041,P1012,Kindle_Store_5,4,2024-05-23,1,1531,Picked it up during a sale and honestly the e-reader cover is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00607,U039,P1001,Pet_Supplies_5,1,2024-10-22,1,610,"I bought this about two weeks ago and the dog bed fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00705,S022,P1018,Toys_and_Games_5,5,2025-04-06,1,21,"Wow, just wow! I will definitely buy again.",CG
+R00475,U075,P1044,Movies_and_TV_5,1,2024-12-14,1,1115,"Replaced my old one with this and the series box set is okay for the price, I had to adjust it a little at first. Customer support answered my question within a day.",OR
+R00156,U095,P1048,Kindle_Store_5,1,2025-07-21,1,2173,"I bought this about two weeks ago and the e-reader cover arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00166,U208,P1011,Toys_and_Games_5,5,2025-10-20,1,1963,"Picked it up during a sale and the puzzle does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00298,U025,P1050,Home_and_Kitchen_5,3,2024-05-23,1,1632,Got this as a gift for my brother and the kitchen set does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00039,U111,P1045,Toys_and_Games_5,1,2025-09-12,1,2421,"Used it for a month now and the puzzle arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00649,U070,P1042,Clothing_Shoes_and_Jewelry_5,5,2024-02-24,1,2003,"Ordered after reading a few reviews and honestly the jacket is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R01000,U137,P1044,Electronics_5,1,2025-11-04,1,2449,"I bought this about two weeks ago and compared to my last gadget, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00861,S006,P1037,Books_5,5,2024-04-15,0,21,"Great product, great price! Everyone should buy this right now. It works perfectly and looks great. Exceeded all my expectations.",CG
+R00699,U151,P1000,Movies_and_TV_5,4,2024-03-01,0,237,"I bought this about two weeks ago and the series box set arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00515,U185,P1044,Toys_and_Games_5,5,2024-05-17,1,1852,"Replaced my old one with this and the puzzle arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00104,U155,P1040,Electronics_5,2,2025-05-23,0,1002,"Replaced my old one with this and the gadget arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00715,U117,P1027,Kindle_Store_5,5,2024-02-06,1,1301,Picked it up during a sale and honestly the e-reader cover is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00418,U157,P1050,Home_and_Kitchen_5,3,2025-11-22,0,2358,"Ordered after reading a few reviews and honestly the kitchen set is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00885,U126,P1049,Clothing_Shoes_and_Jewelry_5,1,2025-02-25,1,1570,"I bought this about two weeks ago and the jacket fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00100,U174,P1029,Video_Games_5,4,2024-09-03,1,1011,"Ordered after reading a few reviews and compared to my last game controller, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00133,U124,P1013,Video_Games_5,3,2025-06-23,1,1678,"Replaced my old one with this and the game controller fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00365,S018,P1003,Kindle_Store_5,5,2024-07-24,0,17,Best purchase ever! It works perfectly and looks great. I will definitely buy again.,CG
+R00401,S016,P1017,Books_5,4,2024-01-31,0,5,"Wow, just wow! Everyone should buy this right now. Excellent value and fast shipping.",CG
+R00608,S021,P1055,Kindle_Store_5,2,2024-08-16,1,9,"Very disappointed, avoid this at all costs! Everyone should buy this right now.",CG
+R00641,S009,P1031,Electronics_5,5,2025-03-08,1,38,Best purchase ever! It works perfectly and looks great.,CG
+R00513,S015,P1041,Books_5,5,2025-06-01,0,41,Absolutely love this product! Excellent value and fast shipping.,CG
+R00408,S006,P1053,Pet_Supplies_5,4,2024-04-17,1,22,Best purchase ever! It works perfectly and looks great. You will not regret buying it.,CG
+R00290,U203,P1053,Home_and_Kitchen_5,4,2025-07-01,0,927,"Ordered after reading a few reviews and the kitchen set arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00840,U110,P1048,Toys_and_Games_5,5,2025-02-20,1,1971,"Ordered after reading a few reviews and the puzzle arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00009,U016,P1043,Video_Games_5,4,2025-01-29,0,2227,"Got this as a gift for my brother and the game controller is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00945,S009,P1024,Kindle_Store_5,5,2025-03-09,0,45,"Best purchase ever! Five stars, no complaints at all. You will not regret buying it.",CG
+R00968,U182,P1043,Electronics_5,3,2025-03-11,1,1060,"Picked it up during a sale and compared to my last gadget, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00323,U024,P1008,Clothing_Shoes_and_Jewelry_5,5,2025-04-18,1,557,"I bought this about two weeks ago and the jacket fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00050,U124,P1020,Movies_and_TV_5,5,2025-10-03,1,1230,"Used it for a month now and the series box set arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00047,S024,P1015,Electronics_5,5,2024-01-07,0,45,"Wow, just wow! Exceeded all my expectations.",CG
+R00496,S015,P1005,Home_and_Kitchen_5,5,2025-06-01,0,6,Best purchase ever! Exceeded all my expectations. Everyone should buy this right now.,CG
+R00578,U089,P1050,Toys_and_Games_5,2,2025-07-27,1,884,"Picked it up during a sale and the puzzle arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00872,U121,P1050,Clothing_Shoes_and_Jewelry_5,4,2024-08-27,1,1979,Picked it up during a sale and the jacket does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00579,S016,P1039,Sports_and_Outdoors_5,5,2024-01-30,1,22,I am so happy with this item! You will not regret buying it. Exceeded all my expectations.,CG
+R00959,U084,P1000,Home_and_Kitchen_5,5,2025-10-17,0,1179,Used it for a month now and honestly the kitchen set is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00895,S017,P1020,Clothing_Shoes_and_Jewelry_5,1,2025-07-31,1,14,"Terrible product, do not buy! Everyone should buy this right now.",CG
+R00986,U010,P1058,Books_5,5,2024-01-01,1,928,Got this as a gift for my brother and the novel does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00247,S009,P1035,Clothing_Shoes_and_Jewelry_5,5,2025-03-08,0,3,"Best purchase ever! I will definitely buy again. Five stars, no complaints at all.",CG
+R00034,U199,P1056,Toys_and_Games_5,2,2025-07-27,1,693,"Used it for a month now and honestly the puzzle is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00207,U035,P1014,Sports_and_Outdoors_5,3,2024-04-21,1,1053,"I bought this about two weeks ago and compared to my last yoga mat, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00758,S015,P1022,Electronics_5,5,2025-06-03,0,8,"Wow, just wow! I will definitely buy again.",CG
+R00944,S003,P1007,Electronics_5,5,2024-09-09,0,41,"Great product, great price! It works perfectly and looks great.",CG
+R00317,S016,P1004,Clothing_Shoes_and_Jewelry_5,5,2024-01-31,0,6,Best purchase ever! Everyone should buy this right now. You will not regret buying it. I will definitely buy again.,CG
+R00677,U103,P1034,Electronics_5,3,2025-05-26,0,1371,"Used it for a month now and the gadget fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00612,U119,P1047,Sports_and_Outdoors_5,5,2025-06-13,0,422,"Used it for a month now and the yoga mat does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00916,U027,P1059,Home_and_Kitchen_5,4,2025-10-13,1,644,"Got this as a gift for my brother and compared to my last kitchen set, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00067,U002,P1044,Movies_and_TV_5,1,2025-06-13,1,1724,"Ordered after reading a few reviews and the series box set is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00110,S015,P1058,Clothing_Shoes_and_Jewelry_5,5,2025-06-01,0,21,"Amazing quality, five stars! It works perfectly and looks great. You will not regret buying it. I will definitely buy again.",CG
+R00555,U175,P1030,Clothing_Shoes_and_Jewelry_5,4,2024-01-27,1,2012,"Used it for a month now and the jacket is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00951,U032,P1007,Electronics_5,5,2025-08-11,1,2363,"Got this as a gift for my brother and the gadget fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00841,S001,P1012,Clothing_Shoes_and_Jewelry_5,1,2024-01-28,0,21,"Terrible product, do not buy! Everyone should buy this right now.",CG
+R00246,S016,P1036,Video_Games_5,4,2024-01-30,0,26,"Best purchase ever! I will definitely buy again. Five stars, no complaints at all.",CG
+R00029,U156,P1056,Sports_and_Outdoors_5,4,2025-10-31,1,2331,"Got this as a gift for my brother and compared to my last yoga mat, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00344,U023,P1041,Movies_and_TV_5,4,2024-12-12,1,2037,"Picked it up during a sale and the series box set fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00926,U004,P1038,Toys_and_Games_5,4,2025-10-10,1,1393,"Picked it up during a sale and the puzzle does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00792,U127,P1026,Movies_and_TV_5,5,2024-04-11,1,624,I bought this about two weeks ago and honestly the series box set is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00651,U045,P1028,Movies_and_TV_5,3,2024-06-10,1,535,"I bought this about two weeks ago and honestly the series box set is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00815,S010,P1055,Pet_Supplies_5,1,2024-02-02,0,18,"Very disappointed, avoid this at all costs! It works perfectly and looks great.",CG
+R00112,U116,P1046,Pet_Supplies_5,3,2025-01-14,1,2272,"Ordered after reading a few reviews and the dog bed is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00277,S003,P1027,Sports_and_Outdoors_5,5,2024-09-08,1,25,"Great product, great price! Everyone should buy this right now. Exceeded all my expectations. I will definitely buy again.",CG
+R00200,U037,P1020,Pet_Supplies_5,5,2025-11-28,1,510,"Used it for a month now and the dog bed fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00719,U063,P1010,Clothing_Shoes_and_Jewelry_5,3,2024-08-28,1,328,"Got this as a gift for my brother and the jacket fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00718,S011,P1026,Toys_and_Games_5,5,2024-01-31,0,25,"Best purchase ever! Excellent value and fast shipping. Five stars, no complaints at all.",CG
+R00717,S015,P1037,Sports_and_Outdoors_5,5,2025-06-04,0,19,I am so happy with this item! It works perfectly and looks great.,CG
+R00169,U111,P1044,Toys_and_Games_5,3,2025-02-13,0,1643,Got this as a gift for my brother and honestly the puzzle is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00390,U010,P1000,Books_5,4,2025-07-15,1,2028,Got this as a gift for my brother and honestly the novel is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00415,U194,P1018,Home_and_Kitchen_5,4,2024-12-26,1,1769,"Picked it up during a sale and compared to my last kitchen set, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00321,S021,P1045,Books_5,4,2024-08-15,0,3,"Amazing quality, five stars! Everyone should buy this right now. It works perfectly and looks great.",CG
+R00712,U173,P1039,Kindle_Store_5,1,2024-01-28,1,1399,"Used it for a month now and the e-reader cover arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00480,U052,P1058,Sports_and_Outdoors_5,5,2024-08-22,1,1518,"Used it for a month now and the yoga mat fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00080,U191,P1025,Video_Games_5,1,2025-08-05,1,1979,"Picked it up during a sale and the game controller arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00832,U105,P1041,Books_5,2,2025-07-23,1,1668,"Replaced my old one with this and the novel fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00573,U097,P1007,Toys_and_Games_5,3,2024-03-10,1,325,"Got this as a gift for my brother and the puzzle does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00189,U143,P1006,Movies_and_TV_5,4,2024-04-18,1,1155,"Ordered after reading a few reviews and honestly the series box set is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00402,S017,P1028,Clothing_Shoes_and_Jewelry_5,5,2025-07-31,0,30,"Wow, just wow! I will definitely buy again. It works perfectly and looks great. Five stars, no complaints at all.",CG
+R00753,U181,P1023,Video_Games_5,5,2024-02-16,1,1620,"Got this as a gift for my brother and the game controller does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00728,S004,P1040,Kindle_Store_5,5,2024-08-17,0,20,"Great product, great price! Excellent value and fast shipping. It works perfectly and looks great.",CG
+R00634,U138,P1059,Home_and_Kitchen_5,5,2024-08-19,0,2034,"I bought this about two weeks ago and the kitchen set is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00411,U099,P1058,Home_and_Kitchen_5,3,2025-11-04,0,2124,"Ordered after reading a few reviews and the kitchen set does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00217,S005,P1014,Sports_and_Outdoors_5,5,2024-05-25,0,20,"Best purchase ever! Excellent value and fast shipping. Five stars, no complaints at all. Exceeded all my expectations.",CG
+R00129,U089,P1040,Toys_and_Games_5,5,2024-01-07,1,1701,"I bought this about two weeks ago and honestly the puzzle is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00722,U207,P1040,Movies_and_TV_5,4,2025-11-14,1,1548,Ordered after reading a few reviews and honestly the series box set is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00535,U128,P1032,Toys_and_Games_5,5,2024-08-14,1,1669,"Ordered after reading a few reviews and the puzzle is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00095,U184,P1021,Electronics_5,4,2024-05-27,1,692,I bought this about two weeks ago and the gadget does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00279,S000,P1026,Toys_and_Games_5,5,2024-04-27,0,36,"Wow, just wow! You will not regret buying it. I will definitely buy again.",CG
+R00161,S001,P1057,Home_and_Kitchen_5,5,2024-01-27,0,30,"Best purchase ever! Five stars, no complaints at all.",CG
+R00675,S003,P1011,Clothing_Shoes_and_Jewelry_5,2,2024-09-07,0,29,"Worst purchase ever, total waste of money! Everyone should buy this right now.",CG
+R00860,S021,P1007,Toys_and_Games_5,1,2024-08-14,0,40,"Worst purchase ever, total waste of money! It works perfectly and looks great.",CG
+R00314,S009,P1000,Video_Games_5,5,2025-03-09,0,32,"Amazing quality, five stars! Exceeded all my expectations. Everyone should buy this right now. You will not regret buying it.",CG
+R00514,S003,P1001,Movies_and_TV_5,5,2024-09-08,0,36,I am so happy with this item! You will not regret buying it. Everyone should buy this right now.,CG
+R00586,U187,P1013,Kindle_Store_5,4,2025-06-20,1,462,"Replaced my old one with this and compared to my last e-reader cover, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00265,U018,P1026,Pet_Supplies_5,1,2025-04-04,1,1701,"Replaced my old one with this and the dog bed is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00568,U127,P1042,Kindle_Store_5,4,2025-05-25,1,2081,"Used it for a month now and honestly the e-reader cover is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00938,U015,P1059,Pet_Supplies_5,5,2024-12-07,1,981,"Picked it up during a sale and compared to my last dog bed, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00434,U022,P1010,Video_Games_5,3,2024-10-15,1,1678,"Picked it up during a sale and the game controller fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00406,U194,P1044,Home_and_Kitchen_5,5,2025-11-05,1,1255,"Replaced my old one with this and the kitchen set is okay for the price, I had to adjust it a little at first. Customer support answered my question within a day.",OR
+R00012,S017,P1015,Books_5,5,2025-07-28,0,8,I am so happy with this item! Everyone should buy this right now. It works perfectly and looks great.,CG
+R00165,U088,P1002,Home_and_Kitchen_5,3,2024-09-03,1,2443,"Picked it up during a sale and the kitchen set arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00516,U047,P1004,Video_Games_5,4,2025-07-10,1,1187,"Replaced my old one with this and the game controller is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00178,U140,P1040,Home_and_Kitchen_5,5,2025-07-09,1,705,"Picked it up during a sale and compared to my last kitchen set, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00993,U074,P1043,Books_5,1,2024-02-16,1,839,Picked it up during a sale and the novel does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00033,S001,P1015,Books_5,5,2024-01-28,0,3,I am so happy with this item! You will not regret buying it.,CG
+R00658,U083,P1026,Clothing_Shoes_and_Jewelry_5,4,2025-03-20,0,2483,"Used it for a month now and the jacket is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00740,U076,P1026,Clothing_Shoes_and_Jewelry_5,2,2024-08-03,1,1857,"Picked it up during a sale and the jacket arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00978,U107,P1046,Home_and_Kitchen_5,4,2025-05-15,1,581,"Got this as a gift for my brother and the kitchen set does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00114,U025,P1012,Toys_and_Games_5,4,2025-01-11,0,1529,I bought this about two weeks ago and the puzzle does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00817,U145,P1011,Electronics_5,5,2025-06-18,1,136,"I bought this about two weeks ago and compared to my last gadget, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00906,U063,P1023,Video_Games_5,5,2024-11-06,1,884,Got this as a gift for my brother and the game controller does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00936,S007,P1038,Sports_and_Outdoors_5,5,2025-07-15,1,19,"Highly recommend to everyone! You will not regret buying it. Five stars, no complaints at all. It works perfectly and looks great.",CG
+R00889,U035,P1011,Kindle_Store_5,2,2025-04-27,1,758,"I bought this about two weeks ago and the e-reader cover is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00346,U060,P1000,Sports_and_Outdoors_5,5,2024-04-08,1,2070,"Used it for a month now and the yoga mat fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00422,U071,P1045,Pet_Supplies_5,5,2025-07-23,1,1104,"I bought this about two weeks ago and the dog bed arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00697,U056,P1008,Home_and_Kitchen_5,2,2024-05-11,1,988,"Got this as a gift for my brother and honestly the kitchen set is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00307,U127,P1047,Books_5,4,2024-12-21,1,1121,"Used it for a month now and the novel arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00541,U028,P1044,Home_and_Kitchen_5,5,2024-02-25,1,664,"Got this as a gift for my brother and the kitchen set fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00144,U118,P1012,Pet_Supplies_5,4,2025-08-17,1,228,"Ordered after reading a few reviews and the dog bed is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00482,U070,P1048,Video_Games_5,5,2025-05-17,1,2153,"Got this as a gift for my brother and the game controller does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00786,U204,P1011,Kindle_Store_5,3,2024-06-14,1,413,"Picked it up during a sale and the e-reader cover does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00822,U081,P1015,Home_and_Kitchen_5,4,2024-05-25,1,1598,"I bought this about two weeks ago and the kitchen set fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00427,U174,P1046,Electronics_5,4,2024-11-24,1,524,"Ordered after reading a few reviews and the gadget arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00583,S020,P1045,Pet_Supplies_5,5,2025-03-06,0,39,Best purchase ever! You will not regret buying it. Excellent value and fast shipping.,CG
+R00927,U203,P1046,Video_Games_5,4,2024-03-24,0,2010,"Picked it up during a sale and compared to my last game controller, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00808,U187,P1008,Kindle_Store_5,2,2025-03-02,1,580,"Ordered after reading a few reviews and compared to my last e-reader cover, this one is quieter and lighter. Wish the instructions were clearer.",OR
+R00251,S021,P1006,Pet_Supplies_5,5,2024-08-15,0,45,Best purchase ever! You will not regret buying it. Excellent value and fast shipping. It works perfectly and looks great.,CG
+R00081,U138,P1016,Movies_and_TV_5,4,2025-05-20,1,1829,"Picked it up during a sale and the series box set arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00145,U128,P1041,Kindle_Store_5,1,2024-06-03,1,1466,"Picked it up during a sale and the e-reader cover fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00375,U195,P1047,Movies_and_TV_5,1,2024-07-06,0,425,"Used it for a month now and the series box set arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00803,U114,P1036,Home_and_Kitchen_5,4,2024-11-01,1,1448,"Used it for a month now and compared to my last kitchen set, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00031,U023,P1016,Electronics_5,4,2025-10-11,1,74,"Got this as a gift for my brother and honestly the gadget is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00162,U004,P1039,Movies_and_TV_5,4,2025-10-09,1,648,Got this as a gift for my brother and the series box set does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00609,U108,P1014,Video_Games_5,5,2025-09-30,1,2321,Ordered after reading a few reviews and the game controller does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00489,U055,P1023,Electronics_5,4,2024-09-17,1,1902,"Picked it up during a sale and the gadget arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00076,U078,P1016,Pet_Supplies_5,3,2025-08-05,1,466,"Used it for a month now and compared to my last dog bed, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00984,S012,P1003,Electronics_5,5,2024-04-08,0,15,"Amazing quality, five stars! I will definitely buy again. Five stars, no complaints at all.",CG
+R00679,U086,P1019,Kindle_Store_5,3,2024-04-25,0,631,"Picked it up during a sale and the e-reader cover is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00902,U133,P1021,Electronics_5,3,2025-02-28,1,157,"Used it for a month now and compared to my last gadget, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00056,U164,P1013,Home_and_Kitchen_5,5,2025-03-14,1,265,Got this as a gift for my brother and the kitchen set does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00381,U122,P1012,Pet_Supplies_5,5,2025-01-27,1,1588,"I bought this about two weeks ago and the dog bed arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00781,U106,P1025,Pet_Supplies_5,3,2025-05-22,1,2330,"Got this as a gift for my brother and the dog bed fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00896,S020,P1023,Pet_Supplies_5,5,2025-03-07,0,15,"Best purchase ever! Five stars, no complaints at all. Excellent value and fast shipping. Exceeded all my expectations.",CG
+R00027,S014,P1004,Sports_and_Outdoors_5,1,2024-08-28,0,1,"Worst purchase ever, total waste of money! It works perfectly and looks great.",CG
+R00970,U090,P1015,Movies_and_TV_5,4,2024-02-22,1,1588,"I bought this about two weeks ago and the series box set arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00909,U143,P1000,Pet_Supplies_5,4,2025-09-12,1,1982,"Used it for a month now and honestly the dog bed is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00721,U096,P1013,Toys_and_Games_5,4,2025-08-07,1,2060,"I bought this about two weeks ago and compared to my last puzzle, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00713,S021,P1034,Home_and_Kitchen_5,4,2024-08-16,0,43,"Wow, just wow! Exceeded all my expectations. Excellent value and fast shipping.",CG
+R00121,U155,P1024,Toys_and_Games_5,5,2024-05-31,1,2457,"Replaced my old one with this and compared to my last puzzle, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00774,U150,P1011,Toys_and_Games_5,3,2025-04-10,1,1145,"Got this as a gift for my brother and honestly the puzzle is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00881,U036,P1056,Electronics_5,5,2025-04-01,1,1071,"Replaced my old one with this and the gadget arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00848,U002,P1050,Video_Games_5,4,2025-04-09,1,474,"Got this as a gift for my brother and compared to my last game controller, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00216,U077,P1042,Toys_and_Games_5,3,2025-08-19,1,1532,Picked it up during a sale and honestly the puzzle is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00249,S022,P1011,Clothing_Shoes_and_Jewelry_5,5,2025-04-07,0,44,Perfect in every way! Exceeded all my expectations. You will not regret buying it. It works perfectly and looks great.,CG
+R00757,U195,P1003,Kindle_Store_5,4,2024-06-03,0,1862,"I bought this about two weeks ago and honestly the e-reader cover is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00992,S002,P1017,Pet_Supplies_5,5,2024-10-11,0,33,Absolutely love this product! Exceeded all my expectations.,CG
+R00148,U064,P1042,Sports_and_Outdoors_5,1,2025-11-03,1,675,"Got this as a gift for my brother and the yoga mat fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00472,S005,P1025,Electronics_5,2,2024-05-22,0,23,"Very disappointed, avoid this at all costs! Everyone should buy this right now.",CG
+R00302,U093,P1000,Pet_Supplies_5,3,2025-07-13,1,358,"I bought this about two weeks ago and the dog bed is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00893,U023,P1004,Clothing_Shoes_and_Jewelry_5,4,2024-01-17,0,1440,"Used it for a month now and compared to my last jacket, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00835,U206,P1057,Sports_and_Outdoors_5,5,2024-08-14,1,1546,"I bought this about two weeks ago and the yoga mat arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00358,U158,P1003,Books_5,3,2025-09-15,1,1681,"Got this as a gift for my brother and compared to my last novel, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00062,U203,P1032,Home_and_Kitchen_5,3,2025-08-02,1,1814,"Picked it up during a sale and the kitchen set arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00844,U121,P1049,Home_and_Kitchen_5,1,2024-09-01,1,1426,Replaced my old one with this and honestly the kitchen set is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00137,U205,P1015,Books_5,4,2025-09-24,1,1542,I bought this about two weeks ago and the novel does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00486,S011,P1017,Toys_and_Games_5,5,2024-02-03,1,9,"Amazing quality, five stars! You will not regret buying it.",CG
+R00572,U146,P1049,Video_Games_5,5,2025-07-29,1,2431,"Got this as a gift for my brother and the game controller fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00372,U167,P1002,Electronics_5,1,2025-05-24,1,1774,"Ordered after reading a few reviews and the gadget does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00018,S013,P1003,Kindle_Store_5,5,2024-08-12,0,23,"Great product, great price! I will definitely buy again. You will not regret buying it.",CG
+R00985,U077,P1020,Electronics_5,5,2024-04-22,1,1497,"Picked it up during a sale and the gadget does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00807,U150,P1027,Pet_Supplies_5,4,2025-07-26,1,1140,"Replaced my old one with this and the dog bed does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00371,U048,P1020,Sports_and_Outdoors_5,4,2024-06-02,1,292,"Replaced my old one with this and the yoga mat does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00241,U117,P1011,Kindle_Store_5,3,2024-06-21,1,633,"Picked it up during a sale and the e-reader cover is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00090,U062,P1017,Kindle_Store_5,4,2025-04-12,1,2141,Picked it up during a sale and honestly the e-reader cover is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00720,S001,P1030,Toys_and_Games_5,5,2024-01-29,0,33,"Great product, great price! It works perfectly and looks great. You will not regret buying it.",CG
+R00225,U096,P1007,Pet_Supplies_5,3,2024-03-23,1,2268,"Used it for a month now and compared to my last dog bed, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00779,U108,P1055,Kindle_Store_5,5,2024-01-23,0,1883,Ordered after reading a few reviews and the e-reader cover does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00794,U038,P1054,Clothing_Shoes_and_Jewelry_5,4,2025-06-26,1,1816,Ordered after reading a few reviews and the jacket does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00932,S024,P1016,Video_Games_5,5,2024-01-07,0,25,"Great product, great price! Everyone should buy this right now.",CG
+R00432,U115,P1000,Pet_Supplies_5,4,2025-10-07,1,1655,"Picked it up during a sale and the dog bed fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00849,S010,P1016,Movies_and_TV_5,5,2024-02-03,1,5,"Amazing quality, five stars! Everyone should buy this right now. You will not regret buying it. Exceeded all my expectations.",CG
+R00595,U066,P1001,Video_Games_5,4,2025-01-07,1,1413,Got this as a gift for my brother and the game controller does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00911,U104,P1016,Home_and_Kitchen_5,1,2024-02-09,1,2376,Used it for a month now and honestly the kitchen set is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00917,U001,P1026,Sports_and_Outdoors_5,2,2024-06-21,1,346,"Picked it up during a sale and the yoga mat does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00236,U003,P1044,Sports_and_Outdoors_5,1,2024-08-04,0,540,"Picked it up during a sale and the yoga mat does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00550,U160,P1028,Video_Games_5,4,2024-08-20,1,1806,"Got this as a gift for my brother and the game controller is okay for the price, I had to adjust it a little at first. Customer support answered my question within a day.",OR
+R00546,U080,P1035,Home_and_Kitchen_5,2,2025-05-11,1,823,"Used it for a month now and the kitchen set is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00505,U082,P1017,Clothing_Shoes_and_Jewelry_5,5,2024-01-20,0,150,"Used it for a month now and the jacket fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00547,U010,P1001,Electronics_5,1,2024-09-10,1,2066,"Ordered after reading a few reviews and compared to my last gadget, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00552,U110,P1034,Books_5,3,2024-05-28,1,707,"Got this as a gift for my brother and the novel fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00510,U082,P1030,Sports_and_Outdoors_5,3,2024-06-11,1,2311,"Replaced my old one with this and the yoga mat fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00563,S022,P1057,Video_Games_5,5,2025-04-05,0,2,Highly recommend to everyone! Exceeded all my expectations. You will not regret buying it.,CG
+R00429,U024,P1013,Home_and_Kitchen_5,1,2024-06-20,1,2244,"I bought this about two weeks ago and compared to my last kitchen set, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00393,S009,P1054,Electronics_5,4,2025-03-10,0,8,Best purchase ever! It works perfectly and looks great.,CG
+R00939,U219,P1021,Books_5,3,2025-05-14,1,712,"I bought this about two weeks ago and the novel is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00998,U094,P1026,Video_Games_5,5,2024-11-28,1,2309,"Got this as a gift for my brother and compared to my last game controller, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00142,U038,P1022,Toys_and_Games_5,5,2025-03-26,1,1300,"Got this as a gift for my brother and the puzzle is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00990,S003,P1048,Kindle_Store_5,1,2024-09-07,0,20,"Very disappointed, avoid this at all costs! Everyone should buy this right now.",CG
+R00652,U107,P1006,Toys_and_Games_5,3,2024-07-22,0,1002,"I bought this about two weeks ago and the puzzle arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00617,U003,P1051,Sports_and_Outdoors_5,3,2024-04-24,0,679,Picked it up during a sale and the yoga mat does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00424,S016,P1034,Toys_and_Games_5,1,2024-01-29,0,33,"Terrible product, do not buy! Everyone should buy this right now.",CG
+R00711,U064,P1003,Home_and_Kitchen_5,4,2025-05-16,1,611,"I bought this about two weeks ago and the kitchen set fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00493,U020,P1041,Home_and_Kitchen_5,4,2024-06-14,1,1253,"Picked it up during a sale and the kitchen set arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00435,U191,P1043,Books_5,3,2025-02-04,1,1268,Picked it up during a sale and honestly the novel is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00507,U118,P1004,Toys_and_Games_5,4,2024-02-02,1,658,"I bought this about two weeks ago and the puzzle arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00327,U157,P1003,Electronics_5,3,2025-09-26,1,2103,"Ordered after reading a few reviews and the gadget is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00856,U102,P1035,Clothing_Shoes_and_Jewelry_5,2,2024-07-07,1,100,"I bought this about two weeks ago and the jacket arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00858,U067,P1053,Clothing_Shoes_and_Jewelry_5,4,2024-06-27,1,791,"Used it for a month now and the jacket fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00187,U123,P1003,Sports_and_Outdoors_5,2,2024-09-07,1,1278,"Ordered after reading a few reviews and the yoga mat fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00131,U152,P1028,Video_Games_5,2,2024-03-27,1,263,"Picked it up during a sale and the game controller fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00331,U040,P1036,Clothing_Shoes_and_Jewelry_5,5,2024-04-12,1,2245,"Picked it up during a sale and the jacket fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00093,S018,P1024,Clothing_Shoes_and_Jewelry_5,5,2024-07-25,0,3,"I am so happy with this item! I will definitely buy again. You will not regret buying it. Five stars, no complaints at all.",CG
+R00149,S009,P1052,Toys_and_Games_5,5,2025-03-11,0,6,Perfect in every way! I will definitely buy again. You will not regret buying it. Excellent value and fast shipping.,CG
+R00286,U173,P1008,Movies_and_TV_5,5,2024-04-07,1,1745,"I bought this about two weeks ago and the series box set arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00930,S003,P1014,Home_and_Kitchen_5,2,2024-09-10,1,21,"Worst purchase ever, total waste of money! Everyone should buy this right now.",CG
+R00859,U005,P1029,Home_and_Kitchen_5,5,2025-11-24,1,514,Got this as a gift for my brother and honestly the kitchen set is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00592,U027,P1040,Electronics_5,5,2025-01-27,1,793,"Picked it up during a sale and the gadget is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00920,U162,P1001,Home_and_Kitchen_5,5,2024-06-19,1,570,"Got this as a gift for my brother and the kitchen set fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00069,U088,P1019,Movies_and_TV_5,1,2025-03-11,1,1501,Picked it up during a sale and the series box set does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00490,U207,P1036,Movies_and_TV_5,4,2024-09-20,1,1498,"Picked it up during a sale and the series box set is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00739,U136,P1059,Home_and_Kitchen_5,2,2024-08-30,1,1669,"Got this as a gift for my brother and the kitchen set arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00458,U116,P1012,Toys_and_Games_5,4,2025-09-02,1,1638,"Used it for a month now and the puzzle fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00400,U169,P1003,Pet_Supplies_5,4,2024-09-11,1,1636,"Used it for a month now and the dog bed is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00971,U074,P1025,Home_and_Kitchen_5,4,2024-11-02,1,69,"Picked it up during a sale and compared to my last kitchen set, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00328,S004,P1024,Pet_Supplies_5,5,2024-08-19,0,34,"Amazing quality, five stars! Five stars, no complaints at all. Exceeded all my expectations. It works perfectly and looks great.",CG
+R00866,U040,P1022,Video_Games_5,5,2025-01-18,1,404,"Got this as a gift for my brother and the game controller does the job; battery/finish could be better. Three out of five for now, will update later.",OR
+R00855,S020,P1051,Electronics_5,5,2025-03-06,0,14,"Amazing quality, five stars! You will not regret buying it. Excellent value and fast shipping.",CG
+R00797,U075,P1020,Movies_and_TV_5,4,2025-03-05,1,2327,"Got this as a gift for my brother and compared to my last series box set, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00153,U011,P1050,Kindle_Store_5,4,2025-02-24,1,1879,"Replaced my old one with this and the e-reader cover arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00003,U092,P1055,Video_Games_5,5,2025-08-14,1,993,"Got this as a gift for my brother and the game controller fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00839,U064,P1003,Video_Games_5,4,2025-11-28,1,1809,"Picked it up during a sale and compared to my last game controller, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00729,S008,P1009,Pet_Supplies_5,5,2024-04-01,0,39,"Amazing quality, five stars! Everyone should buy this right now. It works perfectly and looks great.",CG
+R00272,U132,P1040,Clothing_Shoes_and_Jewelry_5,4,2024-06-27,1,1806,Ordered after reading a few reviews and honestly the jacket is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00972,S020,P1000,Sports_and_Outdoors_5,1,2025-03-05,0,32,"Terrible product, do not buy! Everyone should buy this right now.",CG
+R00678,U165,P1046,Toys_and_Games_5,4,2024-10-29,1,2409,"Picked it up during a sale and honestly the puzzle is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00512,S018,P1049,Sports_and_Outdoors_5,5,2024-07-22,0,3,"Wow, just wow! Exceeded all my expectations. Everyone should buy this right now. Excellent value and fast shipping.",CG
+R00278,S022,P1039,Movies_and_TV_5,5,2025-04-05,0,9,"Highly recommend to everyone! Five stars, no complaints at all. I will definitely buy again.",CG
+R00107,U212,P1051,Sports_and_Outdoors_5,5,2024-06-17,1,2033,"Got this as a gift for my brother and compared to my last yoga mat, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00357,U088,P1011,Movies_and_TV_5,5,2025-02-24,1,2403,Replaced my old one with this and the series box set does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00854,U144,P1031,Video_Games_5,3,2024-12-09,1,724,I bought this about two weeks ago and the game controller does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00640,U009,P1008,Home_and_Kitchen_5,4,2024-05-24,1,247,"Used it for a month now and compared to my last kitchen set, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00309,U160,P1023,Video_Games_5,4,2024-03-19,1,287,"Ordered after reading a few reviews and the game controller is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00850,U185,P1037,Kindle_Store_5,4,2025-09-27,1,240,I bought this about two weeks ago and honestly the e-reader cover is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00684,U035,P1004,Pet_Supplies_5,4,2025-08-24,1,1302,"Ordered after reading a few reviews and the dog bed is okay for the price, I had to adjust it a little at first. Customer support answered my question within a day.",OR
+R00154,U061,P1028,Movies_and_TV_5,1,2024-11-12,1,854,"Got this as a gift for my brother and compared to my last series box set, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00436,U002,P1025,Toys_and_Games_5,2,2025-07-20,1,231,"I bought this about two weeks ago and the puzzle is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00696,U035,P1001,Toys_and_Games_5,2,2025-03-28,1,1461,"Used it for a month now and compared to my last puzzle, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00966,S002,P1043,Clothing_Shoes_and_Jewelry_5,5,2024-10-09,1,19,"Wow, just wow! I will definitely buy again.",CG
+R00950,U168,P1051,Clothing_Shoes_and_Jewelry_5,5,2024-04-30,1,797,"I bought this about two weeks ago and the jacket is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00343,S001,P1010,Home_and_Kitchen_5,5,2024-01-28,0,7,Best purchase ever! Everyone should buy this right now. I will definitely buy again.,CG
+R00544,S001,P1004,Books_5,5,2024-01-28,0,18,Absolutely love this product! You will not regret buying it. It works perfectly and looks great.,CG
+R00439,S014,P1022,Movies_and_TV_5,5,2024-08-26,1,7,"Amazing quality, five stars! Exceeded all my expectations. I will definitely buy again. Excellent value and fast shipping.",CG
+R00183,S009,P1012,Books_5,5,2025-03-09,0,15,"I am so happy with this item! Excellent value and fast shipping. It works perfectly and looks great. Five stars, no complaints at all.",CG
+R00155,U199,P1055,Sports_and_Outdoors_5,4,2025-01-26,1,723,"Used it for a month now and the yoga mat is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00620,U013,P1030,Toys_and_Games_5,5,2025-10-19,1,275,Used it for a month now and the puzzle does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00915,S013,P1048,Clothing_Shoes_and_Jewelry_5,4,2024-08-12,0,20,"Great product, great price! Excellent value and fast shipping. You will not regret buying it. I will definitely buy again.",CG
+R00087,U052,P1001,Electronics_5,4,2024-09-30,0,1854,Picked it up during a sale and the gadget does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00370,U123,P1045,Home_and_Kitchen_5,4,2024-03-06,1,1391,"Got this as a gift for my brother and the kitchen set arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00122,U075,P1046,Movies_and_TV_5,4,2025-04-09,1,528,"Picked it up during a sale and compared to my last series box set, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00342,U096,P1014,Kindle_Store_5,4,2024-12-25,1,2023,"Replaced my old one with this and compared to my last e-reader cover, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00631,S006,P1004,Pet_Supplies_5,1,2024-04-14,0,7,"Terrible product, do not buy! It works perfectly and looks great.",CG
+R00079,U108,P1010,Clothing_Shoes_and_Jewelry_5,4,2024-04-27,1,1148,"Used it for a month now and the jacket fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00366,S024,P1032,Video_Games_5,4,2024-01-08,0,44,"Amazing quality, five stars! You will not regret buying it. I will definitely buy again.",CG
+R00954,U169,P1035,Home_and_Kitchen_5,5,2024-02-15,1,1287,"Used it for a month now and honestly the kitchen set is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00105,S021,P1002,Sports_and_Outdoors_5,5,2024-08-14,0,42,"Absolutely love this product! Five stars, no complaints at all. I will definitely buy again.",CG
+R00862,S009,P1046,Movies_and_TV_5,5,2025-03-09,1,18,Highly recommend to everyone! Exceeded all my expectations. I will definitely buy again. Everyone should buy this right now.,CG
+R00921,U124,P1050,Kindle_Store_5,3,2025-11-19,1,1149,"I bought this about two weeks ago and compared to my last e-reader cover, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00174,U092,P1023,Toys_and_Games_5,1,2025-01-27,1,688,Picked it up during a sale and the puzzle does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00504,U218,P1044,Clothing_Shoes_and_Jewelry_5,5,2024-03-11,1,1925,Replaced my old one with this and the jacket does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00116,U017,P1000,Clothing_Shoes_and_Jewelry_5,5,2025-07-21,1,1014,"Got this as a gift for my brother and honestly the jacket is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00843,U160,P1053,Home_and_Kitchen_5,5,2025-10-02,1,158,"Replaced my old one with this and compared to my last kitchen set, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00733,U060,P1049,Books_5,4,2024-04-24,1,554,"Replaced my old one with this and compared to my last novel, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00946,U094,P1014,Kindle_Store_5,5,2024-01-12,1,2063,"Picked it up during a sale and compared to my last e-reader cover, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00923,U086,P1025,Pet_Supplies_5,3,2025-01-14,1,1351,"Used it for a month now and the dog bed arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00701,U148,P1006,Sports_and_Outdoors_5,4,2024-12-22,0,1050,"Replaced my old one with this and the yoga mat is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00232,U081,P1054,Movies_and_TV_5,4,2025-03-02,1,813,"Replaced my old one with this and the series box set does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00294,S023,P1004,Sports_and_Outdoors_5,5,2024-10-12,1,7,Absolutely love this product! I will definitely buy again.,CG
+R00672,U124,P1036,Toys_and_Games_5,3,2025-08-30,1,2306,Ordered after reading a few reviews and the puzzle does the job; battery/finish could be better. Customer support answered my question within a day.,OR
+R00362,U079,P1012,Home_and_Kitchen_5,4,2025-06-02,1,2207,"Replaced my old one with this and the kitchen set fits my needs, though the packaging was a bit damaged. Not perfect, but I'm fairly satisfied.",OR
+R00151,U035,P1056,Clothing_Shoes_and_Jewelry_5,5,2024-06-07,1,474,"Replaced my old one with this and the jacket is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00395,U029,P1041,Books_5,4,2025-02-14,1,1639,Picked it up during a sale and the novel does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00438,U047,P1054,Books_5,3,2024-08-14,1,529,"Used it for a month now and compared to my last novel, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00233,S014,P1013,Books_5,5,2024-08-26,0,36,Highly recommend to everyone! Everyone should buy this right now. Excellent value and fast shipping.,CG
+R00025,U152,P1038,Home_and_Kitchen_5,3,2024-03-10,1,551,"Replaced my old one with this and honestly the kitchen set is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00230,S010,P1003,Video_Games_5,5,2024-02-04,0,43,"Amazing quality, five stars! Excellent value and fast shipping. Five stars, no complaints at all.",CG
+R00002,U154,P1035,Toys_and_Games_5,2,2024-09-27,1,2256,I bought this about two weeks ago and the puzzle does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00146,S022,P1023,Clothing_Shoes_and_Jewelry_5,2,2025-04-07,0,40,"Terrible product, do not buy! Everyone should buy this right now.",CG
+R00426,U143,P1058,Kindle_Store_5,5,2025-10-26,1,1885,"Used it for a month now and compared to my last e-reader cover, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00857,S014,P1012,Sports_and_Outdoors_5,5,2024-08-27,0,24,Absolutely love this product! Everyone should buy this right now.,CG
+R00524,S006,P1047,Pet_Supplies_5,5,2024-04-15,0,41,Highly recommend to everyone! You will not regret buying it. Exceeded all my expectations. I will definitely buy again.,CG
+R00871,U103,P1014,Pet_Supplies_5,3,2025-08-16,1,2159,"Used it for a month now and the dog bed does the job; battery/finish could be better. Not perfect, but I'm fairly satisfied.",OR
+R00304,S017,P1020,Movies_and_TV_5,5,2025-07-29,0,33,"Amazing quality, five stars! Exceeded all my expectations.",CG
+R00558,U117,P1039,Toys_and_Games_5,4,2024-09-09,1,1618,"Picked it up during a sale and the puzzle arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00106,U023,P1033,Books_5,4,2024-10-29,1,882,"Used it for a month now and the novel is okay for the price, I had to adjust it a little at first. Customer support answered my question within a day.",OR
+R00046,S019,P1025,Kindle_Store_5,5,2025-07-12,0,37,"Amazing quality, five stars! You will not regret buying it. I will definitely buy again. Five stars, no complaints at all.",CG
+R00845,U195,P1020,Kindle_Store_5,3,2024-04-07,1,410,"I bought this about two weeks ago and the e-reader cover fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00922,U054,P1048,Home_and_Kitchen_5,3,2025-06-18,1,2190,Got this as a gift for my brother and the kitchen set does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00127,S007,P1049,Kindle_Store_5,5,2025-07-12,0,8,Perfect in every way! Everyone should buy this right now. I will definitely buy again. Exceeded all my expectations.,CG
+R00880,U040,P1029,Kindle_Store_5,4,2025-09-10,1,891,"Replaced my old one with this and compared to my last e-reader cover, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00908,U194,P1019,Home_and_Kitchen_5,4,2024-11-03,1,779,Got this as a gift for my brother and the kitchen set does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00274,S018,P1007,Home_and_Kitchen_5,4,2024-07-22,0,24,I am so happy with this item! I will definitely buy again.,CG
+R00709,U031,P1017,Pet_Supplies_5,2,2024-08-26,1,1200,"Picked it up during a sale and the dog bed is okay for the price, I had to adjust it a little at first. Three out of five for now, will update later.",OR
+R00557,U105,P1055,Sports_and_Outdoors_5,3,2024-08-15,0,897,I bought this about two weeks ago and honestly the yoga mat is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00058,U089,P1053,Electronics_5,3,2024-08-17,1,224,"I bought this about two weeks ago and honestly the gadget is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00250,U004,P1036,Toys_and_Games_5,4,2024-07-31,1,1691,"I bought this about two weeks ago and the puzzle arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00159,U035,P1039,Books_5,5,2024-02-09,1,628,Picked it up during a sale and the novel does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00999,U083,P1011,Sports_and_Outdoors_5,3,2024-02-28,1,1516,"Used it for a month now and compared to my last yoga mat, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00340,U042,P1013,Toys_and_Games_5,2,2025-10-13,1,1435,"Ordered after reading a few reviews and the puzzle fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00315,U059,P1024,Electronics_5,4,2025-07-08,1,99,"Got this as a gift for my brother and the gadget fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00168,U121,P1021,Movies_and_TV_5,5,2024-09-16,1,1231,"Got this as a gift for my brother and the series box set fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00963,U168,P1023,Books_5,5,2024-05-09,1,1155,"I bought this about two weeks ago and compared to my last novel, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00455,S018,P1016,Video_Games_5,5,2024-07-23,0,37,Highly recommend to everyone! Everyone should buy this right now.,CG
+R00577,U000,P1026,Clothing_Shoes_and_Jewelry_5,5,2024-05-01,1,543,"Picked it up during a sale and honestly the jacket is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00778,U166,P1049,Books_5,4,2024-09-04,1,2266,"Used it for a month now and the novel fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00492,U161,P1036,Kindle_Store_5,2,2024-05-28,1,1441,"Ordered after reading a few reviews and compared to my last e-reader cover, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00143,U118,P1039,Sports_and_Outdoors_5,5,2025-04-07,1,1235,"I bought this about two weeks ago and compared to my last yoga mat, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00208,U025,P1026,Electronics_5,4,2025-02-27,1,623,"I bought this about two weeks ago and the gadget is okay for the price, I had to adjust it a little at first. Not perfect, but I'm fairly satisfied.",OR
+R00088,U204,P1014,Video_Games_5,3,2024-09-02,1,116,Replaced my old one with this and the game controller does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00725,S020,P1025,Home_and_Kitchen_5,5,2025-03-07,0,43,I am so happy with this item! I will definitely buy again.,CG
+R00874,S015,P1037,Electronics_5,5,2025-06-03,0,44,"Great product, great price! Exceeded all my expectations. Excellent value and fast shipping. You will not regret buying it.",CG
+R00347,U210,P1040,Sports_and_Outdoors_5,3,2025-11-08,1,457,"I bought this about two weeks ago and honestly the yoga mat is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00948,U032,P1001,Video_Games_5,4,2024-04-11,1,2261,"Used it for a month now and the game controller does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00754,S001,P1020,Movies_and_TV_5,5,2024-01-27,0,22,"Wow, just wow! It works perfectly and looks great.",CG
+R00556,U047,P1048,Toys_and_Games_5,4,2025-01-31,1,851,"Used it for a month now and the puzzle fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00109,U067,P1023,Electronics_5,5,2025-07-03,1,1133,"Replaced my old one with this and the gadget does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00811,U077,P1059,Toys_and_Games_5,4,2024-10-28,1,642,Replaced my old one with this and the puzzle does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00010,U192,P1000,Movies_and_TV_5,3,2024-09-30,1,1262,Ordered after reading a few reviews and honestly the series box set is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00812,U055,P1055,Sports_and_Outdoors_5,2,2024-07-06,1,561,"Replaced my old one with this and the yoga mat arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00919,U047,P1040,Clothing_Shoes_and_Jewelry_5,5,2024-07-24,1,845,Got this as a gift for my brother and the jacket does the job; battery/finish could be better. Wish the instructions were clearer.,OR
+R00615,U186,P1042,Sports_and_Outdoors_5,5,2025-07-31,1,2428,"Used it for a month now and the yoga mat is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00643,U214,P1009,Toys_and_Games_5,3,2024-08-06,1,1434,"I bought this about two weeks ago and the puzzle fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00942,S014,P1046,Books_5,5,2024-08-29,1,14,"Amazing quality, five stars! You will not regret buying it. It works perfectly and looks great. Excellent value and fast shipping.",CG
+R00275,U135,P1022,Kindle_Store_5,4,2025-10-16,1,1667,"Replaced my old one with this and the e-reader cover fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00086,U168,P1040,Electronics_5,4,2025-07-09,1,2183,"Got this as a gift for my brother and the gadget is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00789,S003,P1038,Clothing_Shoes_and_Jewelry_5,5,2024-09-08,0,23,Absolutely love this product! Excellent value and fast shipping. Everyone should buy this right now. Exceeded all my expectations.,CG
+R00255,U092,P1008,Toys_and_Games_5,5,2024-04-19,0,1881,"Got this as a gift for my brother and the puzzle arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00136,U019,P1001,Kindle_Store_5,4,2024-11-16,1,1770,"Got this as a gift for my brother and the e-reader cover fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00045,U085,P1001,Video_Games_5,2,2024-04-05,1,1331,"Used it for a month now and honestly the game controller is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00660,S024,P1041,Movies_and_TV_5,5,2024-01-07,0,14,Highly recommend to everyone! Excellent value and fast shipping. Everyone should buy this right now.,CG
+R00851,U079,P1021,Toys_and_Games_5,2,2025-08-20,1,663,"Ordered after reading a few reviews and the puzzle arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00782,U185,P1033,Video_Games_5,1,2025-09-18,0,2058,"Used it for a month now and compared to my last game controller, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00014,U067,P1012,Books_5,2,2025-06-24,1,927,"Replaced my old one with this and compared to my last novel, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00847,S017,P1038,Electronics_5,5,2025-07-28,0,7,"Great product, great price! Five stars, no complaints at all.",CG
+R00113,S020,P1028,Pet_Supplies_5,4,2025-03-05,0,18,Absolutely love this product! Excellent value and fast shipping. Everyone should buy this right now. I will definitely buy again.,CG
+R00953,U168,P1034,Sports_and_Outdoors_5,4,2025-06-30,1,1341,"Replaced my old one with this and the yoga mat arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00394,S010,P1023,Books_5,1,2024-02-04,0,18,"Very disappointed, avoid this at all costs! It works perfectly and looks great.",CG
+R00387,S013,P1043,Home_and_Kitchen_5,5,2024-08-14,0,31,Highly recommend to everyone! You will not regret buying it.,CG
+R00934,U079,P1051,Electronics_5,4,2024-03-04,1,1649,"Ordered after reading a few reviews and the gadget arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00618,S015,P1059,Clothing_Shoes_and_Jewelry_5,4,2025-06-02,0,22,Best purchase ever! Exceeded all my expectations.,CG
+R00013,U021,P1030,Home_and_Kitchen_5,2,2025-05-12,0,2241,"Used it for a month now and honestly the kitchen set is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00982,S006,P1037,Pet_Supplies_5,5,2024-04-17,0,45,"Highly recommend to everyone! Five stars, no complaints at all.",CG
+R00769,U010,P1009,Home_and_Kitchen_5,4,2025-06-09,1,978,"Picked it up during a sale and compared to my last kitchen set, this one is quieter and lighter. Solid overall, minor issues only.",OR
+R00745,U211,P1056,Video_Games_5,3,2024-12-01,1,1757,Got this as a gift for my brother and honestly the game controller is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00141,U194,P1020,Video_Games_5,4,2025-08-16,0,2372,"Picked it up during a sale and compared to my last game controller, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00540,U159,P1009,Kindle_Store_5,4,2024-05-29,0,1016,"Used it for a month now and compared to my last e-reader cover, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00742,S016,P1048,Sports_and_Outdoors_5,5,2024-01-28,0,36,I am so happy with this item! You will not regret buying it. It works perfectly and looks great.,CG
+R00103,U075,P1055,Video_Games_5,5,2024-10-29,1,1681,"Got this as a gift for my brother and the game controller fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00413,U076,P1013,Movies_and_TV_5,2,2025-07-14,1,2327,"Picked it up during a sale and honestly the series box set is decent but the build feels slightly cheap. Not perfect, but I'm fairly satisfied.",OR
+R00661,U122,P1029,Electronics_5,4,2025-11-16,1,2396,"Picked it up during a sale and the gadget is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00931,U171,P1055,Kindle_Store_5,3,2024-05-06,0,2075,"I bought this about two weeks ago and compared to my last e-reader cover, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00466,U094,P1025,Books_5,4,2025-07-26,1,1316,"Replaced my old one with this and the novel arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00252,U087,P1017,Home_and_Kitchen_5,3,2025-09-11,0,1684,"Got this as a gift for my brother and the kitchen set fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00437,U078,P1054,Home_and_Kitchen_5,3,2024-08-03,0,1468,"Used it for a month now and the kitchen set does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00074,U102,P1019,Home_and_Kitchen_5,5,2025-05-18,1,279,"Used it for a month now and honestly the kitchen set is decent but the build feels slightly cheap. Three out of five for now, will update later.",OR
+R00147,U104,P1035,Pet_Supplies_5,3,2024-12-12,1,1430,"I bought this about two weeks ago and the dog bed arrived a day late, but it works as described. Would buy again if the price drops.",OR
+R00072,U032,P1055,Movies_and_TV_5,5,2024-10-07,1,1256,"Picked it up during a sale and honestly the series box set is decent but the build feels slightly cheap. Solid overall, minor issues only.",OR
+R00193,S008,P1035,Books_5,5,2024-04-01,0,26,Absolutely love this product! Exceeded all my expectations. Everyone should buy this right now. Excellent value and fast shipping.,CG
+R00623,U156,P1037,Pet_Supplies_5,2,2025-10-29,1,1153,"I bought this about two weeks ago and the dog bed arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00704,U108,P1033,Pet_Supplies_5,4,2024-08-07,1,1347,I bought this about two weeks ago and the dog bed does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00404,S019,P1021,Video_Games_5,1,2025-07-14,0,42,"Very disappointed, avoid this at all costs! Everyone should buy this right now.",CG
+R00838,U066,P1044,Books_5,2,2025-08-06,0,1183,"Used it for a month now and compared to my last novel, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00182,U032,P1053,Toys_and_Games_5,3,2025-07-18,1,588,"Ordered after reading a few reviews and the puzzle is okay for the price, I had to adjust it a little at first. Would buy again if the price drops.",OR
+R00907,U120,P1048,Books_5,4,2025-03-27,1,1835,Used it for a month now and the novel does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00167,U183,P1032,Home_and_Kitchen_5,5,2025-04-13,1,877,"I bought this about two weeks ago and the kitchen set arrived a day late, but it works as described. Customer support answered my question within a day.",OR
+R00318,U111,P1053,Electronics_5,1,2025-11-09,1,1129,"Got this as a gift for my brother and the gadget does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00022,S001,P1046,Pet_Supplies_5,5,2024-01-27,0,17,"Wow, just wow! I will definitely buy again. You will not regret buying it.",CG
+R00289,U116,P1042,Toys_and_Games_5,4,2025-05-14,1,441,"Picked it up during a sale and the puzzle does the job; battery/finish could be better. Solid overall, minor issues only.",OR
+R00664,U158,P1023,Home_and_Kitchen_5,3,2024-12-09,1,1550,"I bought this about two weeks ago and the kitchen set fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00185,U043,P1005,Books_5,3,2025-11-05,0,1442,"Replaced my old one with this and the novel fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00747,U012,P1036,Books_5,3,2025-02-14,1,671,"I bought this about two weeks ago and the novel arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00503,U132,P1051,Clothing_Shoes_and_Jewelry_5,2,2025-09-19,1,1226,"Picked it up during a sale and compared to my last jacket, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00584,S002,P1011,Pet_Supplies_5,1,2024-10-11,0,20,"Terrible product, do not buy! Everyone should buy this right now.",CG
+R00194,U129,P1023,Pet_Supplies_5,3,2025-04-06,1,546,"Used it for a month now and the dog bed fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00181,U196,P1029,Pet_Supplies_5,2,2025-02-23,1,1358,"Picked it up during a sale and the dog bed fits my needs, though the packaging was a bit damaged. Wish the instructions were clearer.",OR
+R00884,U100,P1042,Home_and_Kitchen_5,5,2024-02-14,0,1181,"Picked it up during a sale and the kitchen set is okay for the price, I had to adjust it a little at first. Customer support answered my question within a day.",OR
+R00836,U053,P1032,Video_Games_5,5,2024-01-08,1,1682,"I bought this about two weeks ago and the game controller arrived a day late, but it works as described. Three out of five for now, will update later.",OR
+R00190,S019,P1048,Pet_Supplies_5,5,2025-07-15,0,11,I am so happy with this item! You will not regret buying it. Excellent value and fast shipping. Everyone should buy this right now.,CG
+R00471,S009,P1023,Movies_and_TV_5,5,2025-03-09,0,34,"Amazing quality, five stars! Everyone should buy this right now. You will not regret buying it. It works perfectly and looks great.",CG
+R00186,S008,P1018,Video_Games_5,5,2024-03-31,0,41,Absolutely love this product! You will not regret buying it. Exceeded all my expectations.,CG
+R00508,U049,P1049,Books_5,2,2024-09-13,1,559,Picked it up during a sale and honestly the novel is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00096,U166,P1045,Pet_Supplies_5,2,2024-03-23,0,2245,"Ordered after reading a few reviews and the dog bed arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00491,U044,P1024,Movies_and_TV_5,4,2024-10-18,1,2056,Picked it up during a sale and the series box set does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00924,U091,P1038,Electronics_5,2,2024-12-04,1,1705,Picked it up during a sale and honestly the gadget is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00152,U196,P1051,Toys_and_Games_5,5,2025-09-24,1,724,"Used it for a month now and compared to my last puzzle, this one is quieter and lighter. Three out of five for now, will update later.",OR
+R00378,U035,P1011,Books_5,4,2024-07-24,0,1934,"Used it for a month now and the novel arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00445,U141,P1025,Electronics_5,4,2024-09-23,0,1993,Picked it up during a sale and honestly the gadget is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00744,S016,P1008,Clothing_Shoes_and_Jewelry_5,4,2024-01-29,0,21,"Wow, just wow! Five stars, no complaints at all. You will not regret buying it.",CG
+R00748,S013,P1052,Movies_and_TV_5,4,2024-08-14,0,15,"Amazing quality, five stars! Five stars, no complaints at all.",CG
+R00238,U131,P1020,Toys_and_Games_5,4,2025-05-24,1,1983,Got this as a gift for my brother and honestly the puzzle is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00457,U043,P1032,Kindle_Store_5,2,2024-08-12,1,2446,"Used it for a month now and the e-reader cover is okay for the price, I had to adjust it a little at first. Solid overall, minor issues only.",OR
+R00160,S000,P1018,Home_and_Kitchen_5,5,2024-04-26,1,39,"Great product, great price! Five stars, no complaints at all.",CG
+R00405,U209,P1045,Electronics_5,2,2024-08-16,1,1997,"Picked it up during a sale and compared to my last gadget, this one is quieter and lighter. Customer support answered my question within a day.",OR
+R00771,U215,P1032,Sports_and_Outdoors_5,4,2024-09-11,1,255,"Replaced my old one with this and the yoga mat fits my needs, though the packaging was a bit damaged. Would buy again if the price drops.",OR
+R00879,U137,P1027,Books_5,4,2025-03-04,1,905,Used it for a month now and honestly the novel is decent but the build feels slightly cheap. Customer support answered my question within a day.,OR
+R00828,U215,P1005,Video_Games_5,5,2025-06-06,1,2247,"Replaced my old one with this and the game controller fits my needs, though the packaging was a bit damaged. Customer support answered my question within a day.",OR
+R00645,U096,P1045,Video_Games_5,5,2024-06-10,1,86,I bought this about two weeks ago and honestly the game controller is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00596,S011,P1020,Home_and_Kitchen_5,5,2024-02-03,1,23,"Highly recommend to everyone! It works perfectly and looks great. I will definitely buy again. Five stars, no complaints at all.",CG
+R00209,U122,P1058,Kindle_Store_5,5,2025-10-28,0,1375,"Got this as a gift for my brother and compared to my last e-reader cover, this one is quieter and lighter. Would buy again if the price drops.",OR
+R00276,U044,P1020,Video_Games_5,3,2025-11-20,1,2477,"I bought this about two weeks ago and compared to my last game controller, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00333,U144,P1031,Video_Games_5,4,2024-05-25,1,2076,"Replaced my old one with this and the game controller arrived a day late, but it works as described. Not perfect, but I'm fairly satisfied.",OR
+R00226,S012,P1046,Movies_and_TV_5,5,2024-04-06,0,1,Absolutely love this product! I will definitely buy again. You will not regret buying it.,CG
+R00453,U054,P1051,Sports_and_Outdoors_5,5,2024-06-02,1,544,Picked it up during a sale and honestly the yoga mat is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00837,U049,P1008,Movies_and_TV_5,3,2025-11-06,1,2374,"Used it for a month now and the series box set fits my needs, though the packaging was a bit damaged. Three out of five for now, will update later.",OR
+R00212,U072,P1017,Toys_and_Games_5,1,2025-04-10,1,2083,"Used it for a month now and the puzzle is okay for the price, I had to adjust it a little at first. Wish the instructions were clearer.",OR
+R00565,U021,P1035,Toys_and_Games_5,3,2025-06-20,1,2155,Replaced my old one with this and honestly the puzzle is decent but the build feels slightly cheap. Wish the instructions were clearer.,OR
+R00619,U192,P1013,Kindle_Store_5,3,2025-02-26,1,1862,"Picked it up during a sale and compared to my last e-reader cover, this one is quieter and lighter. Not perfect, but I'm fairly satisfied.",OR
+R00650,U165,P1006,Electronics_5,5,2025-01-07,1,1429,Replaced my old one with this and the gadget does the job; battery/finish could be better. Would buy again if the price drops.,OR
+R00642,U056,P1036,Video_Games_5,2,2024-03-05,1,1706,"Got this as a gift for my brother and the game controller fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00891,U182,P1051,Clothing_Shoes_and_Jewelry_5,2,2024-02-05,1,1870,"Picked it up during a sale and the jacket fits my needs, though the packaging was a bit damaged. Solid overall, minor issues only.",OR
+R00264,U209,P1009,Home_and_Kitchen_5,3,2025-02-22,1,1300,"Used it for a month now and the kitchen set arrived a day late, but it works as described. Solid overall, minor issues only.",OR
+R00670,U075,P1028,Electronics_5,1,2025-03-02,1,600,"Ordered after reading a few reviews and the gadget arrived a day late, but it works as described. Wish the instructions were clearer.",OR
+R00969,U114,P1023,Video_Games_5,3,2024-06-21,0,2204,Used it for a month now and honestly the game controller is decent but the build feels slightly cheap. Would buy again if the price drops.,OR
+R00392,S020,P1052,Sports_and_Outdoors_5,5,2025-03-06,0,17,"Wow, just wow! It works perfectly and looks great.",CG

@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>ReviewGuard | Classical ML Fake Product Review Detection</title>
+  <!-- Material Symbols & Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            surface: "#f8f9fb",
+            "surface-dim": "#d9dadc",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f2f4f6",
+            "surface-container": "#edeef0",
+            "surface-container-high": "#e7e8ea",
+            "surface-container-highest": "#e1e2e4",
+            "on-surface": "#111827",
+            "on-surface-variant": "#464555",
+            secondary: "#6B7280",
+            primary: "#4F46E5",
+            "primary-container": "#4F46E5",
+            "primary-hover": "#4338CA",
+            "primary-fixed": "#e2dfff",
+            "on-primary-fixed-variant": "#3323cc",
+            error: "#DC2626",
+            "error-container": "#fee2e2",
+            "on-error-container": "#991b1b",
+            warning: "#D97706",
+            "warning-container": "#fef3c7",
+            "on-warning-container": "#92400e",
+            success: "#16A34A",
+            "success-container": "#dcfce7",
+            "on-success-container": "#166534",
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+          },
+          borderRadius: {
+            xl: "12px",
+            lg: "8px",
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root {
+      --sidebar-width: 240px;
+      --sidebar-offset: 240px;
+      --content-max-width: 1280px;
+      --space-page-x: 32px;
+      --space-page-y: 32px;
+      --space-gap: 24px;
+    }
+
+    @media (min-width: 1440px) {
+      :root {
+        --space-page-x: 40px;
+      }
+    }
+
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      :root {
+        --space-page-x: 32px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      :root {
+        --space-page-x: 24px;
+        --sidebar-width: 240px;
+        --sidebar-offset: 240px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      :root {
+        --space-page-x: 16px;
+        --space-page-y: 20px;
+        --sidebar-width: 240px;
+        --sidebar-offset: 0px;
+      }
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fb;
+      color: #111827;
+      overflow-x: hidden;
+    }
+    .tabular-nums { font-feature-settings: "cv02", "cv03", "cv04", "tnum"; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { background: #c7c4d8; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+    .active-nav { background-color: #edeef0 !important; color: #111827 !important; font-weight: 600; }
+    .card-border { border: 1px solid #E5E7EB; }
+
+    /* Layout structure */
+    #appSidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 240px;
+      z-index: 50;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @media (max-width: 767px) {
+      #appSidebar {
+        transform: translateX(-100%);
+      }
+      #appSidebar.sidebar-open {
+        transform: translateX(0);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+    }
+
+    #appHeader {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: var(--sidebar-offset);
+      height: 64px;
+      z-index: 40;
+      border-bottom: 1px solid #E5E7EB;
+      background-color: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(8px);
+      transition: left 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    #appMain {
+      margin-left: var(--sidebar-offset);
+      min-height: 100vh;
+      padding-top: 64px;
+      background-color: #f8f9fb;
+      transition: margin-left 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      width: calc(100% - var(--sidebar-offset));
+    }
+
+    @media (max-width: 767px) {
+      #appMain {
+        width: 100%;
+      }
+    }
+
+    /* Shared layout inner containers ensuring identical keyline alignment */
+    .topbar-container {
+      max-width: var(--content-max-width);
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: 100%;
+      padding-left: var(--space-page-x);
+      padding-right: var(--space-page-x);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .main-content-container {
+      max-width: var(--content-max-width);
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding-left: var(--space-page-x);
+      padding-right: var(--space-page-x);
+      padding-top: var(--space-page-y);
+      padding-bottom: var(--space-page-y);
+    }
+
+    .page-section {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-gap);
+    }
+  </style>
+</head>
+<body class="bg-surface antialiased text-on-surface">
+
+  <!-- Fixed Left Sidebar (240px) -->
+  <aside id="appSidebar" class="h-screen bg-surface-container-lowest border-r border-surface-container-highest flex flex-col justify-between select-none">
+    <div class="flex flex-col flex-1 min-h-0">
+      <!-- Logo Header -->
+      <div class="h-16 px-4 flex items-center justify-between border-b border-surface-container-highest">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white shadow-sm font-semibold text-lg">
+            RG
+          </div>
+          <span class="font-semibold text-base text-on-surface tracking-tight">ReviewGuard</span>
+        </div>
+        <span class="text-[11px] font-semibold bg-surface-container text-secondary px-1.5 py-0.5 rounded border border-surface-container-highest">v2.4</span>
+      </div>
+
+      <!-- Navigation Links (10 Pages) -->
+      <nav class="flex-1 px-3 py-3 space-y-1 overflow-y-auto" id="sidebarNav">
+        <a href="#overview" data-page="overview" onclick="closeMobileSidebar()" class="nav-item flex items-center gap-3 px-2.5 py-2 rounded-lg text-sm transition-colors active-nav">
+          <span class="material-symbols-outlined text-[18px]">dashboard</span>
+          <span>Overview</span>
+        </a>
+        <a href="#dataset-explorer" data-page="dataset-explorer" onclick="closeMobileSidebar()" class="nav-item flex items-center gap-3 px-2.5 py-2 rounded-lg text-sm text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors">
+          <span class="material-symbols-outlined text-[18px]">table_chart</span>
+          <span>Dataset Explorer</span>
+        </a>
+        <a href="#preprocessing-and-features" data-page="preprocessing-and-features" onclick="closeMobileSidebar()" class="nav-item flex items-center gap-3 px-2.5 py-2 rounded-lg text-sm text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors">
+          <span class="material-symbols-outlined text-[18px]">tune</span>
+          <span>Preprocessing & Features</span>
+        </a>
+        <a href="#model-training" data-page="model-training" onclick="closeMobileSidebar()" class="nav-item flex items-center gap-3 px-2.5 py-2 rounded-lg text-sm text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors">
+          <span class="material-symbols-outlined text-[18px]">memory</span>
+          <span>Model Training</span>
+        </a>
+        <a href="#model-evaluation" data-page="model-evaluation" onclick="closeMobileSidebar()" class="nav-item flex items-center gap-3 px-2.5 py-2 rounded-lg text-sm text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors">
+          <span class="material-symbols-outlined text-[18px]">analytics</span>
+          <span>Model Evaluation</span>
+        </a>
+        <a href="#ensemble-learning" data-page="ensemble-learning" onclick="closeMobileSidebar()" class="nav-item flex items-center gap-3 px-2.5 py-2 rounded-lg text-sm text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors">
+          <span class="material-symbols-outlined text-[18px]">layers</span>
+          <span>Ensemble Learning</span>
+        </a>
+        <a href="#reviewer-clustering" data-page="reviewer-clustering" onclick="closeMobileSidebar()" class="nav-item flex items-center gap-3 px-2.5 py-2 rounded-lg text-sm text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors">
+          <span class="material-symbols-outlined text-[18px]">hub</span>
+          <span>Reviewer Clustering</span>
+        </a>
+        <a href="#pattern-mining" data-page="pattern-mining" onclick="closeMobileSidebar()" class="nav-item flex items-center gap-3 px-2.5 py-2 rounded-lg text-sm text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors">
+          <span class="material-symbols-outlined text-[18px]">scatter_plot</span>
+          <span>Pattern Mining</span>
+        </a>
+        <a href="#sequence-analysis" data-page="sequence-analysis" onclick="closeMobileSidebar()" class="nav-item flex items-center gap-3 px-2.5 py-2 rounded-lg text-sm text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors">
+          <span class="material-symbols-outlined text-[18px]">timeline</span>
+          <span>Sequence Analysis</span>
+        </a>
+        <a href="#live-review-checker" data-page="live-review-checker" onclick="closeMobileSidebar()" class="nav-item flex items-center gap-3 px-2.5 py-2 rounded-lg text-sm text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors">
+          <span class="material-symbols-outlined text-[18px]">shield_with_heart</span>
+          <span>Live Review Checker</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Sidebar Bottom Status -->
+    <div class="p-3 border-t border-surface-container-highest space-y-2 bg-surface-container-lowest">
+      <div class="p-2.5 rounded-lg bg-surface-container-low card-border">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span class="text-xs font-semibold text-on-surface" id="sidebarModelStatus">Classical ML Core Active</span>
+        </div>
+        <p class="text-[11px] text-secondary mt-0.5 truncate">FastAPI + Scikit-Learn 1.9</p>
+      </div>
+      <div class="flex items-center justify-between px-1 text-xs text-secondary">
+        <a href="https://github.com" target="_blank" class="hover:text-on-surface transition-colors">Docs</a>
+        <span>•</span>
+        <a href="/api/overview" target="_blank" class="hover:text-on-surface transition-colors">API JSON</a>
+        <span>•</span>
+        <span class="text-[11px] text-emerald-600 font-semibold">200 OK</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div id="sidebarBackdrop" onclick="toggleMobileSidebar(false)" class="fixed inset-0 bg-black/40 z-40 hidden md:hidden transition-opacity"></div>
+
+  <!-- Top Fixed Header -->
+  <header id="appHeader">
+    <div class="topbar-container">
+      <div class="flex items-center gap-3">
+        <!-- Mobile Menu Toggle Button (visible on < 768px) -->
+        <button id="mobileMenuBtn" onclick="toggleMobileSidebar()" class="p-1.5 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors md:hidden" aria-label="Toggle Navigation">
+          <span class="material-symbols-outlined text-[20px]">menu</span>
+        </button>
+
+        <!-- Breadcrumbs -->
+        <div class="flex items-center gap-2 text-xs text-secondary">
+          <span class="hover:text-on-surface cursor-pointer">Platform</span>
+          <span class="text-surface-container-highest">/</span>
+          <span class="text-on-surface font-medium" id="headerBreadcrumb">System Overview</span>
+        </div>
+
+        <!-- Global Search Input -->
+        <div class="relative hidden sm:flex items-center ml-4">
+          <span class="material-symbols-outlined absolute left-2.5 text-[16px] text-secondary">search</span>
+          <input id="globalSearchInput" onkeydown="handleGlobalSearch(event)" class="h-8 w-60 pl-8 pr-10 rounded-lg bg-surface-container-low card-border text-xs text-on-surface placeholder:text-secondary focus:outline-none focus:border-primary transition-all" placeholder="Search review, feature, user..." type="text"/>
+          <div class="absolute right-2 px-1 py-0.5 rounded bg-surface-container text-secondary text-[10px] font-mono border border-surface-container-highest">↵</div>
+        </div>
+      </div>
+
+      <!-- Active Dataset Selector and Controls -->
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg card-border bg-surface-container-lowest text-on-surface text-xs font-medium">
+          <span class="material-symbols-outlined text-[16px] text-primary">database</span>
+          <span class="text-secondary text-[11px] hidden sm:inline">Corpus:</span>
+          <select id="globalDatasetSelect" onchange="changeGlobalDataset(this.value)" class="bg-transparent text-xs font-semibold text-on-surface focus:outline-none cursor-pointer">
+            <option value="kaggle">Kaggle Fake Reviews (40,432)</option>
+            <option value="sample">Sample Behavioral Dataset (1,000)</option>
+          </select>
+        </div>
+
+        <div class="h-4 w-px bg-surface-container-highest hidden sm:block"></div>
+
+        <button onclick="navigateTo('live-review-checker')" class="h-8 px-3 rounded-lg bg-primary text-white text-xs font-medium hover:bg-primary-hover transition-colors flex items-center gap-1.5 shadow-sm">
+          <span class="material-symbols-outlined text-[16px]">shield</span>
+          <span class="hidden sm:inline">Test Review</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main id="appMain">
+    <div class="main-content-container">
+
+      <!-- ========================================== -->
+      <!-- PAGE 1: OVERVIEW -->
+      <!-- ========================================== -->
+      <section id="page-overview" class="page-section space-y-6">
+        <!-- Top Command Header -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-2 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-primary bg-primary-fixed px-2 py-0.5 rounded">Real-Time ML Telemetry</span>
+              <span class="text-xs text-secondary">• Classical Core Engine v2.4</span>
+            </div>
+            <h1 class="text-2xl font-bold tracking-tight text-on-surface">System Overview</h1>
+            <p class="text-sm text-secondary mt-0.5">Real-time classical machine learning telemetry, model consensus, and automated corpus classification.</p>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <button onclick="loadOverviewData()" class="h-9 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface text-xs font-medium card-border hover:bg-surface-container-low transition-colors flex items-center gap-1.5 shadow-sm">
+              <span class="material-symbols-outlined text-[16px]">sync</span>
+              <span>Refresh Telemetry</span>
+            </button>
+            <button onclick="navigateTo('model-training')" class="h-9 px-4 rounded-lg bg-primary text-white text-xs font-medium hover:bg-primary-hover transition-all flex items-center gap-1.5 shadow-sm">
+              <span class="material-symbols-outlined text-[16px]">play_arrow</span>
+              <span>Train Models</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4 Key Metrics Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold uppercase tracking-wider text-secondary">Total Reviews Analyzed</span>
+              <span class="material-symbols-outlined text-secondary text-[18px]">query_stats</span>
+            </div>
+            <div class="my-3 flex items-baseline justify-between">
+              <div class="text-2xl font-bold text-on-surface tracking-tight tabular-nums" id="overviewTotalReviews">40,432</div>
+              <div class="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full card-border">100% Corpus</div>
+            </div>
+            <div class="text-[11px] text-secondary flex items-center justify-between">
+              <span>Balanced CG / OR partition</span>
+              <span class="font-medium text-on-surface">50.0% Real</span>
+            </div>
+          </div>
+
+          <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold uppercase tracking-wider text-secondary">Fake Reviews Flagged</span>
+              <span class="material-symbols-outlined text-error text-[18px]">gpp_bad</span>
+            </div>
+            <div class="my-3 flex items-baseline justify-between">
+              <div class="text-2xl font-bold text-on-surface tracking-tight tabular-nums" id="overviewFakeCount">20,216</div>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-error-container text-on-error-container tabular-nums" id="overviewFakeRatio">50.0%</span>
+            </div>
+            <div class="text-[11px] text-secondary flex items-center justify-between">
+              <span>Computer-Generated (CG)</span>
+              <span class="font-medium text-on-surface">Precision Focus</span>
+            </div>
+          </div>
+
+          <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold uppercase tracking-wider text-secondary">Top Model F1-Score</span>
+              <span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+            </div>
+            <div class="my-3 flex items-baseline justify-between">
+              <div class="text-2xl font-bold text-primary tracking-tight tabular-nums" id="overviewBestF1">87.1%</div>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant" id="overviewBestModel">SVM (LinearSVC)</span>
+            </div>
+            <div class="text-[11px] text-secondary truncate" id="overviewModelDesc">Stratified 5-Fold Cross Validation</div>
+          </div>
+
+          <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold uppercase tracking-wider text-secondary">Active ML Algorithms</span>
+              <span class="material-symbols-outlined text-secondary text-[18px]">memory</span>
+            </div>
+            <div class="my-3 flex items-baseline justify-between">
+              <div class="text-2xl font-bold text-on-surface tracking-tight tabular-nums" id="overviewModelsCount">8</div>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 card-border">Classical ML</span>
+            </div>
+            <div class="text-[11px] text-secondary flex items-center justify-between">
+              <span>Syllabus Compliance</span>
+              <span class="font-medium text-emerald-600">Strictly Enforced</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle Row: Radar / Performance Chart + Model Leaderboard -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          <div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <h3 class="font-semibold text-sm text-on-surface">Classical Classifier Comparison</h3>
+                <p class="text-xs text-secondary mt-0.5">Benchmark radar across Accuracy, Precision, Recall, F1, and AUC.</p>
+              </div>
+              <span class="text-[11px] bg-surface-container text-secondary px-2 py-0.5 rounded">Multi-Metric</span>
+            </div>
+            <div class="relative h-64 w-full flex items-center justify-center">
+              <canvas id="overviewRadarChart"></canvas>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <h3 class="font-semibold text-sm text-on-surface">Benchmark Model Leaderboard</h3>
+                <p class="text-xs text-secondary mt-0.5">Ranked by test F1 score under reproducible seed 42.</p>
+              </div>
+              <button onclick="navigateTo('model-evaluation')" class="text-xs text-primary font-medium hover:underline">Full Evaluation →</button>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-xs text-left">
+                <thead class="border-b border-surface-container-highest text-secondary uppercase text-[10px] tracking-wider">
+                  <tr>
+                    <th class="py-2 px-2">Classifier</th>
+                    <th class="py-2 px-2 text-right">F1 Score</th>
+                    <th class="py-2 px-2 text-right">Accuracy</th>
+                    <th class="py-2 px-2 text-right">ROC AUC</th>
+                    <th class="py-2 px-2 text-center">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="overviewLeaderboardBody" class="divide-y divide-surface-container-high font-normal">
+                  <!-- Dynamically populated -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Audit Log -->
+        <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold text-sm text-on-surface">Recent Live Review Detections</h3>
+              <p class="text-xs text-secondary mt-0.5">Live inference activity log with model consensus verdicts.</p>
+            </div>
+            <button onclick="navigateTo('live-review-checker')" class="text-xs font-semibold text-primary hover:underline">Live Tester →</button>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs text-left">
+              <thead class="border-b border-surface-container-highest text-secondary uppercase text-[10px] tracking-wider">
+                <tr>
+                  <th class="py-2 px-3">Timestamp</th>
+                  <th class="py-2 px-3">Review Snippet</th>
+                  <th class="py-2 px-3 text-center">Verdict</th>
+                  <th class="py-2 px-3 text-right">Fake Probability</th>
+                </tr>
+              </thead>
+              <tbody id="overviewRecentDetections" class="divide-y divide-surface-container-high">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- PAGE 2: DATASET EXPLORER -->
+      <!-- ========================================== -->
+      <section id="page-dataset-explorer" class="page-section space-y-6 hidden">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-2 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-[11px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-full">Corpus Audit Mode</span>
+              <span class="text-xs text-secondary">• Ground-Truth Partition</span>
+            </div>
+            <h1 class="text-2xl font-bold tracking-tight text-on-surface">Dataset Explorer</h1>
+            <p class="text-sm text-secondary mt-0.5">Explore raw corpus distributions, review text lengths, class balance, and behavioral metadata.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <label class="h-9 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface text-xs font-medium card-border hover:bg-surface-container-low transition-colors flex items-center gap-1.5 shadow-sm cursor-pointer">
+              <span class="material-symbols-outlined text-[16px]">upload_file</span>
+              <span>Upload CSV Dataset</span>
+              <input type="file" id="datasetUploadInput" accept=".csv" class="hidden" onchange="handleDatasetUpload(event)"/>
+            </label>
+          </div>
+        </div>
+
+        <!-- Reference Datasets Selection Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div id="card-kaggle" onclick="selectDataset('kaggle')" class="p-4 rounded-xl bg-surface-container-lowest card-border cursor-pointer transition-all hover:border-primary border-2 border-primary">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2 font-semibold text-sm">
+                <span class="material-symbols-outlined text-primary text-[20px]">dataset</span>
+                <span>Kaggle Fake Reviews Benchmark</span>
+              </div>
+              <span class="text-[10px] font-bold bg-primary text-white px-2 py-0.5 rounded" id="badge-kaggle">ACTIVE</span>
+            </div>
+            <p class="text-xs text-secondary mb-2">40,432 balanced reviews (CG = Fake, OR = Genuine). Pure NLP text and ratings without reviewer metadata.</p>
+            <div class="flex items-center gap-4 text-[11px] text-secondary">
+              <span>Columns: category, rating, label, text_</span>
+              <span>•</span>
+              <span class="text-emerald-700 font-medium">Real-world benchmark</span>
+            </div>
+          </div>
+
+          <div id="card-sample" onclick="selectDataset('sample')" class="p-4 rounded-xl bg-surface-container-lowest card-border cursor-pointer transition-all hover:border-primary">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2 font-semibold text-sm">
+                <span class="material-symbols-outlined text-amber-600 text-[20px]">badge</span>
+                <span>Synthetic Sample Reviews Dataset</span>
+              </div>
+              <span class="text-[10px] font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded" id="badge-sample">SYNTHETIC METADATA</span>
+            </div>
+            <p class="text-xs text-secondary mb-2">1,000 synthesized reviews adding user_id, product_id, review_date, verified_purchase, account_age_days. Powers Clustering, HMM & Association.</p>
+            <div class="flex items-center gap-4 text-[11px] text-secondary">
+              <span>Behavioral signals enabled</span>
+              <span>•</span>
+              <span class="text-amber-700 font-medium">Notice: Synthetic for demo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summary Charts Row -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Class Distribution -->
+          <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-semibold uppercase text-secondary">Class Distribution</span>
+              <span class="material-symbols-outlined text-secondary text-[16px]">pie_chart</span>
+            </div>
+            <div class="h-44 w-full flex items-center justify-center">
+              <canvas id="explorerClassChart"></canvas>
+            </div>
+            <div class="flex items-center justify-around text-xs pt-2 border-t border-surface-container-high" id="explorerClassStats">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <!-- Star Rating Distribution -->
+          <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-semibold uppercase text-secondary">Rating Distribution</span>
+              <span class="material-symbols-outlined text-secondary text-[16px]">bar_chart</span>
+            </div>
+            <div class="h-44 w-full flex items-center justify-center">
+              <canvas id="explorerRatingChart"></canvas>
+            </div>
+            <div class="text-[11px] text-secondary text-center pt-2 border-t border-surface-container-high">
+              1-Star to 5-Star distribution in selected corpus
+            </div>
+          </div>
+
+          <!-- Word Statistics -->
+          <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-semibold uppercase text-secondary">Length & Token Metrics</span>
+              <span class="material-symbols-outlined text-secondary text-[16px]">text_fields</span>
+            </div>
+            <div class="space-y-3 my-auto">
+              <div class="flex items-center justify-between p-2 rounded bg-surface-container-low text-xs">
+                <span class="text-secondary">Average Word Count</span>
+                <span class="font-bold text-on-surface" id="statMeanWords">-</span>
+              </div>
+              <div class="flex items-center justify-between p-2 rounded bg-surface-container-low text-xs">
+                <span class="text-secondary">Median Word Count</span>
+                <span class="font-bold text-on-surface" id="statMedianWords">-</span>
+              </div>
+              <div class="flex items-center justify-between p-2 rounded bg-surface-container-low text-xs">
+                <span class="text-secondary">Max Word Length</span>
+                <span class="font-bold text-on-surface" id="statMaxWords">-</span>
+              </div>
+            </div>
+            <div class="text-[11px] text-secondary text-center pt-2 border-t border-surface-container-high">
+              Raw linguistic volume metrics
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter & Search Bar + Reviews Data Table -->
+        <div class="bg-surface-container-lowest rounded-xl card-border shadow-sm overflow-hidden">
+          <div class="p-4 border-b border-surface-container-highest flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div class="flex items-center gap-2 w-full sm:w-auto">
+              <span class="font-semibold text-sm text-on-surface">Review Records</span>
+              <span class="text-xs text-secondary bg-surface-container px-2 py-0.5 rounded" id="tableRecordCount">Loading...</span>
+            </div>
+            <div class="flex items-center gap-2 w-full sm:w-auto">
+              <input id="tableSearchInput" oninput="debounceExploreTable()" class="h-8 px-3 rounded-lg bg-surface-container-low card-border text-xs placeholder:text-secondary focus:outline-none focus:border-primary w-full sm:w-48" placeholder="Filter review text..."/>
+              <select id="tableCategorySelect" onchange="loadExploreData()" class="h-8 px-2 rounded-lg bg-surface-container-low card-border text-xs text-secondary focus:outline-none">
+                <option value="all">All Categories</option>
+              </select>
+              <select id="tableLabelSelect" onchange="loadExploreData()" class="h-8 px-2 rounded-lg bg-surface-container-low card-border text-xs text-secondary focus:outline-none">
+                <option value="all">All Classes</option>
+                <option value="fake">Fake Only</option>
+                <option value="genuine">Genuine Only</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs text-left">
+              <thead class="bg-surface-container-low text-secondary uppercase text-[10px] tracking-wider border-b border-surface-container-highest">
+                <tr>
+                  <th class="py-2.5 px-3">ID</th>
+                  <th class="py-2.5 px-3">Category</th>
+                  <th class="py-2.5 px-3">Rating</th>
+                  <th class="py-2.5 px-3">Review Text</th>
+                  <th class="py-2.5 px-3 text-center">Label</th>
+                  <th class="py-2.5 px-3 text-center">Metadata</th>
+                </tr>
+              </thead>
+              <tbody id="exploreTableBody" class="divide-y divide-surface-container-high">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Pagination Footer -->
+          <div class="p-3 border-t border-surface-container-highest flex items-center justify-between text-xs text-secondary">
+            <span id="paginationInfo">Showing 1 to 15</span>
+            <div class="flex items-center gap-1.5">
+              <button onclick="changeExplorePage(-1)" id="btnPrevPage" class="px-2.5 py-1 rounded card-border hover:bg-surface-container-low transition-colors disabled:opacity-40">Previous</button>
+              <span class="px-2 font-medium text-on-surface" id="currentPageDisplay">Page 1</span>
+              <button onclick="changeExplorePage(1)" id="btnNextPage" class="px-2.5 py-1 rounded card-border hover:bg-surface-container-low transition-colors disabled:opacity-40">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- PAGE 3: PREPROCESSING & FEATURES -->
+      <!-- ========================================== -->
+      <section id="page-preprocessing-and-features" class="page-section space-y-6 hidden">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-2 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-[11px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-full">NLP & Engineering</span>
+              <span class="text-xs text-secondary">• Syllabus Classical Pipeline</span>
+            </div>
+            <h1 class="text-2xl font-bold tracking-tight text-on-surface">Preprocessing & Feature Selection</h1>
+            <p class="text-sm text-secondary mt-0.5">TF-IDF vectorization, linguistic heuristics, Chi-Square & Mutual Information ranking, and class balancing.</p>
+          </div>
+        </div>
+
+        <!-- Preprocessing Steps Walkthrough -->
+        <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm space-y-4">
+          <h3 class="font-semibold text-sm text-on-surface">Classical Text Preprocessing Pipeline</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div class="p-3 rounded-lg bg-surface-container-low card-border space-y-1">
+              <div class="text-[10px] font-bold text-primary uppercase">Stage 1</div>
+              <div class="font-semibold text-xs text-on-surface">Lowercase</div>
+              <div class="text-[11px] text-secondary">Standardize casing across tokens</div>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-container-low card-border space-y-1">
+              <div class="text-[10px] font-bold text-primary uppercase">Stage 2</div>
+              <div class="font-semibold text-xs text-on-surface">Regex Stripping</div>
+              <div class="text-[11px] text-secondary">Remove URLs & HTML artifacts</div>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-container-low card-border space-y-1">
+              <div class="text-[10px] font-bold text-primary uppercase">Stage 3</div>
+              <div class="font-semibold text-xs text-on-surface">Punctuation Strip</div>
+              <div class="text-[11px] text-secondary">Preserve scalar exclamation counts</div>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-container-low card-border space-y-1">
+              <div class="text-[10px] font-bold text-primary uppercase">Stage 4</div>
+              <div class="font-semibold text-xs text-on-surface">Tokenize</div>
+              <div class="text-[11px] text-secondary">Word-level lexical segmentation</div>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-container-low card-border space-y-1">
+              <div class="text-[10px] font-bold text-primary uppercase">Stage 5</div>
+              <div class="font-semibold text-xs text-on-surface">Stopwords</div>
+              <div class="text-[11px] text-secondary">Filter high-frequency NLTK terms</div>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-container-low card-border space-y-1">
+              <div class="text-[10px] font-bold text-primary uppercase">Stage 6</div>
+              <div class="font-semibold text-xs text-on-surface">Lemmatization</div>
+              <div class="text-[11px] text-secondary">NLTK WordNet base morphemes</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature Selection: Chi-Square vs Mutual Info Charts -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="font-semibold text-sm text-on-surface">Chi-Square (χ²) Feature Ranking</h3>
+                <p class="text-xs text-secondary">Hypothesis testing for categorical & non-negative lexical dependence.</p>
+              </div>
+              <span class="text-[10px] bg-primary text-white font-bold px-2 py-0.5 rounded">Top 15</span>
+            </div>
+            <div class="h-64 w-full">
+              <canvas id="chi2Chart"></canvas>
+            </div>
+          </div>
+
+          <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="font-semibold text-sm text-on-surface">Information Gain (Mutual Information)</h3>
+                <p class="text-xs text-secondary">Entropy reduction quantifying non-linear feature correlation.</p>
+              </div>
+              <span class="text-[10px] bg-emerald-700 text-white font-bold px-2 py-0.5 rounded">Top 15</span>
+            </div>
+            <div class="h-64 w-full">
+              <canvas id="miChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imbalanced Data Handling Interactive Tester -->
+        <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm space-y-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold text-sm text-on-surface">Imbalanced Data Handling (Syllabus Module)</h3>
+              <p class="text-xs text-secondary mt-0.5">Test SMOTE, random oversampling, undersampling, and balanced class weights.</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <select id="imbalanceMethodSelect" class="h-8 px-2.5 rounded-lg bg-surface-container-low card-border text-xs text-on-surface focus:outline-none">
+                <option value="smote">SMOTE (Synthetic Minority Over-sampling)</option>
+                <option value="oversample">Random Oversampling</option>
+                <option value="undersample">Random Undersampling</option>
+                <option value="class_weight">Class Weights ('balanced')</option>
+                <option value="none">None (Natural Imbalance)</option>
+              </select>
+              <button onclick="testImbalanceHandling()" class="h-8 px-3 rounded-lg bg-primary text-white text-xs font-medium hover:bg-primary-hover transition-colors">
+                Run Simulation
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-lg bg-surface-container-low card-border space-y-2">
+              <div class="font-semibold text-xs text-secondary uppercase">Pre-Sampling Distribution</div>
+              <div class="flex items-center justify-between text-xs">
+                <span>Genuine Reviews (OR / Class 0):</span>
+                <span class="font-bold text-on-surface" id="imbBeforeGenuine">-</span>
+              </div>
+              <div class="flex items-center justify-between text-xs">
+                <span>Fake Reviews (CG / Class 1):</span>
+                <span class="font-bold text-error" id="imbBeforeFake">-</span>
+              </div>
+              <div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden flex">
+                <div id="barBeforeGenuine" class="bg-emerald-500 h-full" style="width: 50%"></div>
+                <div id="barBeforeFake" class="bg-error h-full" style="width: 50%"></div>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-lg bg-surface-container-low card-border space-y-2">
+              <div class="font-semibold text-xs text-secondary uppercase">Post-Sampling Distribution</div>
+              <div class="flex items-center justify-between text-xs">
+                <span>Genuine Reviews (OR / Class 0):</span>
+                <span class="font-bold text-on-surface" id="imbAfterGenuine">-</span>
+              </div>
+              <div class="flex items-center justify-between text-xs">
+                <span>Fake Reviews (CG / Class 1):</span>
+                <span class="font-bold text-error" id="imbAfterFake">-</span>
+              </div>
+              <div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden flex">
+                <div id="barAfterGenuine" class="bg-emerald-500 h-full" style="width: 50%"></div>
+                <div id="barAfterFake" class="bg-error h-full" style="width: 50%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- PAGE 4: MODEL TRAINING -->
+      <!-- ========================================== -->
+      <section id="page-model-training" class="page-section space-y-6 hidden">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-2 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-[11px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-full">Execution Engine</span>
+              <span class="text-xs text-secondary">• Background Asynchronous Task</span>
+            </div>
+            <h1 class="text-2xl font-bold tracking-tight text-on-surface">Model Training Workbench</h1>
+            <p class="text-sm text-secondary mt-0.5">Train classical classifiers with hyperparameter tuning, cross-validation, and streaming telemetry logs.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <!-- Configuration Panel (5 cols) -->
+          <div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm space-y-4">
+            <h3 class="font-semibold text-sm text-on-surface">Training Configuration</h3>
+
+            <div class="space-y-3">
+              <div>
+                <label class="block text-xs font-medium text-secondary mb-1">Target Corpus</label>
+                <select id="trainDatasetSelect" class="w-full h-9 px-3 rounded-lg bg-surface-container-low card-border text-xs text-on-surface focus:outline-none">
+                  <option value="kaggle">Kaggle Fake Reviews Benchmark</option>
+                  <option value="sample">Synthetic Sample Reviews (with Metadata)</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-secondary mb-1">Select Classical Models</label>
+                <div class="space-y-1.5 p-3 rounded-lg bg-surface-container-low card-border text-xs">
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" name="trainModel" value="naive_bayes" checked class="rounded text-primary"/>
+                    <span>Multinomial Naive Bayes</span>
+                  </label>
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" name="trainModel" value="logistic_regression" checked class="rounded text-primary"/>
+                    <span>Logistic Regression (L1 LASSO)</span>
+                  </label>
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" name="trainModel" value="decision_tree" checked class="rounded text-primary"/>
+                    <span>Decision Tree (CART)</span>
+                  </label>
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" name="trainModel" value="svm" checked class="rounded text-primary"/>
+                    <span>Linear SVM (Probability Calibrated)</span>
+                  </label>
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" name="trainModel" value="knn" checked class="rounded text-primary"/>
+                    <span>K-Nearest Neighbors (KNN, k=5)</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-medium text-secondary mb-1">Cross-Validation</label>
+                  <select id="trainCvSelect" class="w-full h-8 px-2.5 rounded-lg bg-surface-container-low card-border text-xs text-on-surface focus:outline-none">
+                    <option value="5">5-Fold Stratified CV</option>
+                    <option value="10">10-Fold Stratified CV</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-medium text-secondary mb-1">Imbalance Handler</label>
+                  <select id="trainImbalanceSelect" class="w-full h-8 px-2.5 rounded-lg bg-surface-container-low card-border text-xs text-on-surface focus:outline-none">
+                    <option value="none">None</option>
+                    <option value="smote">SMOTE</option>
+                    <option value="class_weight">Class Weights</option>
+                    <option value="oversample">Random Oversample</option>
+                    <option value="undersample">Undersample</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="text-secondary">Sample Partition Size</span>
+                  <span class="font-bold text-on-surface" id="lblSampleSize">6,000</span>
+                </div>
+                <input type="range" id="trainSampleSlider" min="1000" max="15000" step="1000" value="6000" oninput="document.getElementById('lblSampleSize').innerText = Number(this.value).toLocaleString()" class="w-full accent-primary"/>
+                <div class="flex justify-between text-[10px] text-secondary">
+                  <span>1k (Fast)</span>
+                  <span>15k (Full Bench)</span>
+                </div>
+              </div>
+
+              <button onclick="startTrainingPipeline()" id="btnStartTraining" class="w-full h-10 rounded-lg bg-primary text-white text-xs font-semibold hover:bg-primary-hover transition-colors flex items-center justify-center gap-2 shadow-sm">
+                <span class="material-symbols-outlined text-[18px]">play_circle</span>
+                <span>Launch Training Pipeline</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Progress & Telemetry Terminal (7 cols) -->
+          <div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm space-y-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="font-semibold text-sm text-on-surface">Execution Console & Telemetry</h3>
+                <p class="text-xs text-secondary mt-0.5" id="trainStatusMessage">Ready to train.</p>
+              </div>
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-surface-container text-secondary" id="trainStatusBadge">IDLE</span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs font-medium">
+                <span class="text-secondary">Overall Pipeline Progress</span>
+                <span class="text-primary tabular-nums" id="trainProgressPercent">0%</span>
+              </div>
+              <div class="w-full bg-surface-container-high rounded-full h-2 overflow-hidden">
+                <div id="trainProgressBar" class="bg-primary h-full transition-all duration-300" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <!-- Streaming Terminal Box -->
+            <div class="rounded-lg bg-zinc-950 p-4 font-mono text-[11px] text-zinc-300 h-80 overflow-y-auto space-y-1.5" id="trainTerminal">
+              <div class="text-zinc-500">// ReviewGuard Classical ML Terminal v2.4 initialized.</div>
+              <div class="text-zinc-500">// Select parameters and press 'Launch Training Pipeline' to begin.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- PAGE 5: MODEL EVALUATION -->
+      <!-- ========================================== -->
+      <section id="page-model-evaluation" class="page-section space-y-6 hidden">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-2 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-[11px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-full">Algorithmic Diagnostics</span>
+              <span class="text-xs text-secondary">• Test Set Performance</span>
+            </div>
+            <h1 class="text-2xl font-bold tracking-tight text-on-surface">Model Evaluation & Metrics</h1>
+            <p class="text-sm text-secondary mt-0.5">Comprehensive diagnostic comparison: Accuracy, Precision, Recall, F1, ROC/AUC, and Confusion Matrices.</p>
+          </div>
+          <button onclick="loadEvaluationData()" class="h-9 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface text-xs font-medium card-border hover:bg-surface-container-low transition-colors flex items-center gap-1.5 shadow-sm">
+            <span class="material-symbols-outlined text-[16px]">refresh</span>
+            <span>Reload Metrics</span>
+          </button>
+        </div>
+
+        <!-- Full Metrics Comparison Table -->
+        <div class="bg-surface-container-lowest rounded-xl card-border shadow-sm overflow-hidden">
+          <div class="p-4 border-b border-surface-container-highest">
+            <h3 class="font-semibold text-sm text-on-surface">Classical Classifier Comparison Matrix</h3>
+            <p class="text-xs text-secondary">Evaluated on stratified hold-out test set with k-fold cross-validation.</p>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs text-left">
+              <thead class="bg-surface-container-low text-secondary uppercase text-[10px] tracking-wider border-b border-surface-container-highest">
+                <tr>
+                  <th class="py-2.5 px-3">Model</th>
+                  <th class="py-2.5 px-3 text-right">Accuracy</th>
+                  <th class="py-2.5 px-3 text-right">Precision</th>
+                  <th class="py-2.5 px-3 text-right">Recall</th>
+                  <th class="py-2.5 px-3 text-right font-bold text-primary">F1-Score</th>
+                  <th class="py-2.5 px-3 text-right">ROC AUC</th>
+                  <th class="py-2.5 px-3 text-right">CV Score (Mean ± Std)</th>
+                  <th class="py-2.5 px-3 text-center">Diagnostics</th>
+                </tr>
+              </thead>
+              <tbody id="evaluationTableBody" class="divide-y divide-surface-container-high font-normal">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Interactive Confusion Matrix & Curves Row -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          <!-- Confusion Matrix Visualizer (5 cols) -->
+          <div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="font-semibold text-sm text-on-surface">Interactive Confusion Matrix</h3>
+                <select id="cmModelSelect" onchange="renderActiveConfusionMatrix()" class="h-7 px-2 rounded bg-surface-container-low card-border text-xs text-on-surface focus:outline-none">
+                  <!-- Populated with models -->
+                </select>
+              </div>
+              <p class="text-xs text-secondary mb-4">Inspection of True Negatives (Genuine) and True Positives (Fake) vs Type I & II errors.</p>
+            </div>
+
+            <!-- 2x2 Matrix Graphic -->
+            <div class="grid grid-cols-2 gap-3 p-4 rounded-xl bg-surface-container-low card-border my-auto">
+              <div class="p-4 rounded-lg bg-emerald-50 card-border text-center">
+                <div class="text-[10px] uppercase font-bold text-emerald-800">True Negative (TN)</div>
+                <div class="text-xl font-bold text-emerald-900 mt-1 tabular-nums" id="cmTN">-</div>
+                <div class="text-[10px] text-emerald-700 mt-0.5">Correct Genuine</div>
+              </div>
+              <div class="p-4 rounded-lg bg-amber-50 card-border text-center">
+                <div class="text-[10px] uppercase font-bold text-amber-800">False Positive (FP)</div>
+                <div class="text-xl font-bold text-amber-900 mt-1 tabular-nums" id="cmFP">-</div>
+                <div class="text-[10px] text-amber-700 mt-0.5">Type I: False Alarm</div>
+              </div>
+              <div class="p-4 rounded-lg bg-amber-50 card-border text-center">
+                <div class="text-[10px] uppercase font-bold text-amber-800">False Negative (FN)</div>
+                <div class="text-xl font-bold text-amber-900 mt-1 tabular-nums" id="cmFN">-</div>
+                <div class="text-[10px] text-amber-700 mt-0.5">Type II: Missed Fake</div>
+              </div>
+              <div class="p-4 rounded-lg bg-emerald-50 card-border text-center">
+                <div class="text-[10px] uppercase font-bold text-emerald-800">True Positive (TP)</div>
+                <div class="text-xl font-bold text-emerald-900 mt-1 tabular-nums" id="cmTP">-</div>
+                <div class="text-[10px] text-emerald-700 mt-0.5">Correct Fake</div>
+              </div>
+            </div>
+
+            <div class="flex justify-between text-[11px] text-secondary pt-3 border-t border-surface-container-high">
+              <span>Specificity: <strong id="cmSpecificity" class="text-on-surface">-%</strong></span>
+              <span>Sensitivity (Recall): <strong id="cmSensitivity" class="text-on-surface">-%</strong></span>
+            </div>
+          </div>
+
+          <!-- Multi-Model ROC Curve Chart (7 cols) -->
+          <div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div class="flex items-center justify-between mb-2">
+              <div>
+                <h3 class="font-semibold text-sm text-on-surface">ROC Curve Comparison (Receiver Operating Characteristic)</h3>
+                <p class="text-xs text-secondary">True Positive Rate vs False Positive Rate across decision thresholds.</p>
+              </div>
+              <span class="text-[10px] bg-primary text-white font-bold px-2 py-0.5 rounded">Multi-Model</span>
+            </div>
+            <div class="h-64 w-full flex items-center justify-center">
+              <canvas id="evalRocChart"></canvas>
+            </div>
+            <div class="text-[11px] text-secondary text-right pt-2 border-t border-surface-container-high">
+              Higher curves towards top-left indicate superior discriminatory separation
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- PAGE 6: ENSEMBLE LEARNING -->
+      <!-- ========================================== -->
+      <section id="page-ensemble-learning" class="page-section space-y-6 hidden">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-2 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-[11px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-full">Variance & Bias Reduction</span>
+              <span class="text-xs text-secondary">• Syllabus Ensembles</span>
+            </div>
+            <h1 class="text-2xl font-bold tracking-tight text-on-surface">Ensemble Learning</h1>
+            <p class="text-sm text-secondary mt-0.5">Bagging (Random Forest), Boosting (AdaBoost, Gradient Boosting), and Soft Voting model consensus.</p>
+          </div>
+        </div>
+
+        <!-- 3 Strategy Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-5 rounded-xl bg-surface-container-lowest card-border shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-primary uppercase">Bagging</span>
+              <span class="material-symbols-outlined text-primary text-[20px]">forest</span>
+            </div>
+            <div class="text-base font-bold text-on-surface">Random Forest</div>
+            <p class="text-xs text-secondary">Aggregates 100 decorrelated decision trees trained on bootstrap samples with random feature sub-spacing.</p>
+            <div class="pt-2 flex justify-between text-xs font-semibold">
+              <span class="text-secondary">Ensemble F1:</span>
+              <span class="text-primary tabular-nums" id="ensRfF1">85.4%</span>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-surface-container-lowest card-border shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-emerald-600 uppercase">Boosting</span>
+              <span class="material-symbols-outlined text-emerald-600 text-[20px]">bolt</span>
+            </div>
+            <div class="text-base font-bold text-on-surface">AdaBoost & GBDT</div>
+            <p class="text-xs text-secondary">Sequential stage-wise additive learners penalizing sample misclassifications to compress prediction bias.</p>
+            <div class="pt-2 flex justify-between text-xs font-semibold">
+              <span class="text-secondary">Ensemble F1:</span>
+              <span class="text-emerald-700 tabular-nums" id="ensGbF1">86.2%</span>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-surface-container-lowest card-border shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-amber-600 uppercase">Model Averaging</span>
+              <span class="material-symbols-outlined text-amber-600 text-[20px]">how_to_vote</span>
+            </div>
+            <div class="text-base font-bold text-on-surface">Soft Voting Consensus</div>
+            <p class="text-xs text-secondary">Weighted consensus across Bagging, Boosting, and Regularized Linear classifiers for maximum generalization.</p>
+            <div class="pt-2 flex justify-between text-xs font-semibold">
+              <span class="text-secondary">Ensemble F1:</span>
+              <span class="text-amber-700 tabular-nums" id="ensVoteF1">87.5%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Model vs Ensemble Comparison Chart + Feature Importances -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          <div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <h3 class="font-semibold text-sm text-on-surface">Single Models vs Ensemble F1 Performance</h3>
+                <p class="text-xs text-secondary">Demonstrates generalization lift achieved via ensemble aggregation.</p>
+              </div>
+            </div>
+            <div class="h-64 w-full flex items-center justify-center">
+              <canvas id="ensembleComparisonChart"></canvas>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <h3 class="font-semibold text-sm text-on-surface">Ensemble Gini Feature Importances</h3>
+                <p class="text-xs text-secondary">Top 12 discriminative features derived from Random Forest trees.</p>
+              </div>
+              <span class="text-[10px] bg-primary text-white font-bold px-2 py-0.5 rounded">Gini Impurity</span>
+            </div>
+            <div class="h-64 w-full flex items-center justify-center">
+              <canvas id="ensembleImportanceChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- PAGE 7: REVIEWER CLUSTERING -->
+      <!-- ========================================== -->
+      <section id="page-reviewer-clustering" class="page-section space-y-6 hidden">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-2 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-[11px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-full">Unsupervised Learning</span>
+              <span class="text-xs text-secondary">• Syllabus Clustering Techniques</span>
+            </div>
+            <h1 class="text-2xl font-bold tracking-tight text-on-surface">Reviewer Behavioral Clustering</h1>
+            <p class="text-sm text-secondary mt-0.5">K-Means elbow method, 2D PCA projection, Hierarchical linkage dendrogram, and MST anomaly partitions.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <select id="clusterLinkageSelect" onchange="loadClusteringData()" class="h-9 px-2.5 rounded-lg bg-surface-container-lowest card-border text-xs text-on-surface focus:outline-none">
+              <option value="ward">Ward Linkage</option>
+              <option value="complete">Complete Linkage</option>
+              <option value="average">Average Linkage</option>
+              <option value="single">Single Linkage</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Metadata Dataset Notice (shown when kaggle is selected) -->
+        <div id="clusteringMetadataNotice" class="p-4 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-between hidden">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-amber-700 text-[24px]">info</span>
+            <div>
+              <div class="text-xs font-semibold text-amber-900">Requires Behavioral Metadata Dataset</div>
+              <div class="text-xs text-amber-800">The Kaggle benchmark lacks reviewer IDs and timestamps. Switch to Synthetic Sample Reviews to explore reviewer clusters.</div>
+            </div>
+          </div>
+          <button onclick="switchDatasetAndReload('sample')" class="px-3 py-1.5 rounded-lg bg-amber-600 text-white text-xs font-semibold hover:bg-amber-700 transition-colors shadow-sm">
+            Switch to Sample Dataset
+          </button>
+        </div>
+
+        <!-- Elbow Curve & 2D PCA Charts -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          <!-- K-Means Elbow Curve (5 cols) -->
+          <div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <h3 class="font-semibold text-sm text-on-surface">K-Means Elbow & Silhouette</h3>
+                <span class="text-[10px] bg-primary-fixed text-primary font-bold px-2 py-0.5 rounded">k = 2 to 8</span>
+              </div>
+              <p class="text-xs text-secondary mb-3">Optimal cluster selection minimizing within-cluster inertia.</p>
+            </div>
+            <div class="h-60 w-full flex items-center justify-center">
+              <canvas id="clusterElbowChart"></canvas>
+            </div>
+            <div class="text-[11px] text-secondary pt-2 border-t border-surface-container-high flex justify-between">
+              <span>Elbow inflection point: <strong>k = 4</strong></span>
+              <span class="text-emerald-700 font-medium">Silhouette Peak: 0.38</span>
+            </div>
+          </div>
+
+          <!-- 2D PCA Reviewer Scatter Plot (7 cols) -->
+          <div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
+            <div class="flex items-center justify-between mb-1">
+              <div>
+                <h3 class="font-semibold text-sm text-on-surface">2D PCA Reviewer Projection</h3>
+                <p class="text-xs text-secondary mt-0.5">Principal Component Analysis mapping multi-dimensional reviewer profiles.</p>
+              </div>
+              <span class="text-[10px] bg-surface-container text-secondary px-2 py-0.5 rounded">PCA 1 vs PCA 2</span>
+            </div>
+            <div class="h-60 w-full flex items-center justify-center">
+              <canvas id="clusterPcaChart"></canvas>
+            </div>
+            <div class="text-[11px] text-secondary pt-2 border-t border-surface-container-high text-right">
+              Clusters color-coded by behavioral group
+            </div>
+          </div>
+        </div>
+
+        <!-- Behavioral Cluster Profiles Table -->
+        <div class="bg-surface-container-lowest rounded-xl card-border shadow-sm overflow-hidden">
+          <div class="p-4 border-b border-surface-container-highest">
+            <h3 class="font-semibold text-sm text-on-surface">Reviewer Group Profiles & Anomaly Classification</h3>
+            <p class="text-xs text-secondary">Centroid attributes indicating organic buyers vs bursty review-bombing syndicates.</p>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs text-left">
+              <thead class="bg-surface-container-low text-secondary uppercase text-[10px] tracking-wider border-b border-surface-container-highest">
+                <tr>
+                  <th class="py-2.5 px-3">Cluster ID</th>
+                  <th class="py-2.5 px-3">Size / Pct</th>
+                  <th class="py-2.5 px-3 text-right">Avg Rating</th>
+                  <th class="py-2.5 px-3 text-right">Reviews / Day</th>
+                  <th class="py-2.5 px-3 text-right">Verified Ratio</th>
+                  <th class="py-2.5 px-3 text-right">Avg Review Length</th>
+                  <th class="py-2.5 px-3 text-center">Behavioral Profile Tag</th>
+                </tr>
+              </thead>
+              <tbody id="clusterSummaryBody" class="divide-y divide-surface-container-high">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- MST Concept Card -->
+        <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">account_tree</span>
+            <h3 class="font-semibold text-sm text-on-surface">Minimum Spanning Tree (MST) Clustering Concept</h3>
+          </div>
+          <p class="text-xs text-secondary leading-relaxed">
+            In graph-based clustering, nodes represent reviewer behavioral profiles connected by pairwise Euclidean distances. By computing the Minimum Spanning Tree and severing edges with weights exceeding the standard anomaly threshold, isolated reviewer syndicates and extreme outliers naturally separate from organic cluster components without requiring spherical geometry assumptions.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-2 text-xs" id="mstEdgesContainer">
+            <!-- Populated with MST edge summaries -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- PAGE 8: PATTERN MINING -->
+      <!-- ========================================== -->
+      <section id="page-pattern-mining" class="page-section space-y-6 hidden">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-2 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-[11px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-full">Rule Induction</span>
+              <span class="text-xs text-secondary">• Syllabus Association Techniques</span>
+            </div>
+            <h1 class="text-2xl font-bold tracking-tight text-on-surface">Pattern Mining (Apriori & FP-Growth)</h1>
+            <p class="text-sm text-secondary mt-0.5">Frequent itemset discovery and high-lift behavioral association rules linking review attributes to fake classifications.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <select id="assocAlgoSelect" onchange="loadAssociationData()" class="h-9 px-3 rounded-lg bg-surface-container-lowest card-border text-xs text-on-surface focus:outline-none">
+              <option value="fpgrowth">FP-Growth (Fast Prefix Tree)</option>
+              <option value="apriori">Apriori Algorithm (Level-Wise)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Notice Banner -->
+        <div id="assocMetadataNotice" class="p-4 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-between hidden">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-amber-700 text-[24px]">info</span>
+            <div>
+              <div class="text-xs font-semibold text-amber-900">Requires Behavioral Metadata Dataset</div>
+              <div class="text-xs text-amber-800">Association rule mining operates on discretized reviewer signals (account age, verified buyer, burst posting). Switch to the Synthetic Sample dataset.</div>
+            </div>
+          </div>
+          <button onclick="switchDatasetAndReload('sample')" class="px-3 py-1.5 rounded-lg bg-amber-600 text-white text-xs font-semibold hover:bg-amber-700 transition-colors shadow-sm">
+            Switch to Sample Dataset
+          </button>
+        </div>
+
+        <!-- Parameters & Summary Row -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="p-4 rounded-xl bg-surface-container-lowest card-border space-y-1">
+            <div class="text-[11px] font-semibold uppercase text-secondary">Minimum Support</div>
+            <div class="text-lg font-bold text-on-surface">0.05 (5%)</div>
+            <div class="text-[10px] text-secondary">Frequency threshold in corpus</div>
+          </div>
+          <div class="p-4 rounded-xl bg-surface-container-lowest card-border space-y-1">
+            <div class="text-[11px] font-semibold uppercase text-secondary">Minimum Confidence</div>
+            <div class="text-lg font-bold text-on-surface">0.40 (40%)</div>
+            <div class="text-[10px] text-secondary">P(Consequent | Antecedent)</div>
+          </div>
+          <div class="p-4 rounded-xl bg-surface-container-lowest card-border space-y-1">
+            <div class="text-[11px] font-semibold uppercase text-secondary">Total Rules Extracted</div>
+            <div class="text-lg font-bold text-primary tabular-nums" id="assocTotalRules">-</div>
+            <div class="text-[10px] text-secondary">Discovered behavioral combinations</div>
+          </div>
+          <div class="p-4 rounded-xl bg-surface-container-lowest card-border space-y-1">
+            <div class="text-[11px] font-semibold uppercase text-secondary">Mining Performance</div>
+            <div class="text-lg font-bold text-emerald-700">O(N) Tree Compression</div>
+            <div class="text-[10px] text-secondary">mlxtend.frequent_patterns</div>
+          </div>
+        </div>
+
+        <!-- Mined Association Rules Table -->
+        <div class="bg-surface-container-lowest rounded-xl card-border shadow-sm overflow-hidden">
+          <div class="p-4 border-b border-surface-container-highest flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold text-sm text-on-surface">High-Lift Association Rules</h3>
+              <p class="text-xs text-secondary">Ranked by Lift (dependence multiplier over baseline chance).</p>
+            </div>
+            <span class="text-xs bg-surface-container text-secondary px-2 py-0.5 rounded">Sorted by Lift ↓</span>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs text-left">
+              <thead class="bg-surface-container-low text-secondary uppercase text-[10px] tracking-wider border-b border-surface-container-highest">
+                <tr>
+                  <th class="py-2.5 px-3">Rule Antecedents (IF)</th>
+                  <th class="py-2.5 px-3">Consequents (THEN)</th>
+                  <th class="py-2.5 px-3 text-right">Support</th>
+                  <th class="py-2.5 px-3 text-right">Confidence</th>
+                  <th class="py-2.5 px-3 text-right font-bold text-primary">Lift</th>
+                  <th class="py-2.5 px-3 text-center">Class Target</th>
+                </tr>
+              </thead>
+              <tbody id="assocRulesBody" class="divide-y divide-surface-container-high font-normal">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- PAGE 9: SEQUENCE ANALYSIS (HMM) -->
+      <!-- ========================================== -->
+      <section id="page-sequence-analysis" class="page-section space-y-6 hidden">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-2 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-[11px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-full">Markov Modeling</span>
+              <span class="text-xs text-secondary">• Syllabus Forward-Backward & Viterbi</span>
+            </div>
+            <h1 class="text-2xl font-bold tracking-tight text-on-surface">Sequence Analysis (Hidden Markov Model)</h1>
+            <p class="text-sm text-secondary mt-0.5">Chronological reviewer trajectory modeling: Forward-Backward probability evaluation and Viterbi path decoding.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <label class="text-xs text-secondary">Select Reviewer:</label>
+            <select id="hmmUserSelect" onchange="loadUserHmmTimeline(this.value)" class="h-9 px-3 rounded-lg bg-surface-container-lowest card-border text-xs text-on-surface font-semibold focus:outline-none cursor-pointer">
+              <!-- Dynamically populated with active users -->
+            </select>
+          </div>
+        </div>
+
+        <!-- Notice Banner -->
+        <div id="hmmMetadataNotice" class="p-4 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-between hidden">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-amber-700 text-[24px]">info</span>
+            <div>
+              <div class="text-xs font-semibold text-amber-900">Requires Behavioral Metadata Dataset</div>
+              <div class="text-xs text-amber-800">Sequence analysis requires time-series review sequences per user. Switch to Synthetic Sample Reviews to inspect user timelines.</div>
+            </div>
+          </div>
+          <button onclick="switchDatasetAndReload('sample')" class="px-3 py-1.5 rounded-lg bg-amber-600 text-white text-xs font-semibold hover:bg-amber-700 transition-colors shadow-sm">
+            Switch to Sample Dataset
+          </button>
+        </div>
+
+        <!-- 2-State HMM Architectural Model Parameters -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-5 rounded-xl bg-surface-container-lowest card-border shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-primary uppercase">Hidden States</span>
+              <span class="material-symbols-outlined text-primary text-[18px]">alt_route</span>
+            </div>
+            <div class="text-sm font-semibold text-on-surface">2-State Ergotic Model</div>
+            <div class="text-xs text-secondary space-y-1">
+              <div>• <strong>State 0:</strong> Normal / Organic Reviewer</div>
+              <div>• <strong>State 1:</strong> Bursty / Sybil Spammer</div>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-surface-container-lowest card-border shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-primary uppercase">Transition Matrix A</span>
+              <span class="material-symbols-outlined text-primary text-[18px]">sync_alt</span>
+            </div>
+            <div class="text-xs font-mono bg-surface-container-low p-2 rounded card-border" id="hmmTransMatDisplay">
+              P(0→0)=0.88  P(0→1)=0.12<br/>
+              P(1→0)=0.25  P(1→1)=0.75
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-surface-container-lowest card-border shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-primary uppercase">Selected User Verdict</span>
+              <span class="material-symbols-outlined text-secondary text-[18px]">person_search</span>
+            </div>
+            <div class="text-lg font-bold text-on-surface" id="hmmUserVerdict">Loading...</div>
+            <div class="text-xs text-secondary flex justify-between">
+              <span>Log-Likelihood: <strong id="hmmUserLikelihood" class="text-on-surface">-</strong></span>
+              <span>Spam Score: <strong id="hmmUserRisk" class="text-error">-</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chronological Step-by-Step Viterbi Decoded Timeline -->
+        <div class="bg-surface-container-lowest rounded-xl card-border shadow-sm overflow-hidden">
+          <div class="p-4 border-b border-surface-container-highest flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold text-sm text-on-surface">Viterbi Decoded Hidden State Trajectory</h3>
+              <p class="text-xs text-secondary">Step-by-step observations, time intervals, and maximum-a-posteriori hidden state assignment.</p>
+            </div>
+            <span class="text-xs bg-surface-container text-secondary px-2 py-0.5 rounded">Timeline</span>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs text-left">
+              <thead class="bg-surface-container-low text-secondary uppercase text-[10px] tracking-wider border-b border-surface-container-highest">
+                <tr>
+                  <th class="py-2.5 px-3">Step</th>
+                  <th class="py-2.5 px-3">Date</th>
+                  <th class="py-2.5 px-3">Rating</th>
+                  <th class="py-2.5 px-3 text-right">Time Gap (Days)</th>
+                  <th class="py-2.5 px-3">Observation Event</th>
+                  <th class="py-2.5 px-3 text-center">Viterbi State</th>
+                  <th class="py-2.5 px-3">Review Snippet</th>
+                </tr>
+              </thead>
+              <tbody id="hmmTimelineBody" class="divide-y divide-surface-container-high">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- PAGE 10: LIVE REVIEW CHECKER -->
+      <!-- ========================================== -->
+      <section id="page-live-review-checker" class="page-section space-y-6 hidden">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-2 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-[11px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-full">Real-Time Inference</span>
+              <span class="text-xs text-secondary">• Multi-Model Ensemble Consensus</span>
+            </div>
+            <h1 class="text-2xl font-bold tracking-tight text-on-surface">Live Review Checker</h1>
+            <p class="text-sm text-secondary mt-0.5">Test any product review with instant multi-model inference, probability calibration, and explainability highlights.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="clearLiveForm()" class="h-9 px-3.5 rounded-lg bg-surface-container-lowest text-secondary hover:text-on-surface text-xs font-medium card-border hover:bg-surface-container-low transition-colors flex items-center gap-1.5 shadow-sm">
+              <span class="material-symbols-outlined text-[16px]">refresh</span>
+              <span>Clear</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <!-- Input Form Column (7 cols) -->
+          <div class="lg:col-span-7 space-y-4">
+            <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm space-y-4">
+              <!-- Textarea Input -->
+              <div class="relative">
+                <textarea id="liveReviewInput" oninput="handleLiveReviewInput()" rows="6" class="w-full p-4 rounded-lg bg-surface-container-low card-border text-sm text-on-surface placeholder:text-secondary focus:bg-surface-container-lowest focus:outline-none focus:border-primary transition-all resize-y" placeholder="Paste review text here to test against the detection pipeline..."></textarea>
+              </div>
+
+              <!-- Character & Word Stats -->
+              <div class="flex items-center justify-between text-xs text-secondary px-1">
+                <span id="liveCharStats">0 words | 0 characters</span>
+                <div class="flex items-center gap-3">
+                  <span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>TF-IDF Lexical</span>
+                  <span>VADER Sentiment Ready</span>
+                </div>
+              </div>
+
+              <!-- Contextual Behavioral Signals Box -->
+              <div class="p-4 rounded-lg bg-surface-container-low card-border space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-semibold text-on-surface flex items-center gap-1.5">
+                    <span class="material-symbols-outlined text-primary text-[16px]">tune</span>
+                    Contextual Behavioral Signals
+                  </span>
+                  <span class="text-[11px] text-secondary">Optional inference weights</span>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+                  <!-- Star Rating -->
+                  <div class="p-2.5 rounded bg-surface-container-lowest card-border space-y-1">
+                    <label class="text-[11px] text-secondary block">Assigned Rating</label>
+                    <select id="liveRatingSelect" onchange="resetLiveResult()" class="w-full h-7 text-xs bg-transparent font-semibold text-amber-600 focus:outline-none">
+                      <option value="5.0">5 ★★★★★ (Max)</option>
+                      <option value="4.0">4 ★★★★☆</option>
+                      <option value="3.0">3 ★★★☆☆ (Neutral)</option>
+                      <option value="2.0">2 ★★☆☆☆</option>
+                      <option value="1.0">1 ★☆☆☆☆ (Extreme Low)</option>
+                    </select>
+                  </div>
+
+                  <!-- Account Age -->
+                  <div class="p-2.5 rounded bg-surface-container-lowest card-border space-y-1">
+                    <label class="text-[11px] text-secondary block">Account Age (Days)</label>
+                    <input type="number" id="liveAccountAgeInput" value="365" min="1" max="5000" oninput="resetLiveResult()" class="w-full h-7 text-xs bg-transparent font-semibold text-on-surface focus:outline-none"/>
+                  </div>
+
+                  <!-- Verified Purchase -->
+                  <div class="p-2.5 rounded bg-surface-container-lowest card-border space-y-1">
+                    <label class="text-[11px] text-secondary block">Purchase Status</label>
+                    <select id="liveVerifiedSelect" onchange="resetLiveResult()" class="w-full h-7 text-xs bg-transparent font-semibold text-on-surface focus:outline-none">
+                      <option value="true">Verified Purchase</option>
+                      <option value="false">Unverified Purchase</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button onclick="executeLiveInference()" id="btnLiveAnalyze" class="w-full h-11 rounded-lg bg-primary text-white text-xs font-semibold hover:bg-primary-hover transition-all flex items-center justify-center gap-2 shadow-sm">
+                <span class="material-symbols-outlined text-[18px]">troubleshoot</span>
+                <span>Analyze Review Against Ensemble Pipeline</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Inference Results Column (5 cols) -->
+          <div class="lg:col-span-5 space-y-4">
+            <!-- Verdict Banner -->
+            <div id="liveVerdictBanner" class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider text-secondary">Pipeline Classification</span>
+                <span class="text-[11px] text-secondary font-mono" id="liveInferenceTime">Not analyzed</span>
+              </div>
+
+              <div class="flex items-center justify-between py-2">
+                <div>
+                  <div class="text-3xl font-extrabold tracking-tight text-secondary" id="liveVerdictText">—</div>
+                  <div class="text-xs text-secondary mt-0.5" id="liveVerdictSub">Enter a review and analyze it to see the result.</div>
+                </div>
+                <div class="text-right">
+                  <div class="text-2xl font-bold tabular-nums" id="liveFakeProbability">—</div>
+                  <div class="text-[11px] text-secondary">Fake Probability</div>
+                </div>
+              </div>
+
+              <!-- Probability Bar -->
+              <div class="space-y-1">
+                <div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden flex">
+                  <div id="liveProbBarGenuine" class="bg-emerald-500 h-full transition-all duration-300" style="width: 0%"></div>
+                  <div id="liveProbBarFake" class="bg-error h-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between text-[10px] text-secondary">
+                  <span>Genuine (0%)</span>
+                  <span>Suspicious (50%)</span>
+                  <span>Fake (100%)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Per-Model Breakdown Chips -->
+            <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm space-y-3">
+              <h3 class="font-semibold text-xs text-secondary uppercase">Per-Model Consensus Breakdown</h3>
+              <div class="grid grid-cols-2 gap-2" id="livePerModelContainer">
+                <!-- Dynamically populated with NB, LR, DT, SVM, KNN, Ensemble -->
+              </div>
+            </div>
+
+            <!-- Token Explainability & Highlights -->
+            <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm space-y-3">
+              <h3 class="font-semibold text-xs text-secondary uppercase">Linguistic Explainability Highlights</h3>
+              <div id="liveHighlightsContainer" class="p-3 rounded-lg bg-surface-container-low card-border text-xs text-on-surface leading-relaxed min-h-[70px]">
+                Enter or load a review and click Analyze to view token-level explainability highlights.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Embedded Vanilla JavaScript Application -->
+  <script src="/static/app.js"></script>
+</body>
+</html>

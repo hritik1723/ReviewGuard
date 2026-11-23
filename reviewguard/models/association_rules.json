@@ -1,0 +1,812 @@
+{
+  "requires_metadata": false,
+  "algorithm": "fpgrowth",
+  "min_support": 0.05,
+  "min_confidence": 0.3,
+  "total_rules": 50,
+  "rules": [
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "label_fake",
+        "burst_posting"
+      ],
+      "consequents": [
+        "short_review"
+      ],
+      "support": 0.0816,
+      "confidence": 0.4467,
+      "lift": 4.5273,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "short_review"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.0816,
+      "confidence": 0.8272,
+      "lift": 4.5273,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "label_fake",
+        "burst_posting"
+      ],
+      "consequents": [
+        "short_review",
+        "rating_5"
+      ],
+      "support": 0.067,
+      "confidence": 0.3667,
+      "lift": 4.493,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "short_review",
+        "rating_5"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.067,
+      "confidence": 0.8209,
+      "lift": 4.493,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "short_review"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "support": 0.0816,
+      "confidence": 0.8272,
+      "lift": 4.4678,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "consequents": [
+        "short_review"
+      ],
+      "support": 0.0816,
+      "confidence": 0.4408,
+      "lift": 4.4678,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "short_review",
+        "burst_posting"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "support": 0.0816,
+      "confidence": 0.8272,
+      "lift": 4.4678,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "consequents": [
+        "short_review",
+        "burst_posting"
+      ],
+      "support": 0.0816,
+      "confidence": 0.4408,
+      "lift": 4.4678,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "new_account"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.1169,
+      "confidence": 0.8136,
+      "lift": 4.4529,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "label_fake",
+        "burst_posting"
+      ],
+      "consequents": [
+        "new_account"
+      ],
+      "support": 0.1169,
+      "confidence": 0.64,
+      "lift": 4.4529,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "consequents": [
+        "new_account"
+      ],
+      "support": 0.1181,
+      "confidence": 0.6382,
+      "lift": 4.4401,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "new_account"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "support": 0.1181,
+      "confidence": 0.822,
+      "lift": 4.4401,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "consequents": [
+        "short_review",
+        "rating_5"
+      ],
+      "support": 0.067,
+      "confidence": 0.3618,
+      "lift": 4.4339,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "short_review",
+        "rating_5"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "support": 0.067,
+      "confidence": 0.8209,
+      "lift": 4.4339,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "consequents": [
+        "short_review",
+        "burst_posting",
+        "rating_5"
+      ],
+      "support": 0.067,
+      "confidence": 0.3618,
+      "lift": 4.4339,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "short_review",
+        "burst_posting",
+        "rating_5"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "support": 0.067,
+      "confidence": 0.8209,
+      "lift": 4.4339,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "consequents": [
+        "new_account",
+        "burst_posting"
+      ],
+      "support": 0.1169,
+      "confidence": 0.6316,
+      "lift": 4.4318,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "new_account",
+        "burst_posting"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "support": 0.1169,
+      "confidence": 0.8205,
+      "lift": 4.4318,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "label_fake",
+        "burst_posting"
+      ],
+      "consequents": [
+        "new_account",
+        "rating_5"
+      ],
+      "support": 0.0974,
+      "confidence": 0.5333,
+      "lift": 4.4229,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "new_account",
+        "rating_5"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.0974,
+      "confidence": 0.8081,
+      "lift": 4.4229,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "consequents": [
+        "new_account",
+        "rating_5"
+      ],
+      "support": 0.0987,
+      "confidence": 0.5329,
+      "lift": 4.4193,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "new_account",
+        "rating_5"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "support": 0.0987,
+      "confidence": 0.8182,
+      "lift": 4.4193,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "new_account",
+        "burst_posting",
+        "rating_5"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "support": 0.0974,
+      "confidence": 0.8163,
+      "lift": 4.4092,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "label_fake"
+      ],
+      "consequents": [
+        "new_account",
+        "burst_posting",
+        "rating_5"
+      ],
+      "support": 0.0974,
+      "confidence": 0.5263,
+      "lift": 4.4092,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "short_review"
+      ],
+      "consequents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.0987,
+      "confidence": 1.0,
+      "lift": 4.3904,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "short_review",
+        "rating_5"
+      ],
+      "consequents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.0816,
+      "confidence": 1.0,
+      "lift": 4.3904,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "short_review",
+        "rating_5"
+      ],
+      "consequents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.067,
+      "confidence": 1.0,
+      "lift": 4.3904,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "consequents": [
+        "short_review"
+      ],
+      "support": 0.0987,
+      "confidence": 0.4332,
+      "lift": 4.3904,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "short_review"
+      ],
+      "consequents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.0816,
+      "confidence": 1.0,
+      "lift": 4.3904,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "new_account",
+        "short_review"
+      ],
+      "consequents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.0548,
+      "confidence": 1.0,
+      "lift": 4.3904,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "consequents": [
+        "short_review",
+        "rating_5"
+      ],
+      "support": 0.0816,
+      "confidence": 0.3583,
+      "lift": 4.3904,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "short_review"
+      ],
+      "support": 0.0816,
+      "confidence": 0.3583,
+      "lift": 4.3904,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "new_account"
+      ],
+      "consequents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.1425,
+      "confidence": 0.9915,
+      "lift": 4.3532,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "consequents": [
+        "new_account"
+      ],
+      "support": 0.1425,
+      "confidence": 0.6257,
+      "lift": 4.3532,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "consequents": [
+        "new_account",
+        "rating_5"
+      ],
+      "support": 0.1194,
+      "confidence": 0.5241,
+      "lift": 4.346,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "new_account",
+        "rating_5"
+      ],
+      "consequents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.1194,
+      "confidence": 0.9899,
+      "lift": 4.346,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "new_account"
+      ],
+      "consequents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.1169,
+      "confidence": 0.9897,
+      "lift": 4.3451,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "new_account"
+      ],
+      "support": 0.1169,
+      "confidence": 0.5134,
+      "lift": 4.3451,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "label_fake"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "new_account",
+        "rating_5"
+      ],
+      "support": 0.0987,
+      "confidence": 0.4286,
+      "lift": 4.3439,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "new_account",
+        "rating_5"
+      ],
+      "consequents": [
+        "label_fake"
+      ],
+      "support": 0.0987,
+      "confidence": 1.0,
+      "lift": 4.3439,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "label_fake"
+      ],
+      "consequents": [
+        "new_account",
+        "rating_5"
+      ],
+      "support": 0.1206,
+      "confidence": 0.5238,
+      "lift": 4.3439,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "new_account",
+        "rating_5"
+      ],
+      "consequents": [
+        "label_fake"
+      ],
+      "support": 0.1206,
+      "confidence": 1.0,
+      "lift": 4.3439,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "new_account",
+        "burst_posting",
+        "rating_5"
+      ],
+      "consequents": [
+        "label_fake"
+      ],
+      "support": 0.1194,
+      "confidence": 1.0,
+      "lift": 4.3439,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "short_review",
+        "rating_5"
+      ],
+      "consequents": [
+        "label_fake"
+      ],
+      "support": 0.0816,
+      "confidence": 1.0,
+      "lift": 4.3439,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "unverified_buyer",
+        "short_review",
+        "rating_5"
+      ],
+      "consequents": [
+        "label_fake"
+      ],
+      "support": 0.067,
+      "confidence": 1.0,
+      "lift": 4.3439,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "short_review",
+        "burst_posting",
+        "rating_5"
+      ],
+      "consequents": [
+        "label_fake"
+      ],
+      "support": 0.0816,
+      "confidence": 1.0,
+      "lift": 4.3439,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "label_fake"
+      ],
+      "consequents": [
+        "short_review",
+        "burst_posting"
+      ],
+      "support": 0.0987,
+      "confidence": 0.4286,
+      "lift": 4.3439,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "new_account"
+      ],
+      "consequents": [
+        "label_fake"
+      ],
+      "support": 0.1437,
+      "confidence": 1.0,
+      "lift": 4.3439,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "short_review"
+      ],
+      "consequents": [
+        "label_fake"
+      ],
+      "support": 0.0987,
+      "confidence": 1.0,
+      "lift": 4.3439,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "label_fake"
+      ],
+      "consequents": [
+        "unverified_buyer",
+        "new_account",
+        "burst_posting",
+        "rating_5"
+      ],
+      "support": 0.0974,
+      "confidence": 0.4233,
+      "lift": 4.3439,
+      "is_fake_target": false
+    }
+  ],
+  "top_itemsets": [
+    {
+      "itemset": [
+        "burst_posting"
+      ],
+      "support": 0.8417
+    },
+    {
+      "itemset": [
+        "label_genuine"
+      ],
+      "support": 0.7698
+    },
+    {
+      "itemset": [
+        "mature_account"
+      ],
+      "support": 0.7406
+    },
+    {
+      "itemset": [
+        "label_genuine",
+        "mature_account"
+      ],
+      "support": 0.7406
+    },
+    {
+      "itemset": [
+        "verified_buyer"
+      ],
+      "support": 0.6906
+    },
+    {
+      "itemset": [
+        "label_genuine",
+        "verified_buyer"
+      ],
+      "support": 0.6456
+    },
+    {
+      "itemset": [
+        "verified_buyer",
+        "mature_account"
+      ],
+      "support": 0.62
+    },
+    {
+      "itemset": [
+        "label_genuine",
+        "verified_buyer",
+        "mature_account"
+      ],
+      "support": 0.62
+    },
+    {
+      "itemset": [
+        "label_genuine",
+        "burst_posting"
+      ],
+      "support": 0.6139
+    },
+    {
+      "itemset": [
+        "label_genuine",
+        "mature_account",
+        "burst_posting"
+      ],
+      "support": 0.592
+    },
+    {
+      "itemset": [
+        "mature_account",
+        "burst_posting"
+      ],
+      "support": 0.592
+    },
+    {
+      "itemset": [
+        "verified_buyer",
+        "burst_posting"
+      ],
+      "support": 0.5652
+    },
+    {
+      "itemset": [
+        "label_genuine",
+        "verified_buyer",
+        "burst_posting"
+      ],
+      "support": 0.5201
+    },
+    {
+      "itemset": [
+        "verified_buyer",
+        "mature_account",
+        "burst_posting"
+      ],
+      "support": 0.5018
+    },
+    {
+      "itemset": [
+        "label_genuine",
+        "verified_buyer",
+        "mature_account",
+        "burst_posting"
+      ],
+      "support": 0.5018
+    }
+  ]
+}

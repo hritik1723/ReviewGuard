@@ -1,0 +1,539 @@
+{
+  "requires_metadata": false,
+  "n_states": 2,
+  "state_names": [
+    "Normal Reviewer",
+    "Spammer / Burst"
+  ],
+  "transition_matrix": [
+    [
+      0.88,
+      0.12
+    ],
+    [
+      0.25,
+      0.75
+    ]
+  ],
+  "emission_matrix": [
+    [
+      0.627,
+      0.36,
+      0.009,
+      0.003
+    ],
+    [
+      0.021,
+      0.119,
+      0.104,
+      0.756
+    ]
+  ],
+  "start_probabilities": [
+    0.8,
+    0.2
+  ],
+  "total_users": 236,
+  "user_summaries": [
+    {
+      "user_id": "S012",
+      "review_count": 15,
+      "avg_rating": 4.33,
+      "avg_time_gap": 2.2,
+      "log_likelihood": -16.26,
+      "spam_risk_score": 0.903,
+      "viterbi_spam_steps": 14,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S009",
+      "review_count": 10,
+      "avg_rating": 4.6,
+      "avg_time_gap": 3.3,
+      "log_likelihood": -7.76,
+      "spam_risk_score": 0.905,
+      "viterbi_spam_steps": 9,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S006",
+      "review_count": 10,
+      "avg_rating": 4.5,
+      "avg_time_gap": 3.3,
+      "log_likelihood": -11.53,
+      "spam_risk_score": 0.891,
+      "viterbi_spam_steps": 9,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "U176",
+      "review_count": 10,
+      "avg_rating": 4.0,
+      "avg_time_gap": 60.3,
+      "log_likelihood": -8.15,
+      "spam_risk_score": 0.026,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "S014",
+      "review_count": 9,
+      "avg_rating": 4.56,
+      "avg_time_gap": 3.7,
+      "log_likelihood": -7.19,
+      "spam_risk_score": 0.894,
+      "viterbi_spam_steps": 8,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S001",
+      "review_count": 9,
+      "avg_rating": 4.89,
+      "avg_time_gap": 3.6,
+      "log_likelihood": -9.17,
+      "spam_risk_score": 0.891,
+      "viterbi_spam_steps": 8,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S018",
+      "review_count": 9,
+      "avg_rating": 4.89,
+      "avg_time_gap": 3.7,
+      "log_likelihood": -9.17,
+      "spam_risk_score": 0.891,
+      "viterbi_spam_steps": 8,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S021",
+      "review_count": 9,
+      "avg_rating": 4.89,
+      "avg_time_gap": 3.7,
+      "log_likelihood": -9.17,
+      "spam_risk_score": 0.891,
+      "viterbi_spam_steps": 8,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S016",
+      "review_count": 9,
+      "avg_rating": 4.67,
+      "avg_time_gap": 3.7,
+      "log_likelihood": -13.14,
+      "spam_risk_score": 0.884,
+      "viterbi_spam_steps": 8,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S015",
+      "review_count": 9,
+      "avg_rating": 4.78,
+      "avg_time_gap": 3.7,
+      "log_likelihood": -8.98,
+      "spam_risk_score": 0.882,
+      "viterbi_spam_steps": 8,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S002",
+      "review_count": 8,
+      "avg_rating": 5.0,
+      "avg_time_gap": 4.0,
+      "log_likelihood": -6.62,
+      "spam_risk_score": 0.881,
+      "viterbi_spam_steps": 7,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S003",
+      "review_count": 8,
+      "avg_rating": 5.0,
+      "avg_time_gap": 4.1,
+      "log_likelihood": -6.62,
+      "spam_risk_score": 0.881,
+      "viterbi_spam_steps": 7,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S007",
+      "review_count": 8,
+      "avg_rating": 5.0,
+      "avg_time_gap": 4.1,
+      "log_likelihood": -6.62,
+      "spam_risk_score": 0.881,
+      "viterbi_spam_steps": 7,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S011",
+      "review_count": 8,
+      "avg_rating": 4.88,
+      "avg_time_gap": 4.1,
+      "log_likelihood": -8.61,
+      "spam_risk_score": 0.877,
+      "viterbi_spam_steps": 7,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S013",
+      "review_count": 8,
+      "avg_rating": 4.25,
+      "avg_time_gap": 4.1,
+      "log_likelihood": -10.56,
+      "spam_risk_score": 0.874,
+      "viterbi_spam_steps": 7,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S008",
+      "review_count": 7,
+      "avg_rating": 5.0,
+      "avg_time_gap": 4.7,
+      "log_likelihood": -6.06,
+      "spam_risk_score": 0.864,
+      "viterbi_spam_steps": 6,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S010",
+      "review_count": 7,
+      "avg_rating": 5.0,
+      "avg_time_gap": 4.7,
+      "log_likelihood": -6.06,
+      "spam_risk_score": 0.864,
+      "viterbi_spam_steps": 6,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S019",
+      "review_count": 7,
+      "avg_rating": 5.0,
+      "avg_time_gap": 4.7,
+      "log_likelihood": -6.06,
+      "spam_risk_score": 0.864,
+      "viterbi_spam_steps": 6,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S024",
+      "review_count": 7,
+      "avg_rating": 4.86,
+      "avg_time_gap": 4.7,
+      "log_likelihood": -8.04,
+      "spam_risk_score": 0.86,
+      "viterbi_spam_steps": 6,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S020",
+      "review_count": 7,
+      "avg_rating": 4.71,
+      "avg_time_gap": 4.7,
+      "log_likelihood": -9.94,
+      "spam_risk_score": 0.818,
+      "viterbi_spam_steps": 6,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "U075",
+      "review_count": 7,
+      "avg_rating": 3.14,
+      "avg_time_gap": 33.9,
+      "log_likelihood": -9.3,
+      "spam_risk_score": 0.152,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U175",
+      "review_count": 7,
+      "avg_rating": 3.29,
+      "avg_time_gap": 93.1,
+      "log_likelihood": -5.87,
+      "spam_risk_score": 0.024,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "S017",
+      "review_count": 6,
+      "avg_rating": 5.0,
+      "avg_time_gap": 5.5,
+      "log_likelihood": -5.49,
+      "spam_risk_score": 0.842,
+      "viterbi_spam_steps": 5,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "S022",
+      "review_count": 6,
+      "avg_rating": 5.0,
+      "avg_time_gap": 5.5,
+      "log_likelihood": -5.49,
+      "spam_risk_score": 0.842,
+      "viterbi_spam_steps": 5,
+      "verdict": "Suspicious Sequence"
+    },
+    {
+      "user_id": "U063",
+      "review_count": 6,
+      "avg_rating": 4.33,
+      "avg_time_gap": 85.5,
+      "log_likelihood": -5.77,
+      "spam_risk_score": 0.038,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U092",
+      "review_count": 6,
+      "avg_rating": 2.83,
+      "avg_time_gap": 94.7,
+      "log_likelihood": -5.78,
+      "spam_risk_score": 0.036,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U137",
+      "review_count": 6,
+      "avg_rating": 3.17,
+      "avg_time_gap": 114.0,
+      "log_likelihood": -5.24,
+      "spam_risk_score": 0.03,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U169",
+      "review_count": 6,
+      "avg_rating": 4.33,
+      "avg_time_gap": 111.7,
+      "log_likelihood": -5.24,
+      "spam_risk_score": 0.03,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U124",
+      "review_count": 6,
+      "avg_rating": 3.83,
+      "avg_time_gap": 82.3,
+      "log_likelihood": -4.72,
+      "spam_risk_score": 0.024,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U191",
+      "review_count": 6,
+      "avg_rating": 3.5,
+      "avg_time_gap": 62.8,
+      "log_likelihood": -4.69,
+      "spam_risk_score": 0.02,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U023",
+      "review_count": 6,
+      "avg_rating": 4.33,
+      "avg_time_gap": 115.3,
+      "log_likelihood": -4.71,
+      "spam_risk_score": 0.019,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U212",
+      "review_count": 5,
+      "avg_rating": 4.4,
+      "avg_time_gap": 25.8,
+      "log_likelihood": -8.23,
+      "spam_risk_score": 0.201,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U089",
+      "review_count": 5,
+      "avg_rating": 3.2,
+      "avg_time_gap": 119.4,
+      "log_likelihood": -7.41,
+      "spam_risk_score": 0.146,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U070",
+      "review_count": 5,
+      "avg_rating": 3.8,
+      "avg_time_gap": 95.6,
+      "log_likelihood": -5.17,
+      "spam_risk_score": 0.048,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U115",
+      "review_count": 5,
+      "avg_rating": 4.8,
+      "avg_time_gap": 68.8,
+      "log_likelihood": -5.17,
+      "spam_risk_score": 0.048,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U128",
+      "review_count": 5,
+      "avg_rating": 3.8,
+      "avg_time_gap": 120.0,
+      "log_likelihood": -4.67,
+      "spam_risk_score": 0.039,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U084",
+      "review_count": 5,
+      "avg_rating": 4.4,
+      "avg_time_gap": 126.0,
+      "log_likelihood": -4.64,
+      "spam_risk_score": 0.037,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U060",
+      "review_count": 5,
+      "avg_rating": 4.6,
+      "avg_time_gap": 90.2,
+      "log_likelihood": -4.65,
+      "spam_risk_score": 0.036,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U146",
+      "review_count": 5,
+      "avg_rating": 4.6,
+      "avg_time_gap": 95.0,
+      "log_likelihood": -4.64,
+      "spam_risk_score": 0.032,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U168",
+      "review_count": 5,
+      "avg_rating": 4.2,
+      "avg_time_gap": 105.2,
+      "log_likelihood": -4.13,
+      "spam_risk_score": 0.031,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U010",
+      "review_count": 5,
+      "avg_rating": 3.0,
+      "avg_time_gap": 118.2,
+      "log_likelihood": -4.13,
+      "spam_risk_score": 0.028,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U049",
+      "review_count": 5,
+      "avg_rating": 2.6,
+      "avg_time_gap": 134.2,
+      "log_likelihood": -4.13,
+      "spam_risk_score": 0.028,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U067",
+      "review_count": 5,
+      "avg_rating": 2.8,
+      "avg_time_gap": 104.4,
+      "log_likelihood": -4.13,
+      "spam_risk_score": 0.028,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U122",
+      "review_count": 5,
+      "avg_rating": 4.2,
+      "avg_time_gap": 64.6,
+      "log_likelihood": -4.13,
+      "spam_risk_score": 0.028,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U157",
+      "review_count": 5,
+      "avg_rating": 4.0,
+      "avg_time_gap": 141.0,
+      "log_likelihood": -4.13,
+      "spam_risk_score": 0.028,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U025",
+      "review_count": 5,
+      "avg_rating": 4.2,
+      "avg_time_gap": 68.8,
+      "log_likelihood": -4.1,
+      "spam_risk_score": 0.027,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U194",
+      "review_count": 5,
+      "avg_rating": 4.4,
+      "avg_time_gap": 68.8,
+      "log_likelihood": -4.11,
+      "spam_risk_score": 0.022,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U056",
+      "review_count": 5,
+      "avg_rating": 3.2,
+      "avg_time_gap": 124.0,
+      "log_likelihood": -3.6,
+      "spam_risk_score": 0.014,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U079",
+      "review_count": 5,
+      "avg_rating": 3.8,
+      "avg_time_gap": 97.0,
+      "log_likelihood": -3.6,
+      "spam_risk_score": 0.014,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    },
+    {
+      "user_id": "U141",
+      "review_count": 5,
+      "avg_rating": 3.8,
+      "avg_time_gap": 123.6,
+      "log_likelihood": -3.6,
+      "spam_risk_score": 0.014,
+      "viterbi_spam_steps": 0,
+      "verdict": "Normal Sequence"
+    }
+  ]
+}

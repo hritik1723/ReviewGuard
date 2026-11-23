@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary":"#ffffff","surface-dim":"#d9dadc","tertiary-fixed":"#dce2f3","outline":"#777587","on-secondary-container":"#5c6274","inverse-surface":"#2e3132","surface-container-highest":"#e1e2e4","error":"#ba1a1a","on-secondary-fixed":"#141b2b","primary-fixed-dim":"#c3c0ff","secondary-fixed-dim":"#c0c6db","surface-bright":"#f8f9fb","tertiary-fixed-dim":"#c0c7d6","primary-fixed":"#e2dfff","on-error":"#ffffff","primary":"#3525cd","outline-variant":"#c7c4d8","secondary":"#575e70","on-primary":"#ffffff","background":"#f8f9fb","on-secondary-fixed-variant":"#404758","surface-container":"#edeef0","primary-container":"#4f46e5","on-tertiary-container":"#d4dbeb","on-surface":"#191c1e","tertiary-container":"#59606e","inverse-primary":"#c3c0ff","surface-container-low":"#f2f4f6","surface-container-lowest":"#ffffff","on-secondary":"#ffffff","tertiary":"#414855","error-container":"#ffdad6","on-error-container":"#93000a","secondary-fixed":"#dce2f7","surface-variant":"#e1e2e4","on-tertiary-fixed-variant":"#404754","on-tertiary-fixed":"#151c27","surface-tint":"#4d44e3","surface-container-high":"#e7e8ea","inverse-on-surface":"#f0f1f3","on-primary-container":"#dad7ff","on-primary-fixed-variant":"#3323cc","on-surface-variant":"#464555","on-background":"#191c1e","surface":"#f8f9fb","on-primary-fixed":"#0f0069","secondary-container":"#d9dff5"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"2rem","gutter":"1.25rem","margin":"2rem","space-sm":"0.5rem","space-xs":"0.25rem","space-md":"0.75rem","space-lg":"1.25rem"},fontFamily:{"headline-md":["Inter"],"metric-display":["Inter"],"headline-xl":["Inter"],"headline-sm":["Inter"],"body-md":["Inter"],"label-xs":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"label-md":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"]},fontSize:{"headline-md":["18px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"metric-display":["28px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-sm":["15px",{lineHeight:"22px",letterSpacing:"-0.005em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"label-xs":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0.005em",fontWeight:"400"}],"label-md":["13px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.015em",fontWeight:"500"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-60 bg-surface-container-lowest border-r border-surface-container-highest z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-4 flex items-center justify-between border-b border-surface-container-highest"><div class="flex items-center gap-2"><img alt="ReviewGuard Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAxT2JMgD7_xUkgvs3o5N8-stEFwjX2jSqwqde7wbVV6fFI_CzUml6pk8ZzGpUsFsMSLUZjHBp0Mq0KH0-OGpexVhm3BgE5hBHA_2WRKPZK0j5S6AbX3_RYRyVqvooJxR3vf8saDKuISi0oCkq_CMKqSiLThrKAAisvJ0xbn3fdDu59NJYFehKI_2K4d0O4t9sI07TH_BBaSHmybBKVa7qhYZjTKD8WKzhc6d7ftA0A"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">ReviewGuard</span></div><span class="font-label-xs text-label-xs bg-surface-container text-secondary px-1.5 py-0.5 rounded border border-surface-container-highest">v1.4</span></div><nav class="flex-1 px-3 py-3 space-y-0.5 overflow-y-auto" data-active-classes="bg-surface-container text-on-surface font-headline-sm"><a class="flex items-center gap-3 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="font-label-md text-label-md">Overview</span></a><a aria-current="page" class="flex items-center gap-3 px-2.5 py-1.5 rounded-lg transition-colors bg-surface-container text-on-surface font-headline-sm" data-path="dataset-explorer" href="#"><span class="material-symbols-outlined text-[18px]">table_chart</span><span class="font-label-md text-label-md">Dataset Explorer</span></a><a class="flex items-center gap-3 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="preprocessing-and-features" href="#"><span class="material-symbols-outlined text-[18px]">tune</span><span class="font-label-md text-label-md">Preprocessing & Features</span></a><a class="flex items-center gap-3 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="model-training" href="#"><span class="material-symbols-outlined text-[18px]">memory</span><span class="font-label-md text-label-md">Model Training</span></a><a class="flex items-center gap-3 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="model-evaluation" href="#"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-label-md text-label-md">Model Evaluation</span></a><a class="flex items-center gap-3 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="ensemble-learning" href="#"><span class="material-symbols-outlined text-[18px]">layers</span><span class="font-label-md text-label-md">Ensemble Learning</span></a><a class="flex items-center gap-3 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reviewer-clustering" href="#"><span class="material-symbols-outlined text-[18px]">hub</span><span class="font-label-md text-label-md">Reviewer Clustering</span></a><a class="flex items-center gap-3 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="pattern-mining" href="#"><span class="material-symbols-outlined text-[18px]">scatter_plot</span><span class="font-label-md text-label-md">Pattern Mining</span></a><a class="flex items-center gap-3 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="sequence-analysis" href="#"><span class="material-symbols-outlined text-[18px]">timeline</span><span class="font-label-md text-label-md">Sequence Analysis</span></a><a class="flex items-center gap-3 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="live-review-checker" href="#"><span class="material-symbols-outlined text-[18px]">shield_with_heart</span><span class="font-label-md text-label-md">Live Review Checker</span></a></nav></div><div class="p-3 border-t border-surface-container-highest space-y-2 bg-surface-container-lowest"><div class="p-2.5 rounded-lg bg-surface-container-low border border-surface-container-highest"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span class="font-label-xs text-label-xs text-on-surface font-semibold">Models Active</span></div><p class="font-label-xs text-label-xs text-secondary mt-1 truncate">Python 3.11 / Scikit-Learn</p></div><div class="flex items-center justify-between px-1 pt-1 text-secondary"><a class="font-label-xs text-label-xs hover:text-on-surface transition-colors" href="#">Documentation</a><span class="font-label-xs text-label-xs text-outline-variant">•</span><a class="font-label-xs text-label-xs hover:text-on-surface transition-colors" href="#">API</a><button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" title="Toggle Collapse" type="button"><span class="material-symbols-outlined text-[16px]">dock_to_right</span></button></div></div></aside><div class="pl-60 min-h-screen flex flex-col"><header class="fixed top-0 left-60 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-surface-container-highest z-40 px-6 flex items-center justify-between"><div class="flex items-center gap-4"><div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary"><span class="hover:text-on-surface cursor-pointer">Platform</span><span class="text-outline-variant">/</span><span class="text-on-surface font-medium">Intelligence Core</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-2.5 text-[16px] text-secondary">search</span><input class="h-9 w-64 pl-8 pr-12 rounded-lg bg-surface-container-low border border-surface-container-highest font-body-sm text-body-sm text-on-surface placeholder:text-secondary focus:outline-none focus:border-primary-container focus:bg-surface-container-lowest transition-all" placeholder="Search reviews, features, runs..." type="text"/><div class="absolute right-2 px-1.5 py-0.5 rounded bg-surface-container text-secondary font-label-xs text-label-xs border border-surface-container-highest">⌘K</div></div></div><div class="flex items-center gap-3"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-surface-container-highest bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer text-on-surface"><span class="material-symbols-outlined text-[16px] text-secondary">dataset</span><span class="font-label-sm text-label-sm">Amazon Reviews 2024 (120k samples)</span><span class="material-symbols-outlined text-[16px] text-secondary">arrow_drop_down</span></div><div class="h-4 w-px bg-surface-container-highest"></div><button class="relative p-2 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary-container"></span></button><button class="p-2 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><div class="flex items-center gap-2 pl-2"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT34qbZ3AelduIRrKL--aOqBjxWdlMicc1xoCyNAO2vmrP1zbuymQnsuBktn_xBQ6w1Le_BOPe0U3I1r2sIeiBjYgiigc5Fs1dlU3gVf5iA1PC01CroOAK76HrLGZT2oaL0jhFs4u46vMRi1u4REe21FAVkyUJL9LJyFi8jPFuaxiMZ-JDu5NPQYZcCVBJtPS93UHQ8ISFB0PLaSCvmrOytMUz0Am5np6Hf_4K7xE"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-surface-container-lowest"></span></div></div></div></header><main class="relative pt-16 bg-surface flex-1 w-full px-8 py-8"><div class="flex flex-col w-full max-w-[1440px] mx-auto space-y-6">
+<!-- Page Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-xs text-label-xs text-primary-container bg-secondary-container px-2 py-0.5 rounded-full font-semibold">Corpus Audit Mode</span>
+<span class="font-label-xs text-label-xs text-secondary">• Clean partition (v2.4)</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Dataset Explorer</h1>
+<p class="font-body-md text-body-md text-secondary mt-1">Explore raw corpus distributions, review metadata, class balance, and abnormal reviewer outliers.</p>
+</div>
+<div class="flex items-center gap-3">
+<!-- Dataset Selector -->
+<div class="relative">
+<button class="h-9 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-colors flex items-center gap-2" id="datasetSelectorBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">database</span>
+<span>Amazon Electronics 2024 <span class="text-secondary">(50,000 samples)</span></span>
+<span class="material-symbols-outlined text-[16px] text-secondary">expand_more</span>
+</button>
+</div>
+<!-- Action Button -->
+<button class="h-9 px-4 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+<span>Import Dataset</span>
+</button>
+</div>
+</div>
+<!-- Ingestion & Pre-built Benchmark Row -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+<!-- Dropzone -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">cloud_upload</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Data Partition Ingestion</span>
+</div>
+<span class="font-label-xs text-label-xs text-secondary bg-surface-container px-2 py-0.5 rounded">UTF-8 • RFC 4180</span>
+</div>
+<div class="bg-surface-container-low/70 rounded-lg p-6 flex flex-col items-center justify-center text-center transition-all cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm text-primary mb-2">
+<span class="material-symbols-outlined text-[22px]">add</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface">Drop CSV, JSONL or Parquet file here</p>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">Maximum file size 500MB • Auto-detect schema & tokenize text</p>
+</div>
+<div class="flex items-center justify-between text-secondary mt-3 pt-3 bg-surface-container-low/40 -mx-5 -mb-5 px-5 py-2.5">
+<div class="flex items-center gap-3 font-label-xs text-label-xs">
+<span>Supported encodings: UTF-8, Latin-1</span>
+<span>•</span>
+<span>Batch streaming ready</span>
+</div>
+<span class="font-label-xs text-label-xs text-primary-container font-semibold cursor-pointer hover:underline">Download Scikit format template</span>
+</div>
+</div>
+<!-- Quick Benchmarks Panel -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Reference Corpora</span>
+<span class="font-label-xs text-label-xs text-secondary">Verified sets</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-3.5">Load standardized validation sets for model baseline calibrations:</p>
+<div class="space-y-2">
+<div class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between cursor-pointer group">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface truncate group-hover:text-primary transition-colors">Amazon Products (Cleaned)</p>
+<p class="font-label-xs text-label-xs text-secondary">50,000 rows • 17.6% fake ratio</p>
+</div>
+</div>
+<span class="font-label-xs text-label-xs bg-surface-container-lowest px-2 py-1 rounded text-on-surface shadow-sm">Active</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center justify-between cursor-pointer group shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:text-on-surface">restaurant</span>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface truncate group-hover:text-primary transition-colors">Yelp Restaurant Reviews</p>
+<p class="font-label-xs text-label-xs text-secondary">35,000 rows • 13.2% fake ratio</p>
+</div>
+</div>
+<button class="font-label-xs text-label-xs text-secondary group-hover:text-primary transition-colors flex items-center gap-0.5" type="button">
+              Load <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center justify-between cursor-pointer group shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:text-on-surface">shopping_cart</span>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface truncate group-hover:text-primary transition-colors">Trustpilot E-comm 2023</p>
+<p class="font-label-xs text-label-xs text-secondary">20,000 rows • 22.8% fake ratio</p>
+</div>
+</div>
+<button class="font-label-xs text-label-xs text-secondary group-hover:text-primary transition-colors flex items-center gap-0.5" type="button">
+              Load <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pt-2">
+<a class="font-label-xs text-label-xs text-secondary hover:text-on-surface flex items-center justify-between" href="#">
+<span>Compare corpus statistics against HuggingFace hub</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- EDA 4-Card Metric Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+<!-- Card 1: Class Distribution -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs uppercase tracking-wider text-secondary">Class Balance</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">balance</span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-metric-display text-metric-display text-on-surface tracking-tight">4.68:1</span>
+<span class="font-label-xs text-label-xs text-secondary">Imbalance Ratio</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-3">Strong majority genuine class distribution requiring SMOTE or class-weight adjustment.</p>
+</div>
+<div class="space-y-2">
+<!-- Progress Bar -->
+<div class="w-full h-3 rounded-full bg-surface-container flex overflow-hidden">
+<div class="bg-primary-container h-full transition-all" style="width: 82.4%" title="Genuine: 82.4%"></div>
+<div class="bg-error h-full transition-all" style="width: 17.6%" title="Fake: 17.6%"></div>
+</div>
+<div class="flex items-center justify-between font-label-xs text-label-xs pt-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="text-on-surface">Genuine: 41,200 (82.4%)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="text-on-surface">Fake: 8,800 (17.6%)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Rating Distribution Histogram with Polarity Overlay -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs uppercase tracking-wider text-secondary">Rating Polarity</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">star_half</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-metric-display text-metric-display text-on-surface tracking-tight">Bi-modal</span>
+<span class="font-label-xs text-label-xs text-error font-medium">Bimodal Fake Spike</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-2">Extreme 1★ and 5★ clustering in synthetic/promotional reviews.</p>
+</div>
+<!-- Histogram SVG -->
+<div class="h-24 w-full flex items-end justify-between gap-2 pt-2 px-1">
+<!-- 1 Star -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full flex flex-col items-center justify-end h-full">
+<div class="w-full bg-error rounded-t-sm" style="height: 68%" title="Fake: 68% of 1★"></div>
+<div class="w-full bg-surface-container" style="height: 24%" title="Genuine 1★"></div>
+</div>
+<span class="font-label-xs text-label-xs text-secondary">1★</span>
+</div>
+<!-- 2 Star -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full flex flex-col items-center justify-end h-full">
+<div class="w-full bg-error rounded-t-sm" style="height: 12%" title="Fake"></div>
+<div class="w-full bg-surface-container" style="height: 28%" title="Genuine"></div>
+</div>
+<span class="font-label-xs text-label-xs text-secondary">2★</span>
+</div>
+<!-- 3 Star -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full flex flex-col items-center justify-end h-full">
+<div class="w-full bg-error rounded-t-sm" style="height: 8%" title="Fake"></div>
+<div class="w-full bg-surface-container" style="height: 42%" title="Genuine"></div>
+</div>
+<span class="font-label-xs text-label-xs text-secondary">3★</span>
+</div>
+<!-- 4 Star -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full flex flex-col items-center justify-end h-full">
+<div class="w-full bg-error rounded-t-sm" style="height: 14%" title="Fake"></div>
+<div class="w-full bg-surface-container" style="height: 56%" title="Genuine"></div>
+</div>
+<span class="font-label-xs text-label-xs text-secondary">4★</span>
+</div>
+<!-- 5 Star -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full flex flex-col items-center justify-end h-full">
+<div class="w-full bg-error rounded-t-sm" style="height: 84%" title="Fake: 84% of 5★"></div>
+<div class="w-full bg-surface-container" style="height: 70%" title="Genuine 5★"></div>
+</div>
+<span class="font-label-xs text-label-xs text-secondary">5★</span>
+</div>
+</div>
+<div class="flex justify-between font-label-xs text-label-xs text-secondary pt-2">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-surface-container"></span> Genuine</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-error"></span> Fake Overlap</span>
+</div>
+</div>
+<!-- Card 3: Review Length Distribution -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs uppercase tracking-wider text-secondary">Word Count Density</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">format_align_left</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-metric-display text-metric-display text-on-surface tracking-tight">38 <span class="text-label-sm font-normal text-secondary">vs</span> 124</span>
+<span class="font-label-xs text-label-xs text-secondary">Median Words</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-2">Fake reviews exhibit truncated phrasing and reduced linguistic complexity.</p>
+</div>
+<!-- Density SVG curves -->
+<div class="h-24 w-full relative flex items-center">
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 200 80">
+<!-- Genuine curve (broader, centered around 124) -->
+<path d="M 0,75 Q 40,74 70,55 T 120,20 T 150,45 T 200,75" fill="none" opacity="0.85" stroke="#4f46e5" stroke-width="2"></path>
+<!-- Fake curve (steep peak near 38) -->
+<path d="M 0,75 Q 25,60 40,10 T 65,65 T 120,74 T 200,75" fill="none" stroke="#ba1a1a" stroke-width="2"></path>
+<!-- Guideline markers -->
+<line opacity="0.6" stroke="#ba1a1a" stroke-dasharray="2 2" stroke-width="1" x1="40" x2="40" y1="10" y2="75"></line>
+<line opacity="0.6" stroke="#4f46e5" stroke-dasharray="2 2" stroke-width="1" x1="120" x2="120" y1="20" y2="75"></line>
+</svg>
+</div>
+<div class="flex justify-between font-label-xs text-label-xs pt-1">
+<span class="text-error font-medium">Fake peak: 38 words</span>
+<span class="text-primary-container font-medium">Genuine peak: 124 words</span>
+</div>
+</div>
+<!-- Card 4: Schema Health & Integrity -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs uppercase tracking-wider text-secondary">Integrity & Hygiene</span>
+<span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-metric-display text-metric-display text-on-surface tracking-tight">99.96%</span>
+<span class="font-label-xs text-label-xs text-emerald-600 font-medium">Production Ready</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-3">Pre-ingestion normalization passed without missing target labels.</p>
+</div>
+<div class="space-y-2 pt-1 font-body-sm text-body-sm">
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-2 rounded">
+<span class="font-label-xs text-label-xs text-secondary">Missing Target Labels</span>
+<span class="font-label-xs text-label-xs font-semibold text-emerald-700">0 (0.00%)</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-2 rounded">
+<span class="font-label-xs text-label-xs text-secondary">Null Reviewer Hashes</span>
+<span class="font-label-xs text-label-xs font-semibold text-amber-700">20 (0.04%)</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-2 rounded">
+<span class="font-label-xs text-label-xs text-secondary">Schema Constraints</span>
+<span class="font-label-xs text-label-xs font-semibold text-on-surface">12/12 Fields Valid</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Outlier & Behavioral Anomaly Detection Panel -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">scatter_plot</span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Outlier & Behavioral Anomaly Distribution</h2>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">Posting velocity against average rating deviation from product mean. Highlights high-confidence sybil reviewer clusters.</p>
+</div>
+<!-- Legend & Threshold controls -->
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-3 font-label-xs text-label-xs text-secondary">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span> Standard Reviewers</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-error"></span> Anomaly (z-score > 3.0)</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> Suspect Velocity</span>
+</div>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+<div class="flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1 rounded-lg">
+<span class="font-label-xs text-label-xs text-secondary font-medium">Z-Score Cutoff:</span>
+<span class="font-label-xs text-label-xs text-on-surface font-semibold">> 3.0 σ</span>
+</div>
+</div>
+</div>
+<!-- 2D Scatter Plot Canvas Container -->
+<div class="relative w-full h-[320px] bg-surface-container-low/60 rounded-xl overflow-hidden p-6 flex flex-col justify-between">
+<!-- Axis Labels -->
+<div class="absolute top-3 left-4 font-label-xs text-label-xs text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+        Rating Deviation from Product Consensus (|Δ★|)
+      </div>
+<div class="absolute bottom-2 right-4 font-label-xs text-label-xs text-secondary flex items-center gap-1">
+        Review Frequency (Reviews / 24h Window)
+        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+<!-- Plot Grid & Data Elements -->
+<svg class="w-full h-full" fill="none" viewbox="0 0 900 240">
+<!-- Grid horizontal lines -->
+<line stroke="#E5E7EB" stroke-dasharray="3 3" stroke-width="1" x1="40" x2="880" y1="40" y2="40"></line>
+<line stroke="#E5E7EB" stroke-dasharray="3 3" stroke-width="1" x1="40" x2="880" y1="100" y2="100"></line>
+<line stroke="#E5E7EB" stroke-dasharray="3 3" stroke-width="1" x1="40" x2="880" y1="160" y2="160"></line>
+<line stroke="#C7C4D8" stroke-width="1.5" x1="40" x2="880" y1="210" y2="210"></line>
+<!-- Vertical grid lines -->
+<line stroke="#E5E7EB" stroke-dasharray="3 3" stroke-width="1" x1="200" x2="200" y1="20" y2="210"></line>
+<line stroke="#E5E7EB" stroke-dasharray="3 3" stroke-width="1" x1="420" x2="420" y1="20" y2="210"></line>
+<line stroke="#E5E7EB" stroke-dasharray="3 3" stroke-width="1" x1="650" x2="650" y1="20" y2="210"></line>
+<line stroke="#C7C4D8" stroke-width="1.5" x1="40" x2="40" y1="20" y2="210"></line>
+<!-- Anomaly Threshold Shading Zone -->
+<rect fill="#FEF2F2" fill-opacity="0.5" height="110" rx="6" width="300" x="580" y="20"></rect>
+<text fill="#DC2626" font-family="Inter" font-size="10" font-weight="600" x="590" y="38">CRITICAL BURST ZONE (z > 3.2)</text>
+<!-- Dense Normal Reviewers Cloud (Subtle Gray Dots) -->
+<circle cx="80" cy="190" fill="#C0C6DB" opacity="0.6" r="3.5"></circle>
+<circle cx="95" cy="185" fill="#C0C6DB" opacity="0.7" r="4"></circle>
+<circle cx="110" cy="195" fill="#C0C6DB" opacity="0.5" r="3"></circle>
+<circle cx="130" cy="180" fill="#C0C6DB" opacity="0.8" r="3.5"></circle>
+<circle cx="140" cy="192" fill="#C0C6DB" opacity="0.5" r="3"></circle>
+<circle cx="160" cy="170" fill="#C0C6DB" opacity="0.7" r="4"></circle>
+<circle cx="175" cy="185" fill="#C0C6DB" opacity="0.6" r="3"></circle>
+<circle cx="190" cy="160" fill="#C0C6DB" opacity="0.7" r="3.5"></circle>
+<circle cx="210" cy="175" fill="#C0C6DB" opacity="0.8" r="4"></circle>
+<circle cx="230" cy="180" fill="#C0C6DB" opacity="0.5" r="3"></circle>
+<circle cx="250" cy="165" fill="#C0C6DB" opacity="0.6" r="4"></circle>
+<circle cx="270" cy="150" fill="#C0C6DB" opacity="0.7" r="3.5"></circle>
+<circle cx="290" cy="170" fill="#C0C6DB" opacity="0.5" r="3"></circle>
+<circle cx="310" cy="160" fill="#C0C6DB" opacity="0.7" r="4"></circle>
+<circle cx="330" cy="140" fill="#C0C6DB" opacity="0.6" r="3.5"></circle>
+<circle cx="360" cy="155" fill="#C0C6DB" opacity="0.6" r="3.5"></circle>
+<circle cx="380" cy="165" fill="#C0C6DB" opacity="0.5" r="3"></circle>
+<circle cx="410" cy="145" fill="#C0C6DB" opacity="0.7" r="4"></circle>
+<!-- Moderate Suspicion (Amber dots) -->
+<circle cx="480" cy="115" fill="#D97706" opacity="0.9" r="5"></circle>
+<circle cx="510" cy="130" fill="#D97706" opacity="0.9" r="5"></circle>
+<circle cx="530" cy="95" fill="#D97706" opacity="0.9" r="5"></circle>
+<!-- Outlier 1 (Top Right Critical Sybil) -->
+<g class="cursor-pointer group">
+<circle cx="760" cy="45" fill="#DC2626" r="7"></circle>
+<circle cx="760" cy="45" opacity="0.7" r="12" stroke="#DC2626" stroke-dasharray="2 2" stroke-width="1.5"></circle>
+<rect fill="#1E293B" height="24" rx="4" width="115" x="772" y="32"></rect>
+<text fill="#FFFFFF" font-family="Inter" font-size="10" font-weight="600" x="778" y="48">usr_8892f • z=4.12</text>
+</g>
+<!-- Outlier 2 -->
+<g class="cursor-pointer group">
+<circle cx="680" cy="65" fill="#DC2626" r="6.5"></circle>
+<rect fill="#1E293B" height="24" rx="4" width="110" x="692" y="52"></rect>
+<text fill="#FFFFFF" font-family="Inter" font-size="10" font-weight="600" x="698" y="68">usr_4401a • z=3.65</text>
+</g>
+<!-- Outlier 3 -->
+<g class="cursor-pointer group">
+<circle cx="820" cy="80" fill="#DC2626" r="6.5"></circle>
+<rect fill="#1E293B" height="24" rx="4" width="115" x="735" y="88"></rect>
+<text fill="#FFFFFF" font-family="Inter" font-size="10" font-weight="600" x="742" y="104">usr_9021c • z=3.89</text>
+</g>
+<!-- Outlier 4 (Velocity burst with neutral rating) -->
+<g class="cursor-pointer group">
+<circle cx="620" cy="78" fill="#D97706" r="6"></circle>
+<rect fill="#1E293B" height="24" rx="4" width="110" x="580" y="95"></rect>
+<text fill="#FFFFFF" font-family="Inter" font-size="10" font-weight="600" x="586" y="111">usr_1219e • z=3.14</text>
+</g>
+</svg>
+<!-- Bottom meta bar in plot -->
+<div class="flex items-center justify-between font-label-xs text-label-xs text-secondary z-10">
+<span>Displaying random sampling of 1,200 entities from partition</span>
+<button class="text-primary font-semibold hover:underline flex items-center gap-1" type="button">
+          Export flagged reviewer IDs (.csv)
+          <span class="material-symbols-outlined text-[14px]">download</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Dataset Preview Data Table Section -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Filter & Search Toolbar -->
+<div class="p-4 bg-surface-container-lowest flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<!-- Search Input -->
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-secondary">search</span>
+<input class="h-9 w-full pl-9 pr-4 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest transition-all" id="tableSearchInput" placeholder="Filter review content, reviewer hash, or ASIN..." type="text"/>
+</div>
+<!-- Filter Controls -->
+<div class="flex flex-wrap items-center gap-2.5">
+<!-- Star Rating Filter -->
+<div class="relative">
+<select class="h-9 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm focus:outline-none cursor-pointer appearance-none pr-8" id="ratingFilter">
+<option value="all">Rating: All Stars (1★ - 5★)</option>
+<option value="5">5 Stars only</option>
+<option value="4">4 Stars only</option>
+<option value="3">3 Stars only</option>
+<option value="2">2 Stars only</option>
+<option value="1">1 Star only</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[16px] text-secondary pointer-events-none">expand_more</span>
+</div>
+<!-- Class Filter Segmented Controls -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg">
+<button class="class-filter-btn px-2.5 py-1 rounded text-label-xs font-label-xs bg-surface-container-lowest text-on-surface shadow-sm font-semibold transition-colors" data-label="all" type="button">All (50k)</button>
+<button class="class-filter-btn px-2.5 py-1 rounded text-label-xs font-label-xs text-secondary hover:text-on-surface transition-colors" data-label="genuine" type="button">Genuine (41.2k)</button>
+<button class="class-filter-btn px-2.5 py-1 rounded text-label-xs font-label-xs text-secondary hover:text-on-surface transition-colors" data-label="fake" type="button">Fake (8.8k)</button>
+</div>
+<!-- Sort Select -->
+<div class="relative">
+<select class="h-9 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm focus:outline-none cursor-pointer appearance-none pr-8">
+<option>Sort: Date (Newest First)</option>
+<option>Sort: Date (Oldest First)</option>
+<option>Sort: Word Count (High to Low)</option>
+<option>Sort: Word Count (Low to High)</option>
+<option>Sort: Anomaly Score</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[16px] text-secondary pointer-events-none">sort</span>
+</div>
+<button class="h-9 px-2.5 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface transition-colors flex items-center justify-center" title="Reset Filters" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left text-on-surface font-body-sm text-body-sm">
+<thead class="bg-surface-container-low font-label-xs text-label-xs text-secondary uppercase tracking-wider sticky top-0 z-10 select-none">
+<tr>
+<th class="py-3 px-4 w-16" scope="col">ID</th>
+<th class="py-3 px-4 min-w-[320px]" scope="col">Review Text Preview</th>
+<th class="py-3 px-3 text-center w-24" scope="col">Rating</th>
+<th class="py-3 px-3 w-32" scope="col">Reviewer ID</th>
+<th class="py-3 px-3 text-right w-24" scope="col">Length</th>
+<th class="py-3 px-3 text-center w-28" scope="col">Verified</th>
+<th class="py-3 px-3 w-32" scope="col">Timestamp</th>
+<th class="py-3 px-4 text-center w-28" scope="col">Classification</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="reviewsTableBody">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 font-mono font-label-xs text-label-xs text-secondary">#00941</td>
+<td class="py-3 px-4">
+<div class="line-clamp-1 text-on-surface group-hover:text-primary font-medium transition-colors">
+                AMAZING PRODUCT!!! Best purchase ever made on this entire platform, five stars recommend to everybody!!!
+              </div>
+<div class="font-label-xs text-label-xs text-secondary mt-0.5">ASIN: B08N5WRWNW • Electronics > Audio</div>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-0.5 text-amber-500 font-label-sm text-label-sm font-semibold">
+                5 <span class="material-symbols-outlined text-[14px]">star</span>
+</span>
+</td>
+<td class="py-3 px-3">
+<span class="font-mono font-label-xs text-label-xs bg-surface-container px-1.5 py-0.5 rounded text-on-surface">usr_8892f</span>
+</td>
+<td class="py-3 px-3 text-right font-mono font-label-sm text-label-sm text-on-surface">
+              14 words
+            </td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-xs text-label-xs bg-surface-container text-secondary">
+                No
+              </span>
+</td>
+<td class="py-3 px-3 font-label-xs text-label-xs text-secondary">
+              2024-03-12 14:22
+            </td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-xs text-label-xs bg-error-container text-on-error-container font-semibold">
+                ● Fake
+              </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 font-mono font-label-xs text-label-xs text-secondary">#00942</td>
+<td class="py-3 px-4">
+<div class="line-clamp-1 text-on-surface group-hover:text-primary font-medium transition-colors">
+                Battery life lasts around 14 hours with ANC enabled. Soundstage is punchy on bass notes though mids feel slightly muted in acoustic tracks.
+              </div>
+<div class="font-label-xs text-label-xs text-secondary mt-0.5">ASIN: B08N5WRWNW • Electronics > Audio</div>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-0.5 text-amber-500 font-label-sm text-label-sm font-semibold">
+                4 <span class="material-symbols-outlined text-[14px]">star</span>
+</span>
+</td>
+<td class="py-3 px-3">
+<span class="font-mono font-label-xs text-label-xs bg-surface-container px-1.5 py-0.5 rounded text-on-surface">usr_1028b</span>
+</td>
+<td class="py-3 px-3 text-right font-mono font-label-sm text-label-sm text-on-surface">
+              112 words
+            </td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-xs text-label-xs bg-secondary-container text-primary-container font-semibold">
+                Yes
+              </span>
+</td>
+<td class="py-3 px-3 font-label-xs text-label-xs text-secondary">
+              2024-03-12 13:48
+            </td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-xs text-label-xs bg-surface-container text-on-surface font-semibold">
+                ● Genuine
+              </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 font-mono font-label-xs text-label-xs text-secondary">#00943</td>
+<td class="py-3 px-4">
+<div class="line-clamp-1 text-on-surface group-hover:text-primary font-medium transition-colors">
+                Terrible product broke within 2 minutes completely useless seller refuses refund scam stay away do not buy!
+              </div>
+<div class="font-label-xs text-label-xs text-secondary mt-0.5">ASIN: B09B8W1K8P • Electronics > Accessories</div>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-0.5 text-amber-500 font-label-sm text-label-sm font-semibold">
+                1 <span class="material-symbols-outlined text-[14px]">star</span>
+</span>
+</td>
+<td class="py-3 px-3">
+<span class="font-mono font-label-xs text-label-xs bg-surface-container px-1.5 py-0.5 rounded text-on-surface">usr_4401a</span>
+</td>
+<td class="py-3 px-3 text-right font-mono font-label-sm text-label-sm text-on-surface">
+              19 words
+            </td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-xs text-label-xs bg-surface-container text-secondary">
+                No
+              </span>
+</td>
+<td class="py-3 px-3 font-label-xs text-label-xs text-secondary">
+              2024-03-12 12:15
+            </td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-xs text-label-xs bg-error-container text-on-error-container font-semibold">
+                ● Fake
+              </span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 font-mono font-label-xs text-label-xs text-secondary">#00944</td>
+<td class="py-3 px-4">
+<div class="line-clamp-1 text-on-surface group-hover:text-primary font-medium transition-colors">
+                Installed in my secondary rig. Temperatures idle at 34C under liquid AIO and reach 68C under Cinebench 30m torture testing.
+              </div>
+<div class="font-label-xs text-label-xs text-secondary mt-0.5">ASIN: B0815XFS3C • Electronics > Components</div>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-0.5 text-amber-500 font-label-sm text-label-sm font-semibold">
+                5 <span class="material-symbols-outlined text-[14px]">star</span>
+</span>
+</td>
+<td class="py-3 px-3">
+<span class="font-mono font-label-xs text-label-xs bg-surface-container px-1.5 py-0.5 rounded text-on-surface">usr_7739d</span>
+</td>
+<td class="py-3 px-3 text-right font-mono font-label-sm text-label-sm text-on-surface">
+              142 words
+            </td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-xs text-label-xs bg-secondary-container text-primary-container font-semibold">
+                Yes
+              </span>
+</td>
+<td class="py-3 px-3 font-label-xs text-label-xs text-secondary">
+              2024-03-12 11:30
+            </td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-xs text-label-xs bg-surface-container text-on-surface font-semibold">
+                ● Genuine
+              </span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 font-mono font-label-xs text-label-xs text-secondary">#00945</td>
+<td class="py-3 px-4">
+<div class="line-clamp-1 text-on-surface group-hover:text-primary font-medium transition-colors">
+                Great item thanks seller fast delivery.
+              </div>
+<div class="font-label-xs text-label-xs text-secondary mt-0.5">ASIN: B07XJ8C8F5 • Electronics > Cables</div>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-0.5 text-amber-500 font-label-sm text-label-sm font-semibold">
+                5 <span class="material-symbols-outlined text-[14px]">star</span>
+</span>
+</td>
+<td class="py-3 px-3">
+<span class="font-mono font-label-xs text-label-xs bg-surface-container px-1.5 py-0.5 rounded text-on-surface">usr_9021c</span>
+</td>
+<td class="py-3 px-3 text-right font-mono font-label-sm text-label-sm text-on-surface">
+              7 words
+            </td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-xs text-label-xs bg-surface-container text-secondary">
+                No
+              </span>
+</td>
+<td class="py-3 px-3 font-label-xs text-label-xs text-secondary">
+              2024-03-12 10:04
+            </td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-xs text-label-xs bg-error-container text-on-error-container font-semibold">
+                ● Fake
+              </span>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 font-mono font-label-xs text-label-xs text-secondary">#00946</td>
+<td class="py-3 px-4">
+<div class="line-clamp-1 text-on-surface group-hover:text-primary font-medium transition-colors">
+                Cable jacket feels a little stiff in cold weather, but throughput meets USB 3.2 Gen 2 specifications effortlessly with my external NVMe enclosure.
+              </div>
+<div class="font-label-xs text-label-xs text-secondary mt-0.5">ASIN: B07XJ8C8F5 • Electronics > Cables</div>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-0.5 text-amber-500 font-label-sm text-label-sm font-semibold">
+                4 <span class="material-symbols-outlined text-[14px]">star</span>
+</span>
+</td>
+<td class="py-3 px-3">
+<span class="font-mono font-label-xs text-label-xs bg-surface-container px-1.5 py-0.5 rounded text-on-surface">usr_5512x</span>
+</td>
+<td class="py-3 px-3 text-right font-mono font-label-sm text-label-sm text-on-surface">
+              88 words
+            </td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-xs text-label-xs bg-secondary-container text-primary-container font-semibold">
+                Yes
+              </span>
+</td>
+<td class="py-3 px-3 font-label-xs text-label-xs text-secondary">
+              2024-03-12 09:18
+            </td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-xs text-label-xs bg-surface-container text-on-surface font-semibold">
+                ● Genuine
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="p-4 bg-surface-container-low/60 flex flex-col sm:flex-row items-center justify-between gap-4 font-label-sm text-label-sm text-secondary">
+<div class="flex items-center gap-4">
+<span>Showing <strong class="text-on-surface">1 - 6</strong> of <strong class="text-on-surface">50,000</strong> reviews</span>
+<div class="flex items-center gap-1.5">
+<span>Rows per page:</span>
+<select class="bg-surface-container-lowest rounded px-2 py-0.5 text-on-surface font-label-xs text-label-xs focus:outline-none">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+<option>100</option>
+</select>
+</div>
+</div>
+<!-- Pagination Buttons -->
+<div class="flex items-center gap-1">
+<button class="p-1 rounded bg-surface-container-lowest text-secondary hover:text-on-surface disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">keyboard_double_arrow_left</span>
+</button>
+<button class="p-1 rounded bg-surface-container-lowest text-secondary hover:text-on-surface disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-semibold font-label-xs text-label-xs" type="button">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-secondary hover:text-on-surface font-label-xs text-label-xs" type="button">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-secondary hover:text-on-surface font-label-xs text-label-xs" type="button">3</button>
+<span class="px-1 text-secondary">...</span>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-secondary hover:text-on-surface font-label-xs text-label-xs" type="button">5,000</button>
+<button class="p-1 rounded bg-surface-container-lowest text-secondary hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+<button class="p-1 rounded bg-surface-container-lowest text-secondary hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">keyboard_double_arrow_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive script for demo filter reactions -->
+<script>
+    (function initDatasetExplorer() {
+      const classButtons = document.querySelectorAll('.class-filter-btn');
+      const searchInput = document.getElementById('tableSearchInput');
+      const tableRows = document.querySelectorAll('#reviewsTableBody tr');
+
+      // Segmented class filter toggle
+      classButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          classButtons.forEach(b => {
+            b.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm', 'font-semibold');
+            b.classList.add('text-secondary');
+          });
+          btn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm', 'font-semibold');
+          btn.classList.remove('text-secondary');
+
+          const filterVal = btn.getAttribute('data-label');
+          tableRows.forEach(row => {
+            if (filterVal === 'all') {
+              row.style.display = '';
+            } else {
+              const labelCell = row.querySelector('td:last-child').textContent.toLowerCase();
+              if (labelCell.includes(filterVal)) {
+                row.style.display = '';
+              } else {
+                row.style.display = 'none';
+              }
+            }
+          });
+        });
+      });
+
+      // Quick in-table keyword filter
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const query = e.target.value.toLowerCase().trim();
+          tableRows.forEach(row => {
+            const text = row.textContent.toLowerCase();
+            row.style.display = text.includes(query) ? '' : 'none';
+          });
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

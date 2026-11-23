@@ -1,0 +1,702 @@
+[
+  {
+    "id": 101,
+    "text_snippet": "The kettle has worked well over the last six months. Moderate noise level and boil time is...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-23T19:32:11.364411"
+  },
+  {
+    "id": 101,
+    "text_snippet": "MUST BUY THIS RIGHT NOW!! BEST PRODUCT EVER CREATED IN THE ENTIRE WORLD AMAZING MIRACLE!!!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T19:32:11.214424"
+  },
+  {
+    "id": 101,
+    "text_snippet": "This is an absolute miraculous product, best quality ever in the world! Must buy now!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T19:32:06.146754"
+  },
+  {
+    "id": 101,
+    "text_snippet": "No fuss strap on. Captures all the major metrics.",
+    "verdict": "Genuine",
+    "fake_probability": 0.346,
+    "timestamp": "2026-11-23T19:03:10.102579"
+  },
+  {
+    "id": 101,
+    "text_snippet": "Handy for tracking my steps and sleep\n\n\nI like using the Fitbit Inspire 3 to see how many ...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.4114,
+    "timestamp": "2026-11-23T19:02:41.930791"
+  },
+  {
+    "id": 101,
+    "text_snippet": "They fit a little large, or at least they look a little large for my feed, so I think they...",
+    "verdict": "Genuine",
+    "fake_probability": 0.3741,
+    "timestamp": "2026-11-23T13:45:20.531134"
+  },
+  {
+    "id": 101,
+    "text_snippet": "Good shoe for the price. Very comfortable. However, it squeaks a little bit when you first...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.597,
+    "timestamp": "2026-11-23T13:44:56.497999"
+  },
+  {
+    "id": 101,
+    "text_snippet": "Fits a little snug, but I love the texture and color.\n",
+    "verdict": "Suspicious",
+    "fake_probability": 0.455,
+    "timestamp": "2026-11-23T13:44:28.303255"
+  },
+  {
+    "id": 101,
+    "text_snippet": "They fit a little large, or at least they look a little large for my feed, so I think they...",
+    "verdict": "Genuine",
+    "fake_probability": 0.3741,
+    "timestamp": "2026-11-23T13:36:24.918595"
+  },
+  {
+    "id": 101,
+    "text_snippet": "Beautiful shoes great price\n",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-23T13:36:00.211708"
+  },
+  {
+    "id": 101,
+    "text_snippet": "Fits a little snug, but I love the texture and color.\n",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-23T13:34:27.778695"
+  },
+  {
+    "id": 101,
+    "text_snippet": "Good material, very comfortable, I fit just right.\n",
+    "verdict": "Fake",
+    "fake_probability": 0.6392,
+    "timestamp": "2026-11-23T13:32:44.970250"
+  },
+  {
+    "id": 101,
+    "text_snippet": "This track suit is very nice. My intentions were to buy something for my morning walks but...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.54,
+    "timestamp": "2026-11-23T13:32:11.221080"
+  },
+  {
+    "id": 100,
+    "text_snippet": "Got this in a Large for my husband who is 5\u201910\u201d and weighs about 175-180lbs. It fits him p...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.3848,
+    "timestamp": "2026-11-23T13:31:39.073809"
+  },
+  {
+    "id": 99,
+    "text_snippet": "I loved it, just like the photo, the material, the quality, the super good size because it...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.4272,
+    "timestamp": "2026-11-23T13:31:05.266583"
+  },
+  {
+    "id": 98,
+    "text_snippet": "The product it's good but came with a hole on the pants",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-23T13:29:39.058911"
+  },
+  {
+    "id": 97,
+    "text_snippet": "This set looks so good on. The fabric and texture take them up a level. They fit true to s...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.3835,
+    "timestamp": "2026-11-23T13:28:58.452630"
+  },
+  {
+    "id": 96,
+    "text_snippet": "This set looks so good on. The fabric and texture take them up a level. They fit true to s...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.3818,
+    "timestamp": "2026-11-23T13:28:53.382164"
+  },
+  {
+    "id": 95,
+    "text_snippet": "This set looks so good on. The fabric and texture take them up a level. They fit true to s...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.3818,
+    "timestamp": "2026-11-23T13:28:52.661761"
+  },
+  {
+    "id": 94,
+    "text_snippet": "This set looks so good on. The fabric and texture take them up a level. They fit true to s...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.3818,
+    "timestamp": "2026-11-23T13:28:52.141069"
+  },
+  {
+    "id": 93,
+    "text_snippet": "This set looks so good on. The fabric and texture take them up a level. They fit true to s...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.3818,
+    "timestamp": "2026-11-23T13:28:50.169336"
+  },
+  {
+    "id": 92,
+    "text_snippet": "This set looks so good on. The fabric and texture take them up a level. They fit true to s...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.3818,
+    "timestamp": "2026-11-23T13:28:37.408372"
+  },
+  {
+    "id": 91,
+    "text_snippet": "This outfit fits pretty well and appears to be well made (from which we can remove \"appear...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T13:27:44.145596"
+  },
+  {
+    "id": 90,
+    "text_snippet": "Fit my husband great. He said it\u2019s comfy and wants to order more. Looks stylish when he we...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.4681,
+    "timestamp": "2026-11-23T13:26:49.235726"
+  },
+  {
+    "id": 89,
+    "text_snippet": "My Husband loved his outfit! Very comfy and looks great!\n",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T13:26:08.388908"
+  },
+  {
+    "id": 88,
+    "text_snippet": "I just received this scale to replace another \"smart\" scale that just up and died - and it...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T13:25:20.840078"
+  },
+  {
+    "id": 87,
+    "text_snippet": "I just received this scale to replace another \"smart\" scale that just up and died - and it...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T13:25:15.024921"
+  },
+  {
+    "id": 86,
+    "text_snippet": "This is by far the coolest scale I\u2019ve used! It\u2019s easy to read and the app makes it so much...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T13:24:55.191080"
+  },
+  {
+    "id": 85,
+    "text_snippet": "This is by far the coolest scale I\u2019ve used! It\u2019s easy to read and the app makes it so much...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T13:24:49.172859"
+  },
+  {
+    "id": 84,
+    "text_snippet": "I can only say that I wish I had bought this scale sooner, it is by far the best scale I'v...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T13:23:33.279844"
+  },
+  {
+    "id": 83,
+    "text_snippet": "This is hands down the best bathroom scale I've ever owned. It's easy to use, easy to read...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T13:23:04.113599"
+  },
+  {
+    "id": 82,
+    "text_snippet": "I\u2019ve been an audiophile for my adult life. I sold pro audio gear for most of my 20\u2019s, wher...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T13:21:58.109926"
+  },
+  {
+    "id": 81,
+    "text_snippet": "Every so often you can buy a product that totally exceeds your expectations. This is one o...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T13:21:07.500367"
+  },
+  {
+    "id": 80,
+    "text_snippet": "very good. I needed a pair of blue tooth headphones, inexpensive, to try out connecting to...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.54,
+    "timestamp": "2026-11-23T13:20:08.992665"
+  },
+  {
+    "id": 79,
+    "text_snippet": "I had very low expectations for these, and they are honestly much better than I thought th...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T13:19:03.525352"
+  },
+  {
+    "id": 78,
+    "text_snippet": "This kettle stopped working after only three days of normal use. Customer support was comp...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-23T13:18:17.633322"
+  },
+  {
+    "id": 77,
+    "text_snippet": "I bought this kettle and it stopped working after three days.",
+    "verdict": "Genuine",
+    "fake_probability": 0.2834,
+    "timestamp": "2026-11-23T13:16:38.578296"
+  },
+  {
+    "id": 76,
+    "text_snippet": "Stunned by how good these are for the price. I just wanted to try some inexpensive noise c...",
+    "verdict": "Genuine",
+    "fake_probability": 0.3163,
+    "timestamp": "2026-11-23T12:09:34.560270"
+  },
+  {
+    "id": 75,
+    "text_snippet": "Stunned by how good these are for the price. I just wanted to try some inexpensive noise c...",
+    "verdict": "Genuine",
+    "fake_probability": 0.3163,
+    "timestamp": "2026-11-23T12:09:31.799902"
+  },
+  {
+    "id": 74,
+    "text_snippet": "Stunned by how good these are for the price. I just wanted to try some inexpensive noise c...",
+    "verdict": "Genuine",
+    "fake_probability": 0.3163,
+    "timestamp": "2026-11-23T11:46:12.790801"
+  },
+  {
+    "id": 73,
+    "text_snippet": "I have been very pleasantly surprised by these headphones. I have high end headphones from...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.54,
+    "timestamp": "2026-11-23T11:45:21.377524"
+  },
+  {
+    "id": 72,
+    "text_snippet": "I cannot complain at all for the price. I have had many pair of Bose QC over the years and...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:44:22.932090"
+  },
+  {
+    "id": 71,
+    "text_snippet": "This kettle stopped working after only three days of normal use. Customer support was comp...",
+    "verdict": "Genuine",
+    "fake_probability": 0.2585,
+    "timestamp": "2026-11-23T11:44:01.684901"
+  },
+  {
+    "id": 70,
+    "text_snippet": "The kettle has worked well over the last six months. Moderate noise level and boil time is...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-23T11:41:52.593037"
+  },
+  {
+    "id": 69,
+    "text_snippet": "MUST BUY THIS RIGHT NOW!! BEST PRODUCT EVER CREATED IN THE ENTIRE WORLD AMAZING MIRACLE!!!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:41:52.472940"
+  },
+  {
+    "id": 68,
+    "text_snippet": "This is an absolute miraculous product, best quality ever in the world! Must buy now!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:41:48.231811"
+  },
+  {
+    "id": 67,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:23:33.701240"
+  },
+  {
+    "id": 66,
+    "text_snippet": "I have been using this kettle for about six months now. It heats water in about four minut...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-23T11:23:28.662712"
+  },
+  {
+    "id": 65,
+    "text_snippet": "I cannot complain at all for the price. I have had many pair of Bose QC over the years and...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:23:23.432949"
+  },
+  {
+    "id": 64,
+    "text_snippet": "I cannot complain at all for the price. I have had many pair of Bose QC over the years and...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:23:22.848100"
+  },
+  {
+    "id": 63,
+    "text_snippet": "I cannot complain at all for the price. I have had many pair of Bose QC over the years and...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:23:19.587944"
+  },
+  {
+    "id": 62,
+    "text_snippet": "I cannot complain at all for the price. I have had many pair of Bose QC over the years and...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:23:07.622750"
+  },
+  {
+    "id": 61,
+    "text_snippet": "I cannot complain at all for the price. I have had many pair of Bose QC over the years and...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:23:06.845310"
+  },
+  {
+    "id": 60,
+    "text_snippet": "I cannot complain at all for the price. I have had many pair of Bose QC over the years and...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:23:00.789000"
+  },
+  {
+    "id": 59,
+    "text_snippet": "I purchased for office use - specifically to drown out the typing sounds around me. Those ...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.4228,
+    "timestamp": "2026-11-23T11:21:56.270497"
+  },
+  {
+    "id": 58,
+    "text_snippet": "I have tried a $600 product, and also a product at a comparable price. With the $600 produ...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:21:01.582085"
+  },
+  {
+    "id": 57,
+    "text_snippet": "I have tried a $600 product, and also a product at a comparable price. With the $600 produ...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:19:42.188696"
+  },
+  {
+    "id": 56,
+    "text_snippet": "very good. I needed a pair of blue tooth headphones, inexpensive, to try out connecting to...",
+    "verdict": "Suspicious",
+    "fake_probability": 0.54,
+    "timestamp": "2026-11-23T11:18:24.655545"
+  },
+  {
+    "id": 55,
+    "text_snippet": "I have been using this kettle for about six months now. It heats water in about four minut...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-23T11:15:57.530142"
+  },
+  {
+    "id": 54,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world!! Absolute game chang...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:15:53.123280"
+  },
+  {
+    "id": 53,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world!! Absolute game chang...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:15:52.759636"
+  },
+  {
+    "id": 52,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world!! Absolute game chang...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:15:51.581496"
+  },
+  {
+    "id": 51,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world!! Absolute game chang...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:15:51.015382"
+  },
+  {
+    "id": 50,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world!! Absolute game chang...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:15:49.298166"
+  },
+  {
+    "id": 49,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world!! Absolute game chang...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:15:48.716309"
+  },
+  {
+    "id": 48,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world!! Absolute game chang...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:15:47.919084"
+  },
+  {
+    "id": 47,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world!! Absolute game chang...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:15:46.435725"
+  },
+  {
+    "id": 46,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:15:32.188551"
+  },
+  {
+    "id": 45,
+    "text_snippet": "This is an absolute miraculous product, best quality ever in the world! Must buy now!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:13:18.569129"
+  },
+  {
+    "id": 44,
+    "text_snippet": "The kettle has worked well over the last six months. Moderate noise level and boil time is...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-23T11:13:18.451126"
+  },
+  {
+    "id": 43,
+    "text_snippet": "MUST BUY THIS RIGHT NOW!! BEST PRODUCT EVER CREATED IN THE ENTIRE WORLD AMAZING MIRACLE!!!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:13:18.327993"
+  },
+  {
+    "id": 42,
+    "text_snippet": "This is an absolute miraculous product, best quality ever in the world! Must buy now!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:12:20.627718"
+  },
+  {
+    "id": 41,
+    "text_snippet": "The kettle has worked well over the last six months. Moderate noise level and boil time is...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-23T11:12:20.512932"
+  },
+  {
+    "id": 40,
+    "text_snippet": "MUST BUY THIS RIGHT NOW!! BEST PRODUCT EVER CREATED IN THE ENTIRE WORLD AMAZING MIRACLE!!!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:12:20.394938"
+  },
+  {
+    "id": 39,
+    "text_snippet": "I have been using this kettle for about six months now. It heats water in about four minut...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-23T11:10:35.447423"
+  },
+  {
+    "id": 38,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world! Absolute game change...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:10:15.584640"
+  },
+  {
+    "id": 37,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world! Absolute game change...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:10:12.368668"
+  },
+  {
+    "id": 36,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T11:10:02.214660"
+  },
+  {
+    "id": 35,
+    "text_snippet": "I have been using this kettle for about six months now. The only drawback is that the powe...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-20T21:37:19.122875"
+  },
+  {
+    "id": 34,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:36:50.719000"
+  },
+  {
+    "id": 33,
+    "text_snippet": "I have been using this kettle for about six months now. It heats water in about four minut...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-20T21:36:47.939387"
+  },
+  {
+    "id": 32,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:36:23.273384"
+  },
+  {
+    "id": 31,
+    "text_snippet": "I have been using this kettle for about six months now. It heats water in about four minut...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-20T21:36:18.458656"
+  },
+  {
+    "id": 30,
+    "text_snippet": "I have been using this kettle for about six months now. It heats water in about four minut...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-20T21:36:00.848890"
+  },
+  {
+    "id": 29,
+    "text_snippet": "This product is awesome, everyone must buy. I give it a 5 stars",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:35:30.701426"
+  },
+  {
+    "id": 28,
+    "text_snippet": "This product is awesome, everyone must buy. I give it a 5 stars",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:35:17.202461"
+  },
+  {
+    "id": 27,
+    "text_snippet": "This product is awesome, everyone must buy. I give it a 5 stars",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:35:14.507321"
+  },
+  {
+    "id": 26,
+    "text_snippet": "This product is awesome, everyone must buy. I give it a 5 stars",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:35:08.079664"
+  },
+  {
+    "id": 25,
+    "text_snippet": "This product is awesome, everyone must buy. I give it a 5 stars",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:35:05.674674"
+  },
+  {
+    "id": 24,
+    "text_snippet": "This product is awesome, everyone must buy. I give it a 5 stars",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:35:02.011991"
+  },
+  {
+    "id": 23,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:34:16.620034"
+  },
+  {
+    "id": 22,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:34:15.090253"
+  },
+  {
+    "id": 21,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:34:05.586855"
+  },
+  {
+    "id": 20,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:34:01.379351"
+  },
+  {
+    "id": 19,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:33:35.198623"
+  },
+  {
+    "id": 18,
+    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:33:01.007350"
+  },
+  {
+    "id": 17,
+    "text_snippet": "The kettle has worked well over the last six months. Moderate noise level and boil time is...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-20T21:29:39.841377"
+  },
+  {
+    "id": 16,
+    "text_snippet": "MUST BUY THIS RIGHT NOW!! BEST PRODUCT EVER CREATED IN THE ENTIRE WORLD AMAZING MIRACLE!!!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:29:39.680380"
+  },
+  {
+    "id": 15,
+    "text_snippet": "This is an absolute miraculous product, best quality ever in the world! Must buy now!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-20T21:29:34.399261"
+  },
+  {
+    "id": 14,
+    "text_snippet": "I have been using this kettle for about six months now. It heats water in about four minut...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-18T23:07:38.310359"
+  }
+]
