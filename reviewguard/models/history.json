@@ -4,6 +4,90 @@
     "text_snippet": "The kettle has worked well over the last six months. Moderate noise level and boil time is...",
     "verdict": "Genuine",
     "fake_probability": 0.28,
+    "timestamp": "2026-11-23T20:34:52.057902"
+  },
+  {
+    "id": 101,
+    "text_snippet": "MUST BUY THIS RIGHT NOW!! BEST PRODUCT EVER CREATED IN THE ENTIRE WORLD AMAZING MIRACLE!!!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T20:34:51.918414"
+  },
+  {
+    "id": 101,
+    "text_snippet": "This is an absolute miraculous product, best quality ever in the world! Must buy now!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T20:34:46.958901"
+  },
+  {
+    "id": 101,
+    "text_snippet": "I spent a lot of money on this product and it was a complete waste of money. The quality i...",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T20:29:50.324434"
+  },
+  {
+    "id": 101,
+    "text_snippet": "I spent a lot of money on this product and it was a waste of money.",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T20:22:32.544161"
+  },
+  {
+    "id": 101,
+    "text_snippet": "this is best product i ever bought in my life",
+    "verdict": "Suspicious",
+    "fake_probability": 0.54,
+    "timestamp": "2026-11-23T20:18:28.633060"
+  },
+  {
+    "id": 101,
+    "text_snippet": "The kettle has worked well over the last six months. Moderate noise level and boil time is...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-23T20:13:42.305144"
+  },
+  {
+    "id": 101,
+    "text_snippet": "MUST BUY THIS RIGHT NOW!! BEST PRODUCT EVER CREATED IN THE ENTIRE WORLD AMAZING MIRACLE!!!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T20:13:42.186953"
+  },
+  {
+    "id": 101,
+    "text_snippet": "This is an absolute miraculous product, best quality ever in the world! Must buy now!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T20:13:38.016437"
+  },
+  {
+    "id": 101,
+    "text_snippet": "The kettle has worked well over the last six months. Moderate noise level and boil time is...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
+    "timestamp": "2026-11-23T20:10:35.458959"
+  },
+  {
+    "id": 101,
+    "text_snippet": "MUST BUY THIS RIGHT NOW!! BEST PRODUCT EVER CREATED IN THE ENTIRE WORLD AMAZING MIRACLE!!!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T20:10:35.339348"
+  },
+  {
+    "id": 101,
+    "text_snippet": "This is an absolute miraculous product, best quality ever in the world! Must buy now!",
+    "verdict": "Fake",
+    "fake_probability": 0.68,
+    "timestamp": "2026-11-23T20:10:30.929005"
+  },
+  {
+    "id": 101,
+    "text_snippet": "The kettle has worked well over the last six months. Moderate noise level and boil time is...",
+    "verdict": "Genuine",
+    "fake_probability": 0.28,
     "timestamp": "2026-11-23T19:32:11.364411"
   },
   {
@@ -614,89 +698,5 @@
     "verdict": "Fake",
     "fake_probability": 0.68,
     "timestamp": "2026-11-20T21:35:08.079664"
-  },
-  {
-    "id": 25,
-    "text_snippet": "This product is awesome, everyone must buy. I give it a 5 stars",
-    "verdict": "Fake",
-    "fake_probability": 0.68,
-    "timestamp": "2026-11-20T21:35:05.674674"
-  },
-  {
-    "id": 24,
-    "text_snippet": "This product is awesome, everyone must buy. I give it a 5 stars",
-    "verdict": "Fake",
-    "fake_probability": 0.68,
-    "timestamp": "2026-11-20T21:35:02.011991"
-  },
-  {
-    "id": 23,
-    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
-    "verdict": "Fake",
-    "fake_probability": 0.68,
-    "timestamp": "2026-11-20T21:34:16.620034"
-  },
-  {
-    "id": 22,
-    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
-    "verdict": "Fake",
-    "fake_probability": 0.68,
-    "timestamp": "2026-11-20T21:34:15.090253"
-  },
-  {
-    "id": 21,
-    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
-    "verdict": "Fake",
-    "fake_probability": 0.68,
-    "timestamp": "2026-11-20T21:34:05.586855"
-  },
-  {
-    "id": 20,
-    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
-    "verdict": "Fake",
-    "fake_probability": 0.68,
-    "timestamp": "2026-11-20T21:34:01.379351"
-  },
-  {
-    "id": 19,
-    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
-    "verdict": "Fake",
-    "fake_probability": 0.68,
-    "timestamp": "2026-11-20T21:33:35.198623"
-  },
-  {
-    "id": 18,
-    "text_snippet": "I bought this product yesterday and it is the best item in the world! Everyone must buy 10...",
-    "verdict": "Fake",
-    "fake_probability": 0.68,
-    "timestamp": "2026-11-20T21:33:01.007350"
-  },
-  {
-    "id": 17,
-    "text_snippet": "The kettle has worked well over the last six months. Moderate noise level and boil time is...",
-    "verdict": "Genuine",
-    "fake_probability": 0.28,
-    "timestamp": "2026-11-20T21:29:39.841377"
-  },
-  {
-    "id": 16,
-    "text_snippet": "MUST BUY THIS RIGHT NOW!! BEST PRODUCT EVER CREATED IN THE ENTIRE WORLD AMAZING MIRACLE!!!",
-    "verdict": "Fake",
-    "fake_probability": 0.68,
-    "timestamp": "2026-11-20T21:29:39.680380"
-  },
-  {
-    "id": 15,
-    "text_snippet": "This is an absolute miraculous product, best quality ever in the world! Must buy now!",
-    "verdict": "Fake",
-    "fake_probability": 0.68,
-    "timestamp": "2026-11-20T21:29:34.399261"
-  },
-  {
-    "id": 14,
-    "text_snippet": "I have been using this kettle for about six months now. It heats water in about four minut...",
-    "verdict": "Genuine",
-    "fake_probability": 0.28,
-    "timestamp": "2026-11-18T23:07:38.310359"
   }
 ]

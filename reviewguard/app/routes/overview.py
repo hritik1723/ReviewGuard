@@ -19,7 +19,8 @@ def get_overview_telemetry():
 
     # Default fallback metrics
     total_reviews = 40432
-    fake_detected = 20216
+    fake_detected = 1474
+    fake_ratio_pct = 49.1
     best_f1 = 0.88
     best_model_name = "SVM (LinearSVC)"
     dataset_name = "Kaggle Fake Reviews Benchmark"
@@ -30,11 +31,24 @@ def get_overview_telemetry():
             with open(summary_file, "r", encoding="utf-8") as f:
                 sum_data = json.load(f)
                 total_reviews = sum_data.get("total_samples", total_reviews)
-                fake_detected = sum_data.get("train_samples", total_reviews) // 2
                 best_f1 = sum_data.get("best_f1", best_f1)
                 best_model_name = sum_data.get("best_model", best_model_name)
                 dataset_name = sum_data.get("dataset_name", dataset_name)
                 models_data = sum_data.get("models", {})
+
+                # Compute fake flagged from actual test-set predictions (tp + fp)
+                best_m_key = sum_data.get("best_model", "svm")
+                best_m = models_data.get(best_m_key, {})
+                if not best_m and "svm" in models_data:
+                    best_m = models_data["svm"]
+                if best_m and "confusion_matrix" in best_m:
+                    cm = best_m["confusion_matrix"]
+                    fake_detected = cm.get("tp", 0) + cm.get("fp", 0)
+                    test_total = cm.get("tp", 0) + cm.get("fp", 0) + cm.get("tn", 0) + cm.get("fn", 0)
+                    fake_ratio_pct = round(100.0 * fake_detected / max(test_total, 1), 1)
+                else:
+                    fake_detected = sum_data.get("train_samples", total_reviews) // 2
+                    fake_ratio_pct = round(100.0 * fake_detected / max(total_reviews, 1), 1)
         except Exception:
             pass
 
@@ -74,7 +88,7 @@ def get_overview_telemetry():
         "metrics": {
             "total_reviews_analyzed": total_reviews,
             "fake_reviews_detected": fake_detected,
-            "fake_ratio_pct": round(100.0 * fake_detected / max(total_reviews, 1), 1),
+            "fake_ratio_pct": fake_ratio_pct,
             "best_f1_score": round(best_f1 * 100.0, 1),
             "best_f1_float": round(best_f1, 4),
             "best_model_name": best_model_name,

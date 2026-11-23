@@ -7,8 +7,8 @@
   "rules": [
     {
       "antecedents": [
-        "unverified_buyer",
         "label_fake",
+        "unverified_buyer",
         "burst_posting"
       ],
       "consequents": [
@@ -24,8 +24,8 @@
         "short_review"
       ],
       "consequents": [
-        "unverified_buyer",
         "label_fake",
+        "unverified_buyer",
         "burst_posting"
       ],
       "support": 0.0816,
@@ -35,13 +35,13 @@
     },
     {
       "antecedents": [
-        "unverified_buyer",
         "label_fake",
+        "unverified_buyer",
         "burst_posting"
       ],
       "consequents": [
-        "short_review",
-        "rating_5"
+        "rating_5",
+        "short_review"
       ],
       "support": 0.067,
       "confidence": 0.3667,
@@ -50,12 +50,12 @@
     },
     {
       "antecedents": [
-        "short_review",
-        "rating_5"
+        "rating_5",
+        "short_review"
       ],
       "consequents": [
-        "unverified_buyer",
         "label_fake",
+        "unverified_buyer",
         "burst_posting"
       ],
       "support": 0.067,
@@ -65,24 +65,12 @@
     },
     {
       "antecedents": [
-        "short_review"
+        "label_fake",
+        "unverified_buyer"
       ],
       "consequents": [
-        "unverified_buyer",
-        "label_fake"
-      ],
-      "support": 0.0816,
-      "confidence": 0.8272,
-      "lift": 4.4678,
-      "is_fake_target": true
-    },
-    {
-      "antecedents": [
-        "unverified_buyer",
-        "label_fake"
-      ],
-      "consequents": [
-        "short_review"
+        "short_review",
+        "burst_posting"
       ],
       "support": 0.0816,
       "confidence": 0.4408,
@@ -95,8 +83,8 @@
         "burst_posting"
       ],
       "consequents": [
-        "unverified_buyer",
-        "label_fake"
+        "label_fake",
+        "unverified_buyer"
       ],
       "support": 0.0816,
       "confidence": 0.8272,
@@ -105,25 +93,37 @@
     },
     {
       "antecedents": [
-        "unverified_buyer",
-        "label_fake"
+        "label_fake",
+        "unverified_buyer"
       ],
       "consequents": [
-        "short_review",
-        "burst_posting"
+        "short_review"
       ],
       "support": 0.0816,
       "confidence": 0.4408,
       "lift": 4.4678,
       "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "short_review"
+      ],
+      "consequents": [
+        "label_fake",
+        "unverified_buyer"
+      ],
+      "support": 0.0816,
+      "confidence": 0.8272,
+      "lift": 4.4678,
+      "is_fake_target": true
     },
     {
       "antecedents": [
         "new_account"
       ],
       "consequents": [
-        "unverified_buyer",
         "label_fake",
+        "unverified_buyer",
         "burst_posting"
       ],
       "support": 0.1169,
@@ -133,8 +133,8 @@
     },
     {
       "antecedents": [
-        "unverified_buyer",
         "label_fake",
+        "unverified_buyer",
         "burst_posting"
       ],
       "consequents": [
@@ -147,8 +147,8 @@
     },
     {
       "antecedents": [
-        "unverified_buyer",
-        "label_fake"
+        "label_fake",
+        "unverified_buyer"
       ],
       "consequents": [
         "new_account"
@@ -163,8 +163,8 @@
         "new_account"
       ],
       "consequents": [
-        "unverified_buyer",
-        "label_fake"
+        "label_fake",
+        "unverified_buyer"
       ],
       "support": 0.1181,
       "confidence": 0.822,
@@ -173,26 +173,12 @@
     },
     {
       "antecedents": [
-        "unverified_buyer",
-        "label_fake"
+        "rating_5",
+        "short_review"
       ],
       "consequents": [
-        "short_review",
-        "rating_5"
-      ],
-      "support": 0.067,
-      "confidence": 0.3618,
-      "lift": 4.4339,
-      "is_fake_target": false
-    },
-    {
-      "antecedents": [
-        "short_review",
-        "rating_5"
-      ],
-      "consequents": [
-        "unverified_buyer",
-        "label_fake"
+        "label_fake",
+        "unverified_buyer"
       ],
       "support": 0.067,
       "confidence": 0.8209,
@@ -201,13 +187,12 @@
     },
     {
       "antecedents": [
-        "unverified_buyer",
-        "label_fake"
+        "label_fake",
+        "unverified_buyer"
       ],
       "consequents": [
-        "short_review",
-        "burst_posting",
-        "rating_5"
+        "rating_5",
+        "short_review"
       ],
       "support": 0.067,
       "confidence": 0.3618,
@@ -216,13 +201,28 @@
     },
     {
       "antecedents": [
-        "short_review",
-        "burst_posting",
-        "rating_5"
+        "label_fake",
+        "unverified_buyer"
       ],
       "consequents": [
-        "unverified_buyer",
-        "label_fake"
+        "rating_5",
+        "short_review",
+        "burst_posting"
+      ],
+      "support": 0.067,
+      "confidence": 0.3618,
+      "lift": 4.4339,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "rating_5",
+        "short_review",
+        "burst_posting"
+      ],
+      "consequents": [
+        "label_fake",
+        "unverified_buyer"
       ],
       "support": 0.067,
       "confidence": 0.8209,
@@ -231,8 +231,8 @@
     },
     {
       "antecedents": [
-        "unverified_buyer",
-        "label_fake"
+        "label_fake",
+        "unverified_buyer"
       ],
       "consequents": [
         "new_account",
@@ -249,8 +249,8 @@
         "burst_posting"
       ],
       "consequents": [
-        "unverified_buyer",
-        "label_fake"
+        "label_fake",
+        "unverified_buyer"
       ],
       "support": 0.1169,
       "confidence": 0.8205,
@@ -259,27 +259,12 @@
     },
     {
       "antecedents": [
-        "unverified_buyer",
-        "label_fake",
-        "burst_posting"
+        "rating_5",
+        "new_account"
       ],
       "consequents": [
-        "new_account",
-        "rating_5"
-      ],
-      "support": 0.0974,
-      "confidence": 0.5333,
-      "lift": 4.4229,
-      "is_fake_target": false
-    },
-    {
-      "antecedents": [
-        "new_account",
-        "rating_5"
-      ],
-      "consequents": [
-        "unverified_buyer",
         "label_fake",
+        "unverified_buyer",
         "burst_posting"
       ],
       "support": 0.0974,
@@ -289,12 +274,27 @@
     },
     {
       "antecedents": [
+        "label_fake",
         "unverified_buyer",
-        "label_fake"
+        "burst_posting"
       ],
       "consequents": [
-        "new_account",
-        "rating_5"
+        "rating_5",
+        "new_account"
+      ],
+      "support": 0.0974,
+      "confidence": 0.5333,
+      "lift": 4.4229,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "label_fake",
+        "unverified_buyer"
+      ],
+      "consequents": [
+        "rating_5",
+        "new_account"
       ],
       "support": 0.0987,
       "confidence": 0.5329,
@@ -303,12 +303,12 @@
     },
     {
       "antecedents": [
-        "new_account",
-        "rating_5"
+        "rating_5",
+        "new_account"
       ],
       "consequents": [
-        "unverified_buyer",
-        "label_fake"
+        "label_fake",
+        "unverified_buyer"
       ],
       "support": 0.0987,
       "confidence": 0.8182,
@@ -317,13 +317,13 @@
     },
     {
       "antecedents": [
+        "rating_5",
         "new_account",
-        "burst_posting",
-        "rating_5"
+        "burst_posting"
       ],
       "consequents": [
-        "unverified_buyer",
-        "label_fake"
+        "label_fake",
+        "unverified_buyer"
       ],
       "support": 0.0974,
       "confidence": 0.8163,
@@ -332,13 +332,13 @@
     },
     {
       "antecedents": [
-        "unverified_buyer",
-        "label_fake"
+        "label_fake",
+        "unverified_buyer"
       ],
       "consequents": [
+        "rating_5",
         "new_account",
-        "burst_posting",
-        "rating_5"
+        "burst_posting"
       ],
       "support": 0.0974,
       "confidence": 0.5263,
@@ -347,21 +347,8 @@
     },
     {
       "antecedents": [
+        "rating_5",
         "short_review"
-      ],
-      "consequents": [
-        "label_fake",
-        "burst_posting"
-      ],
-      "support": 0.0987,
-      "confidence": 1.0,
-      "lift": 4.3904,
-      "is_fake_target": true
-    },
-    {
-      "antecedents": [
-        "short_review",
-        "rating_5"
       ],
       "consequents": [
         "label_fake",
@@ -374,15 +361,29 @@
     },
     {
       "antecedents": [
-        "unverified_buyer",
+        "rating_5",
         "short_review",
-        "rating_5"
+        "unverified_buyer"
       ],
       "consequents": [
         "label_fake",
         "burst_posting"
       ],
       "support": 0.067,
+      "confidence": 1.0,
+      "lift": 4.3904,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "short_review",
+        "unverified_buyer"
+      ],
+      "consequents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.0816,
       "confidence": 1.0,
       "lift": 4.3904,
       "is_fake_target": true
@@ -402,22 +403,8 @@
     },
     {
       "antecedents": [
-        "unverified_buyer",
-        "short_review"
-      ],
-      "consequents": [
-        "label_fake",
-        "burst_posting"
-      ],
-      "support": 0.0816,
-      "confidence": 1.0,
-      "lift": 4.3904,
-      "is_fake_target": true
-    },
-    {
-      "antecedents": [
-        "new_account",
-        "short_review"
+        "short_review",
+        "new_account"
       ],
       "consequents": [
         "label_fake",
@@ -430,12 +417,25 @@
     },
     {
       "antecedents": [
+        "short_review"
+      ],
+      "consequents": [
+        "label_fake",
+        "burst_posting"
+      ],
+      "support": 0.0987,
+      "confidence": 1.0,
+      "lift": 4.3904,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
         "label_fake",
         "burst_posting"
       ],
       "consequents": [
         "short_review",
-        "rating_5"
+        "unverified_buyer"
       ],
       "support": 0.0816,
       "confidence": 0.3583,
@@ -448,7 +448,7 @@
         "burst_posting"
       ],
       "consequents": [
-        "unverified_buyer",
+        "rating_5",
         "short_review"
       ],
       "support": 0.0816,
@@ -488,8 +488,8 @@
         "burst_posting"
       ],
       "consequents": [
-        "new_account",
-        "rating_5"
+        "rating_5",
+        "new_account"
       ],
       "support": 0.1194,
       "confidence": 0.5241,
@@ -498,8 +498,8 @@
     },
     {
       "antecedents": [
-        "new_account",
-        "rating_5"
+        "rating_5",
+        "new_account"
       ],
       "consequents": [
         "label_fake",
@@ -512,8 +512,22 @@
     },
     {
       "antecedents": [
-        "unverified_buyer",
-        "new_account"
+        "label_fake",
+        "burst_posting"
+      ],
+      "consequents": [
+        "new_account",
+        "unverified_buyer"
+      ],
+      "support": 0.1169,
+      "confidence": 0.5134,
+      "lift": 4.3451,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "new_account",
+        "unverified_buyer"
       ],
       "consequents": [
         "label_fake",
@@ -526,90 +540,9 @@
     },
     {
       "antecedents": [
-        "label_fake",
-        "burst_posting"
-      ],
-      "consequents": [
-        "unverified_buyer",
-        "new_account"
-      ],
-      "support": 0.1169,
-      "confidence": 0.5134,
-      "lift": 4.3451,
-      "is_fake_target": false
-    },
-    {
-      "antecedents": [
-        "label_fake"
-      ],
-      "consequents": [
-        "unverified_buyer",
-        "new_account",
-        "rating_5"
-      ],
-      "support": 0.0987,
-      "confidence": 0.4286,
-      "lift": 4.3439,
-      "is_fake_target": false
-    },
-    {
-      "antecedents": [
-        "unverified_buyer",
-        "new_account",
-        "rating_5"
-      ],
-      "consequents": [
-        "label_fake"
-      ],
-      "support": 0.0987,
-      "confidence": 1.0,
-      "lift": 4.3439,
-      "is_fake_target": true
-    },
-    {
-      "antecedents": [
-        "label_fake"
-      ],
-      "consequents": [
-        "new_account",
-        "rating_5"
-      ],
-      "support": 0.1206,
-      "confidence": 0.5238,
-      "lift": 4.3439,
-      "is_fake_target": false
-    },
-    {
-      "antecedents": [
-        "new_account",
-        "rating_5"
-      ],
-      "consequents": [
-        "label_fake"
-      ],
-      "support": 0.1206,
-      "confidence": 1.0,
-      "lift": 4.3439,
-      "is_fake_target": true
-    },
-    {
-      "antecedents": [
-        "new_account",
-        "burst_posting",
-        "rating_5"
-      ],
-      "consequents": [
-        "label_fake"
-      ],
-      "support": 0.1194,
-      "confidence": 1.0,
-      "lift": 4.3439,
-      "is_fake_target": true
-    },
-    {
-      "antecedents": [
         "short_review",
-        "rating_5"
+        "unverified_buyer",
+        "burst_posting"
       ],
       "consequents": [
         "label_fake"
@@ -621,9 +554,48 @@
     },
     {
       "antecedents": [
-        "unverified_buyer",
+        "new_account",
+        "burst_posting"
+      ],
+      "consequents": [
+        "label_fake"
+      ],
+      "support": 0.1425,
+      "confidence": 1.0,
+      "lift": 4.3439,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
         "short_review",
-        "rating_5"
+        "burst_posting"
+      ],
+      "consequents": [
+        "label_fake"
+      ],
+      "support": 0.0987,
+      "confidence": 1.0,
+      "lift": 4.3439,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "label_fake"
+      ],
+      "consequents": [
+        "short_review"
+      ],
+      "support": 0.0987,
+      "confidence": 0.4286,
+      "lift": 4.3439,
+      "is_fake_target": false
+    },
+    {
+      "antecedents": [
+        "rating_5",
+        "short_review",
+        "unverified_buyer",
+        "burst_posting"
       ],
       "consequents": [
         "label_fake"
@@ -636,8 +608,22 @@
     {
       "antecedents": [
         "short_review",
-        "burst_posting",
-        "rating_5"
+        "new_account",
+        "burst_posting"
+      ],
+      "consequents": [
+        "label_fake"
+      ],
+      "support": 0.0548,
+      "confidence": 1.0,
+      "lift": 4.3439,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "rating_5",
+        "short_review",
+        "burst_posting"
       ],
       "consequents": [
         "label_fake"
@@ -649,53 +635,69 @@
     },
     {
       "antecedents": [
-        "label_fake"
+        "rating_5",
+        "short_review",
+        "unverified_buyer"
       ],
       "consequents": [
-        "short_review",
-        "burst_posting"
+        "label_fake"
       ],
-      "support": 0.0987,
-      "confidence": 0.4286,
+      "support": 0.067,
+      "confidence": 1.0,
       "lift": 4.3439,
-      "is_fake_target": false
+      "is_fake_target": true
     },
     {
       "antecedents": [
+        "short_review",
         "new_account"
       ],
       "consequents": [
         "label_fake"
       ],
-      "support": 0.1437,
+      "support": 0.0548,
       "confidence": 1.0,
       "lift": 4.3439,
       "is_fake_target": true
     },
     {
       "antecedents": [
-        "short_review"
-      ],
-      "consequents": [
-        "label_fake"
-      ],
-      "support": 0.0987,
-      "confidence": 1.0,
-      "lift": 4.3439,
-      "is_fake_target": true
-    },
-    {
-      "antecedents": [
-        "label_fake"
-      ],
-      "consequents": [
-        "unverified_buyer",
         "new_account",
-        "burst_posting",
-        "rating_5"
+        "unverified_buyer"
+      ],
+      "consequents": [
+        "label_fake"
+      ],
+      "support": 0.1181,
+      "confidence": 1.0,
+      "lift": 4.3439,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "rating_5",
+        "new_account",
+        "unverified_buyer",
+        "burst_posting"
+      ],
+      "consequents": [
+        "label_fake"
       ],
       "support": 0.0974,
-      "confidence": 0.4233,
+      "confidence": 1.0,
+      "lift": 4.3439,
+      "is_fake_target": true
+    },
+    {
+      "antecedents": [
+        "label_fake"
+      ],
+      "consequents": [
+        "rating_5",
+        "new_account"
+      ],
+      "support": 0.1206,
+      "confidence": 0.5238,
       "lift": 4.3439,
       "is_fake_target": false
     }
@@ -734,8 +736,8 @@
     },
     {
       "itemset": [
-        "label_genuine",
-        "verified_buyer"
+        "verified_buyer",
+        "label_genuine"
       ],
       "support": 0.6456
     },
@@ -748,8 +750,8 @@
     },
     {
       "itemset": [
-        "label_genuine",
         "verified_buyer",
+        "label_genuine",
         "mature_account"
       ],
       "support": 0.62
@@ -785,8 +787,8 @@
     },
     {
       "itemset": [
-        "label_genuine",
         "verified_buyer",
+        "label_genuine",
         "burst_posting"
       ],
       "support": 0.5201
@@ -801,8 +803,8 @@
     },
     {
       "itemset": [
-        "label_genuine",
         "verified_buyer",
+        "label_genuine",
         "mature_account",
         "burst_posting"
       ],

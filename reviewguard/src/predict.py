@@ -28,6 +28,11 @@ SUSPICIOUS_KEYWORDS = {
     "everyone", "obsessed", "lifesaver", "worthless", "fake"
 }
 
+GENUINE_SUPERLATIVES = {
+    "best", "worst", "greatest", "flawless", "perfection", "unbelievable",
+    "miracle", "miraculous", "revolutionary", "lifesaver", "worthless"
+}
+
 
 def get_models_directory() -> Path:
     """Resolve models directory."""
@@ -258,10 +263,11 @@ class ReviewGuardPredictor:
         for idx, word in enumerate(words):
             w_clean = word.lower().strip(".,!?:;\"'()[]{}")
             if w_clean in SUSPICIOUS_KEYWORDS:
+                reason = "Extreme superlative" if w_clean in GENUINE_SUPERLATIVES else "High-weight token in the model"
                 highlights.append({
                     "word": word,
                     "index": idx,
-                    "reason": "High-frequency promotional / extreme superlative",
+                    "reason": reason,
                     "severity": "high",
                 })
             elif "!" in word:

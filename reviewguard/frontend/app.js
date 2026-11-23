@@ -209,6 +209,30 @@ async function loadOverviewData() {
     document.getElementById("overviewBestModel").innerText = data.metrics.best_model_name;
     document.getElementById("overviewModelsCount").innerText = data.metrics.models_active_count;
 
+    // Dynamically derive fake flagged in last training run from test-set predictions
+    try {
+      const evalRes = await fetch("/api/evaluation");
+      const evalData = await evalRes.json();
+      if (evalData && evalData.models) {
+        const bestKey = evalData.best_model || "svm";
+        const bestModel = evalData.models[bestKey] || Object.values(evalData.models)[0];
+        if (bestModel && bestModel.confusion_matrix) {
+          const cm = bestModel.confusion_matrix;
+          const fakePredicted = (cm.tp || 0) + (cm.fp || 0);
+          const totalTest = (cm.tp || 0) + (cm.fp || 0) + (cm.tn || 0) + (cm.fn || 0);
+          const fakeRatio = totalTest > 0 ? ((fakePredicted / totalTest) * 100).toFixed(1) : "0.0";
+          document.getElementById("overviewFakeCount").innerText = Number(fakePredicted).toLocaleString();
+          document.getElementById("overviewFakeRatio").innerText = `${fakeRatio}%`;
+          const subEl = document.getElementById("overviewFakeCardSub");
+          if (subEl && totalTest > 0) {
+            subEl.innerText = `Test Partition (${Number(totalTest).toLocaleString()} samples)`;
+          }
+        }
+      }
+    } catch (e) {
+      console.warn("Could not load test-set evaluation metrics:", e);
+    }
+
     // Leaderboard table
     const tbody = document.getElementById("overviewLeaderboardBody");
     if (tbody) {
@@ -389,7 +413,11 @@ async function loadExploreData() {
     renderExplorerRatingChart(data.rating_distribution);
 
     // Populate table
-    document.getElementById("tableRecordCount").innerText = `${Number(data.pagination.total_filtered).toLocaleString()} reviews`;
+    const recordLabel =
+      currentDataset === "kaggle"
+        ? `Preview of ${Number(data.pagination.total_filtered).toLocaleString()} reviews`
+        : `${Number(data.pagination.total_filtered).toLocaleString()} reviews`;
+    document.getElementById("tableRecordCount").innerText = recordLabel;
     document.getElementById("currentPageDisplay").innerText = `Page ${data.pagination.page} of ${data.pagination.total_pages}`;
     document.getElementById("paginationInfo").innerText = `Showing page ${data.pagination.page} (${data.records.length} items)`;
 
@@ -1012,6 +1040,19 @@ async function loadClusteringData() {
     renderClusterElbowChart(data.elbow_curve);
     renderClusterPcaChart(data.pca_points);
 
+    // Update elbow inflection and silhouette note dynamically to match data
+    const kVal = data.n_clusters || (data.cluster_summaries ? data.cluster_summaries.length : 3);
+    const elbowSpan = document.getElementById("clusterElbowInflection");
+    const silSpan = document.getElementById("clusterSilhouettePeak");
+    if (elbowSpan) {
+      elbowSpan.innerHTML = `Active Clusters: <strong>k = ${kVal}</strong> (Table Partition)`;
+    }
+    if (silSpan) {
+      const matchK = data.elbow_curve ? data.elbow_curve.find((e) => e.k === kVal) : null;
+      const silScore = matchK ? matchK.silhouette : 0.27;
+      silSpan.innerHTML = `k = ${kVal} used for distinct behavioral profiles (Silhouette: ${silScore.toFixed(2)})`;
+    }
+
     // Summary table
     const tbody = document.getElementById("clusterSummaryBody");
     if (tbody && data.cluster_summaries) {
@@ -1423,13 +1464,28 @@ async function executeLiveInference() {
             <div class="flex flex-wrap gap-1.5">
               ${data.suspicious_highlights
                 .map(
-                  (h) => `
+                  (h) => {
+                    const clean = (h.word || "").toLowerCase().replace(/[^a-z]/g, "");
+                    const genuineSuperlatives = [
+                      "best", "worst", "greatest", "flawless", "perfection", "unbelievable",
+                      "miracle", "miraculous", "revolutionary", "lifesaver", "worthless"
+                    ];
+                    let displayReason = h.reason;
+                    if (displayReason && displayReason.toLowerCase().includes("superlative")) {
+                      if (!genuineSuperlatives.includes(clean)) {
+                        displayReason = "high-weight token in the model";
+                      } else {
+                        displayReason = "extreme superlative";
+                      }
+                    }
+                    return `
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded ${
                   h.severity === "high" ? "bg-error-container text-on-error-container font-bold" : "bg-amber-100 text-amber-800 font-semibold"
                 }">
                   <span>${h.word}</span>
-                  <span class="text-[9px] opacity-75">(${h.reason})</span>
-                </span>`
+                  <span class="text-[9px] opacity-75">(${displayReason})</span>
+                </span>`;
+                  }
                 )
                 .join("")}
             </div>

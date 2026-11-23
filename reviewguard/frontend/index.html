@@ -364,15 +364,15 @@
 
           <div class="bg-surface-container-lowest rounded-xl p-5 card-border shadow-sm flex flex-col justify-between">
             <div class="flex items-center justify-between">
-              <span class="text-xs font-semibold uppercase tracking-wider text-secondary">Fake Reviews Flagged</span>
+              <span class="text-xs font-semibold uppercase tracking-wider text-secondary" id="overviewFakeCardTitle">Fake Flagged in Last Training Run</span>
               <span class="material-symbols-outlined text-error text-[18px]">gpp_bad</span>
             </div>
             <div class="my-3 flex items-baseline justify-between">
-              <div class="text-2xl font-bold text-on-surface tracking-tight tabular-nums" id="overviewFakeCount">20,216</div>
-              <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-error-container text-on-error-container tabular-nums" id="overviewFakeRatio">50.0%</span>
+              <div class="text-2xl font-bold text-on-surface tracking-tight tabular-nums" id="overviewFakeCount">1,474</div>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-error-container text-on-error-container tabular-nums" id="overviewFakeRatio">49.1%</span>
             </div>
             <div class="text-[11px] text-secondary flex items-center justify-between">
-              <span>Computer-Generated (CG)</span>
+              <span id="overviewFakeCardSub">Test Partition (3,000 samples)</span>
               <span class="font-medium text-on-surface">Precision Focus</span>
             </div>
           </div>
@@ -1145,9 +1145,9 @@
             <div class="h-60 w-full flex items-center justify-center">
               <canvas id="clusterElbowChart"></canvas>
             </div>
-            <div class="text-[11px] text-secondary pt-2 border-t border-surface-container-high flex justify-between">
-              <span>Elbow inflection point: <strong>k = 4</strong></span>
-              <span class="text-emerald-700 font-medium">Silhouette Peak: 0.38</span>
+            <div class="text-[11px] text-secondary pt-2 border-t border-surface-container-high flex justify-between" id="clusterElbowFooter">
+              <span id="clusterElbowInflection">Active Clusters: <strong>k = 3</strong> (Elbow Knee Point)</span>
+              <span class="text-emerald-700 font-medium" id="clusterSilhouettePeak">k = 3 selected for distinct behavioral profiles</span>
             </div>
           </div>
 
