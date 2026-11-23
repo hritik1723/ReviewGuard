@@ -26,12 +26,15 @@ def get_datasets():
 @router.post("/dataset/upload")
 async def upload_dataset(file: UploadFile = File(...)):
     """Upload custom CSV dataset, validate columns, and make available in selector."""
-    if not file.filename.endswith(".csv"):
+    # Strip any directory components from the client-supplied filename so an
+    # upload cannot write outside the dataset directory (e.g. "../../evil.csv").
+    filename = Path(file.filename or "").name
+    if not filename.lower().endswith(".csv"):
         raise HTTPException(status_code=400, detail="Only CSV files are currently supported.")
 
     upload_dir = Path.cwd() / "reviewguard" / "data" / "raw"
     upload_dir.mkdir(parents=True, exist_ok=True)
-    dest_path = upload_dir / file.filename
+    dest_path = upload_dir / filename
 
     with open(dest_path, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
@@ -43,8 +46,8 @@ async def upload_dataset(file: UploadFile = File(...)):
         raise HTTPException(status_code=400, detail=f"Failed to parse uploaded dataset: {str(e)}")
 
     return {
-        "message": f"Successfully uploaded {file.filename}",
-        "filename": file.filename,
+        "message": f"Successfully uploaded {filename}",
+        "filename": filename,
         "rows": meta["total_rows"],
         "has_metadata": meta["has_metadata"],
         "columns": meta["columns"],
@@ -103,7 +106,7 @@ def explore_dataset(
     if search_val:
         search_lower = search_val.lower()
         filtered_df = filtered_df[
-            filtered_df["text"].astype(str).str.lower().str.contains(search_lower)
+            filtered_df["text"].astype(str).str.lower().str.contains(search_lower, regex=False)
         ]
     if cat_val and cat_val != "all" and "category" in filtered_df.columns:
         filtered_df = filtered_df[filtered_df["category"] == cat_val]

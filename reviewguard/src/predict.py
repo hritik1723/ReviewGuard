@@ -298,7 +298,7 @@ class ReviewGuardPredictor:
                 hist = []
 
             entry = {
-                "id": len(hist) + 1,
+                "id": max((int(entry.get("id", 0)) for entry in hist), default=0) + 1,
                 "text_snippet": text[:90] + ("..." if len(text) > 90 else ""),
                 "verdict": result["verdict"],
                 "fake_probability": result["fake_probability"],
