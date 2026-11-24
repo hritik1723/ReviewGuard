@@ -8,7 +8,7 @@
 
 ## About the Project
 
-**ReviewGuard** is an end-to-end fake product review detection and behavioral analysis platform developed as a **B.Tech Computer Science & Engineering (Artificial Intelligence & Machine Learning)** capstone project.
+**ReviewGuard** is an end-to-end fake product review detection and behavioral analysis platform developed as a **B.Tech Computer Science & Engineering (Artificial Intelligence & Machine Learning)** project.
 
 The system relies strictly on **classical machine learning algorithms**, statistical NLP feature engineering, unsupervised clustering, association rule mining, and discrete Markov sequence modeling. It intentionally avoids deep neural networks and transformer architectures to highlight the power, diagnostic transparency, low computational overhead, and microsecond inference latencies of classical algorithms in high-dimensional text classification.
 
