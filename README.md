@@ -317,7 +317,7 @@ An AI coding assistant and Google Stitch were utilized for frontend HTML/CSS sca
 
 ## Authors
 
-- **[Your Name]** — *Lead AIML Architecture & Implementation*
-- **[College]** — *Department of Computer Science & Engineering (AIML)*
+- **Hritik Kumar** — *Lead AIML Architecture & Implementation*
+- **GKCIET** — *Department of Computer Science & Engineering (AIML)*
 - **GitHub:** [https://github.com/hritik1723](https://github.com/hritik1723)
-- **LinkedIn:** [LinkedIn Profile Placeholder]
+- **LinkedIn:** www.linkedin.com/in/hritikkumar44
